@@ -1,0 +1,69 @@
+@import "fonts.css";
+
+body {
+    margin: 0;
+}
+
+h1, h3 {
+    margin: 0
+}
+
+a {
+    color: yellow;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 5;
+    margin: 0;
+    text-align: center;
+}
+
+#headers {
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 0;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    text-align: center;
+}
+
+.yellow-part {
+    background-color: yellow;
+    color: black;
+    height: 30vh;
+}
+
+.black-part {
+    background-color: black;
+    color: yellow;
+    height: 70vh;
+}
+
+#status-code {
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-size: 120px;
+    padding-bottom: 15vh;
+    height: 10vh;
+    padding-top: 5vh;
+    font-weight: lighter;
+}
+
+#error-heading {
+    padding-top: 10vh;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-family: "Russo One", sans-serif;
+    font-weight: lighter;
+}
+
+#error-description {
+    font-size: 20px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,264 @@
+#logo {
+    animation: fadeinAnim 3.5s;
+    width: 232px;
+    height: 90px;
+}
+
+#names {
+    max-width: 500px;
+    margin-top: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 28px;
+}
+
+#name {
+    width: 100%;
+    height: 100%;
+    padding-right: 15px;
+    border-right: solid 2px white;
+    font-size: 40px;
+    font-family: 'Jost', sans-serif;
+    animation: zoominAnim 2s;
+}
+
+#nickname {
+    margin-left: 8px;
+    font-size: 30px;
+    animation: collapseAnim 2s;
+}
+
+.nickname {
+    color: white;
+    font-family: 'Exo', sans-serif;
+    animation: gradientAnim 4s infinite;
+}
+
+#nickname span {
+    margin-right: 2px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+@keyframes fadeinAnim {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes collapseAnim {
+    0% {
+        font-size: 30px;
+    }
+    30% {
+        font-size: 70px;
+    }
+    50% {
+        font-size: 70px;
+    }
+    100% {
+        font-size: 30px;
+    }
+}
+
+@keyframes zoominAnim {
+    0% {
+        opacity: 0;
+        font-size: 0;
+    }
+    30% {
+        opacity: 0;
+        font-size: 0;
+    }
+    50% {
+        opacity: 0;
+        font-size: 0;
+    }
+    100% {
+        opacity: 1;
+        font-size: 40px;
+    }
+}
+
+@keyframes gradientAnim {
+    0% {
+        color: white;
+    }
+    20% {
+        color: #abbfff;
+    }
+    40% {
+        color: #aef8d5;
+    }
+    60% {
+        color: #b5dcfa;
+    }
+    80% {
+        color: #7fefef;
+    }
+    95% {
+        color: #dbf0ff;
+    }
+    100% {
+        color: white;
+    }
+}
+
+@media (max-width: 1350px) {
+    #logo {
+        width: 200px;
+        height: 75px;
+    }
+
+    #name {
+        padding-right: 12px;
+        font-size: 35px;
+    }
+
+    #nickname {
+        margin-left: 5px;
+        font-size: 25px;
+    }
+
+    @keyframes collapseAnim {
+        0% {
+            font-size: 25px;
+        }
+        30% {
+            font-size: 45px;
+        }
+        50% {
+            font-size: 45px;
+        }
+        100% {
+            font-size: 25px;
+        }
+    }
+
+    @keyframes zoominAnim {
+        0% {
+            opacity: 0;
+            font-size: 0;
+        }
+        30% {
+            opacity: 0;
+            font-size: 0;
+        }
+        50% {
+            opacity: 0;
+            font-size: 0;
+        }
+        100% {
+            opacity: 1;
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #logo {
+        width: 180px;
+        height: 68px;
+    }
+
+    #name {
+        padding-right: 10px;
+        font-size: 30px;
+    }
+
+    #nickname {
+        margin-left: 3px;
+        font-size: 22px;
+    }
+
+    @keyframes collapseAnim {
+        0% {
+            font-size: 22px;
+        }
+        30% {
+            font-size: 40px;
+        }
+        50% {
+            font-size: 40px;
+        }
+        100% {
+            font-size: 22px;
+        }
+    }
+
+    @keyframes zoominAnim {
+        0% {
+            opacity: 0;
+            font-size: 0;
+        }
+        30% {
+            opacity: 0;
+            font-size: 0;
+        }
+        50% {
+            opacity: 0;
+            font-size: 0;
+        }
+        100% {
+            opacity: 1;
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    #logo {
+        width: 135px;
+        height: 55px;
+    }
+
+    #name {
+        padding-right: 8px;
+        border-right: solid 1px white;
+        font-size: 25px;
+    }
+
+    #nickname {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    @keyframes collapseAnim {
+        0% {
+            font-size: 20px;
+        }
+        30% {
+            font-size: 40px;
+        }
+        50% {
+            font-size: 40px;
+        }
+        100% {
+            font-size: 20px;
+        }
+    }
+
+    @keyframes zoominAnim {
+        0% {
+            opacity: 0;
+            font-size: 0;
+        }
+        30% {
+            opacity: 0;
+            font-size: 0;
+        }
+        50% {
+            opacity: 0;
+            font-size: 0;
+        }
+        100% {
+            opacity: 1;
+            font-size: 25px;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Exo";
+    src: url(fonts2/Exo-Regular.woff2) format('woff2');
+    font-display: block;
+}
+
+@font-face {
+    font-family: "ABeeZee";
+    src: url(fonts2/ABeeZee-Regular.woff2) format('woff2');
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url(fonts2/Jost-Light.woff2) format('woff2');
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    font-weight: normal;
+    src: url(fonts2/SourceCodePro-Regular.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    font-weight: bold;
+    src: url(fonts2/SourceCodePro-Bold.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bellota Text";
+    font-weight: normal;
+    src: url(fonts2/BellotaText-Regular.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bellota Text";
+    font-weight: bold;
+    src: url(fonts2/BellotaText-Bold.woff2) format('woff2');
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url(fonts2/Comfortaa-VariableFont_wght.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik Marker Hatch";
+    src: url(fonts2/RubikMarkerHatch-Regular.woff2) format('woff2');
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Russo One";
+    src: url(fonts2/RussoOne-Regular.woff2) format('woff2');
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts2/Roboto-Bold.woff2) format('woff2');
+    font-display: swap;
+}

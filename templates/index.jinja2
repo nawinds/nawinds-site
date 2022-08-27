@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Персональный сайт Никиты Аксенова (@nawinds). Информация обо мне и ссылки
+    на соцсети">
+    <meta name="keywords" content="nawinds, @nawinds, sailsme, voneska_n, esails,
+    Никита Аксенов сайт, Аксенов Никита, персональный сайт">
+    <meta name="og:image" content="">
+    <meta name='theme-color' content='#fff537'>
+
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="{{ url_for('static', filename='icons/favicon/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="{{ url_for('static', filename='icons/favicon/favicon-32x32.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="{{ url_for('static', filename='icons/favicon/apple-touch-icon.png') }}">
+
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+
+    <title>Nawinds | Никита Аксенов</title>
+
+    <link rel="preload" href="{{ url_for('static', filename='css/fonts2/Exo-Regular.woff2') }}"
+          as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='css/fonts2/ABeeZee-Regular.woff2') }}"
+          as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='css/fonts2/Jost-Light.woff2') }}"
+          as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='css/fonts2/SourceCodePro-Bold.woff2') }}"
+          as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='css/fonts2/SourceCodePro-Regular.woff2') }}"
+          as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='css/fonts2/BellotaText-Bold.woff2') }}"
+          as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='css/fonts2/BellotaText-Regular.woff2') }}"
+          as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ url_for('static', filename='css/fonts2/Comfortaa-VariableFont_wght.woff2') }}"
+          as="font" type="font/woff2" crossorigin>
+
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+</head>
+<body>
+<div id="main">
+    <div id="gallery">
+        {% for img in sail_images[:-1] %}
+            <img data-lazysrc="{{ url_for('static', filename="sail/"+img) }}" class="gallery-image">
+        {% endfor %}
+        <img data-lazysrc="{{ url_for('static', filename="sail/"+sail_images[-1]) }}"
+             class="gallery-image last-gallery-image">
+    </div>
+    <div id="vignette"></div>
+    <div id="darker"></div>
+    <a id="scroll-up" onclick="scrollUp()">
+        <img src="{{ url_for('static', filename='icons/angle-up.svg') }}" alt="Наверх">
+    </a>
+    <div id="headers">
+        <img id="logo" src="{{ url_for('static', filename='logo.png') }}" alt="nawinds"><br>
+        <div id="names">
+            <span id="name">Никита&nbsp;Аксенов</span>
+            <span class="nickname">
+                <span id="nickname"><span>@</span>nawinds</span>
+            </span>
+        </div>
+        <div id="social">
+            <a class="social-btn" href="tg://resolve?domain={{ telegram }}" onclick="socialClick('Telegram')">
+                <img src="{{ url_for('static', filename='icons/tg2.svg') }}" alt="Telegram">
+            </a>
+            <a class="social-btn" href="https://github.com/{{ github }}" target="_blank"
+               onclick="socialClick('Github')">
+                <img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub">
+            </a>
+            <a class="social-btn" href="https://instagram.com/{{ instagram }}" target="_blank"
+               onclick="socialClick('Instagram')">
+                <img src="{{ url_for('static', filename='icons/instagram.svg') }}" alt="Instagram">
+            </a>
+            <a class="social-btn" href="https://vk.com/{{ vk }}" target="_blank" onclick="socialClick('VK')">
+                <img src="{{ url_for('static', filename='icons/vk.svg') }}" alt="VK">
+            </a>
+            <a class="social-btn" href="mailto:{{ email }}" onclick="socialClick('Email')">
+                <img src="{{ url_for('static', filename='icons/email.svg') }}" alt="Email">
+            </a>
+        </div>
+    </div>
+    <div id="scroll-down">
+        <a id="scroll-down-btn" onclick="scrollDown()">
+            <img src="{{ url_for('static', filename='icons/down-long.svg') }}" alt="Листать дальше">
+        </a>
+    </div>
+    <div id="about">
+        <div class="container">
+            <h1>О себе</h1>
+            <div id="short-summary">
+                <p class="muted">
+                    <span class="green"><b>nawinds@localhost</b>:<span class="blue">~</span>$</span>
+                    ./about.sh
+                </p>
+                <p>
+                    <img src="{{ url_for('static', filename='icons/user.svg') }}" alt="Возраст">
+                    Возраст: {{ age }} лет
+                </p>
+                <p>
+                    <img src="{{ url_for('static', filename='icons/city.svg') }}" alt="Москва">
+                    Живу в Москве
+                </p>
+                <p>
+                    <img src="{{ url_for('static', filename='icons/python.svg') }}" alt="Python">
+                    Программист, в основном пишу на Python
+                </p>
+                <p>
+                    <img src="{{ url_for('static', filename='icons/sailboat.svg') }}" alt="Парусный спорт">
+                    Профессионально занимаюсь парусным спортом,
+                    на данный момент гоняюсь в классах яхт Лазер 4.7 и Лазер Радиал
+                </p>
+                <p>
+                    <img src="{{ url_for('static', filename='icons/photo-film.svg') }}" alt="Видеография">
+                    Люблю монтировать видеоролики и сам снимаю с дрона
+                </p>
+                <p class="muted muted-bottom">
+                    <span class="green"><b>nawinds@localhost</b>:<span class="blue">~</span>$</span>
+                    <span id="terminal-cursor"></span>
+                </p>
+            </div>
+            <div id="programming-skills">
+                <h3>Опыт в программировании</h3>
+                <p>
+                    Python я изучал в <a href="https://academy.yandex.ru/lyceum" target="_blank">Яндекс.Лицее</a>,
+                    где прошёл 2 курса (Основы программирования на языке Python и
+                    Основы промышленного программирования).
+                    Больше всего опыта у меня в написании бэкенда для
+                    сайтов (Flask, SqlAlchemy) и создании ботов (для Telegram и VK). Я знаком с основами
+                    HTML, CSS, JS и могу написать фронтенд для сайта (версткой этого сайта я занимался сам).
+                    Свои проекты я размещаю на арендованном Linux сервере в Европе.
+                </p>
+                <p>
+                    Обычно я программирую один, но мне доводилось работать в команде во время моего обучения
+                    в Яндекс.Лицее и на летней смене <a href="https://lksh.ru/" target="_blank">ЛКШ</a> Июль 2021
+                    в параллели P.
+                    Я умею работать с системой контроля версий Git и репозиториями на Github и
+                    Gitlab.
+                </p>
+                <p>
+                    Мне постоянно приходят идеи новых проектов и улучшения старых. В своё свободное
+                    время я совершенствую свои навыки и изучаю новое, работая над реализацией своих идей.
+                </p>
+                <p>
+                    С 2021 года я изучаю C++ и C# в
+                    <a href="https://informatics.ru/" target="_blank">Школе программистов</a>.
+                    В будущем хочу углубиться в тему машинного обучения и нейросетей,
+                    попробовать себя в мобильной разработке для Android.
+                </p>
+                <p>
+                    Я буду рад присоединиться к работе над совместным проектом, даже если для этого нужно будет
+                    изучить много нового материала.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            Сайт&nbsp;написан с<span>
+                <img src="{{ url_for('static', filename='icons/heart.svg') }}" alt="любовью">
+            </span>мной&nbsp;самим
+        </p>
+        <p class="copyright">&copy;&nbsp;{{ year }},&nbsp;Никита&nbsp;Аксенов</p>
+    </footer>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
