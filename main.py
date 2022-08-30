@@ -24,9 +24,9 @@ def index():
         age -= 1
 
     telegram = "nawinds"
-    github = "sailsme"
+    github = "nawinds"
     instagram = "nawinds"
-    vk = "sailsme"
+    vk = "nawinds"
     email = "me@nawinds.top"
 
     return render_template("index.jinja2", sail_images=sail_images, age=age,
