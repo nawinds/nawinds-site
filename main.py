@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_file
+from flask import Flask, render_template, send_from_directory, request, redirect
 import datetime
 import requests
 import os
@@ -42,13 +42,9 @@ def social_click(site_name):
 
 
 @app.route("/favicon.ico")
-def favicon():
-    return send_file("static/icons/favicon/favicon.ico")
-
-
 @app.route("/robots.txt")
-def robots():
-    return send_file("static/robots.txt")
+def root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 
 def not_found(e):
@@ -61,4 +57,4 @@ app.register_error_handler(404, not_found)
 
 
 if __name__ == '__main__':
-    app.run("0.0.0.0", port=80)
+    app.run("127.0.0.1", port=80)

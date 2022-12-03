@@ -49,13 +49,16 @@ window.addEventListener("scroll", (event) => {
     let vh = window.innerHeight;
     if (scrollY > vh / 4) {
         document.getElementById("scroll-up").style.opacity = 1;
+        document.getElementById("navbar").style.backgroundColor = "black";
     }
 
     if (scrollY < vh / 4) {
         document.getElementById("scroll-up").style.opacity = 0;
+        document.getElementById("navbar").style.backgroundColor = "transparent";
     }
 
     if (darkerActive) {
-        document.getElementById("darker").style.backgroundColor = "rgba(0, 0, 0, " + scrollY / vh + ")";
+        document.getElementById("darker").style.backgroundColor = "rgba(0, 0, 0, " +
+            scrollY / vh + ")";
     }
 });
