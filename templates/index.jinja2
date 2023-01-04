@@ -63,6 +63,7 @@
     <a id="scroll-up" onclick="scrollUp()">
         <img src="{{ url_for('static', filename='icons/angle-up.svg') }}" alt="Наверх">
     </a>
+
     <div id="headers">
         <img id="logo" src="{{ url_for('static', filename='logo.png') }}" alt="nawinds"><br>
         <div id="names">
@@ -72,12 +73,16 @@
             </span>
         </div>
         <div id="social">
-            <a class="social-btn" href="tg://resolve?domain={{ telegram }}" onclick="socialClick('Telegram')">
-                <img src="{{ url_for('static', filename='icons/tg2.svg') }}" alt="Telegram">
+            <a class="social-btn" href="https://git.nawinds.top" target="_blank"
+               onclick="socialClick('Gitea')">
+                <img src="{{ url_for('static', filename='icons/gitea2_black.svg') }}" alt="Gitea">
             </a>
             <a class="social-btn" href="https://github.com/{{ github }}" target="_blank"
                onclick="socialClick('Github')">
                 <img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub">
+            </a>
+            <a class="social-btn" href="tg://resolve?domain={{ telegram }}" onclick="socialClick('Telegram')">
+                <img src="{{ url_for('static', filename='icons/tg2.svg') }}" alt="Telegram">
             </a>
             <a class="social-btn" href="https://instagram.com/{{ instagram }}" target="_blank"
                onclick="socialClick('Instagram')">
@@ -87,7 +92,7 @@
                 <img src="{{ url_for('static', filename='icons/vk.svg') }}" alt="VK">
             </a>
             <a class="social-btn" href="mailto:{{ email }}" onclick="socialClick('Email')">
-                <img src="{{ url_for('static', filename='icons/email.svg') }}" alt="Email">
+                <img src="{{ url_for('static', filename='icons/mail-square.svg') }}" alt="Email" id="email-icon">
             </a>
         </div>
     </div>
