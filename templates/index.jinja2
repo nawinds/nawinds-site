@@ -54,8 +54,12 @@
     <a id="scroll-up" onclick="scrollUp()">
         <img src="{{ url_for('static', filename='icons/angle-up.svg') }}" alt="Наверх">
     </a>
-    <nav id="navbar">
-        <img id="navbarlogo" src="{{ url_for('static', filename='logo.png') }}" alt="nawinds">
+    <!--<nav id="navbar">
+        <img id="navbarlogo" src="{{ url_for('static',
+        filename='icons/favicon/android-chrome-512x512.png') }}" alt="nawinds">
+        <button onclick="showNavbar()">
+
+        </button>
         <ul>
             <li>
                 <a href="#">О себе</a>
@@ -68,6 +72,26 @@
             </li>
         </ul>
     </nav>
+
+
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li><span>Web Developer</span></li>
+            <li><a href="https://vanila.io" target="_blank">Company</a></li>
+            <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+            <li><a href="https://www.youtube.com/channel/" target="_blank">YouTube</a></li>
+            <li><a href="https://www.linkedin.com/in/" target="_blank">Linkedin</a></li>
+        </ul>
+    </div>-->
+
     <div id="headers">
         <img id="logo" src="{{ url_for('static', filename='logo.png') }}" alt="nawinds"><br>
         <div id="names">
