@@ -21,7 +21,14 @@
 .social-btn img {
     width: 45px;
     height: 45px;
-    padding: 15px 15px;
+    margin: 15px 15px;
+}
+
+#email-icon {
+    border-radius: 30%;
+    padding: 2px 2px 2px 2px;
+    width: 41px;
+    height: 41px;
 }
 
 @keyframes socialAnim {
