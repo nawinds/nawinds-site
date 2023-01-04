@@ -49,16 +49,20 @@ window.addEventListener("scroll", (event) => {
     let vh = window.innerHeight;
     if (scrollY > vh / 4) {
         document.getElementById("scroll-up").style.opacity = 1;
-        document.getElementById("navbar").style.backgroundColor = "black";
     }
 
     if (scrollY < vh / 4) {
         document.getElementById("scroll-up").style.opacity = 0;
-        document.getElementById("navbar").style.backgroundColor = "transparent";
     }
 
     if (darkerActive) {
-        document.getElementById("darker").style.backgroundColor = "rgba(0, 0, 0, " +
-            scrollY / vh + ")";
+        document.getElementById("darker").style.backgroundColor = "rgba(0, 0, 0, " + scrollY / vh + ")";
     }
 });
+
+console.log("%cHey there!",
+        "color: white; font-style: bold; background-color: black; font-size: 30px;");
+console.log("%cYou're lucky to find a surprise from me!",
+        "color: black; font-style: bold; background-color: white; font-size: 20px;");
+console.log("%cGo to https://nawinds.top/lucky and enjoy it!",
+        "color: black; font-style: bold; background-color: yellow; font-size: 20px;");

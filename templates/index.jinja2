@@ -1,3 +1,12 @@
+<!--
+     Дорогой дневник,
+
+     Мне не подобрать слов, чтобы описать боль и унижение,
+     которые я испытал сегодня.
+     Моя жизнь поломана навсегда.
+     Я не нашел в шкафу нарнию.. но зато
+     наконец-то ЗаДеПлОиЛ ЭТОТ СААААААЙТ
+-->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -5,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Персональный сайт Никиты Аксенова (@nawinds). Информация обо мне и ссылки
     на соцсети">
-    <meta name="keywords" content="nawinds, @nawinds, sailsme, voneska_n, esails,
+    <meta name="keywords" content="nawinds, @nawinds,
     Никита Аксенов сайт, Аксенов Никита, персональный сайт">
     <meta name="og:image" content="">
     <meta name='theme-color' content='#fff537'>
@@ -54,43 +63,6 @@
     <a id="scroll-up" onclick="scrollUp()">
         <img src="{{ url_for('static', filename='icons/angle-up.svg') }}" alt="Наверх">
     </a>
-    <!--<nav id="navbar">
-        <img id="navbarlogo" src="{{ url_for('static',
-        filename='icons/favicon/android-chrome-512x512.png') }}" alt="nawinds">
-        <button onclick="showNavbar()">
-
-        </button>
-        <ul>
-            <li>
-                <a href="#">О себе</a>
-            </li>
-            <li>
-                <a href="#">Контакты</a>
-            </li>
-            <li>
-                <a href="#">Телеграм-канал</a>
-            </li>
-        </ul>
-    </nav>
-
-
-    <div class="header"></div>
-    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-    <label for="openSidebarMenu" class="sidebarIconToggle">
-        <div class="spinner diagonal part-1"></div>
-        <div class="spinner horizontal"></div>
-        <div class="spinner diagonal part-2"></div>
-    </label>
-    <div id="sidebarMenu">
-        <ul class="sidebarMenuInner">
-            <li><span>Web Developer</span></li>
-            <li><a href="https://vanila.io" target="_blank">Company</a></li>
-            <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
-            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-            <li><a href="https://www.youtube.com/channel/" target="_blank">YouTube</a></li>
-            <li><a href="https://www.linkedin.com/in/" target="_blank">Linkedin</a></li>
-        </ul>
-    </div>-->
 
     <div id="headers">
         <img id="logo" src="{{ url_for('static', filename='logo.png') }}" alt="nawinds"><br>
@@ -101,16 +73,12 @@
             </span>
         </div>
         <div id="social">
-            <a class="social-btn" href="https://git.nawinds.top" target="_blank"
-               onclick="socialClick('Gitea')">
-                <img src="{{ url_for('static', filename='icons/gitea2_black.svg') }}" alt="Gitea">
+            <a class="social-btn" href="tg://resolve?domain={{ telegram }}" onclick="socialClick('Telegram')">
+                <img src="{{ url_for('static', filename='icons/tg2.svg') }}" alt="Telegram">
             </a>
             <a class="social-btn" href="https://github.com/{{ github }}" target="_blank"
                onclick="socialClick('Github')">
                 <img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub">
-            </a>
-            <a class="social-btn" href="tg://resolve?domain={{ telegram }}" onclick="socialClick('Telegram')">
-                <img src="{{ url_for('static', filename='icons/tg2.svg') }}" alt="Telegram">
             </a>
             <a class="social-btn" href="https://instagram.com/{{ instagram }}" target="_blank"
                onclick="socialClick('Instagram')">
@@ -120,14 +88,9 @@
                 <img src="{{ url_for('static', filename='icons/vk.svg') }}" alt="VK">
             </a>
             <a class="social-btn" href="mailto:{{ email }}" onclick="socialClick('Email')">
-                <img src="{{ url_for('static', filename='icons/mail-square.svg') }}" alt="Email" id="email-icon">
+                <img src="{{ url_for('static', filename='icons/email.svg') }}" alt="Email">
             </a>
         </div>
-        <!--<div id="menu">
-            <a class="menu-btn" href="#" onclick="">
-                Test
-            </a>
-        </div>-->
     </div>
     <div id="scroll-down">
         <a id="scroll-down-btn" onclick="scrollDown()">
@@ -191,10 +154,11 @@
                     время я совершенствую свои навыки и изучаю новое, работая над реализацией своих идей.
                 </p>
                 <p>
-                    С 2021 года я изучаю C++ и C# в
+                    В 2021-2022 году изучал C++, C# и блокчейн в
                     <a href="https://informatics.ru/" target="_blank">Школе программистов</a>.
-                    В будущем хочу углубиться в тему машинного обучения и нейросетей,
-                    попробовать себя в мобильной разработке для Android.
+                    В конце 2022 года прошёл <a href="https://academy.yandex.ru/intensive/bigdata" target="_blank">
+                    интенсив Академии Яндекса по большим данным</a>.
+                    В будущем хочу углубиться в тему машинного обучения и нейросетей.
                 </p>
                 <p>
                     Я буду рад присоединиться к работе над совместным проектом, даже если для этого нужно будет
@@ -215,3 +179,4 @@
 <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
+<!-- ВСЁ! пара-пара-пам -->
