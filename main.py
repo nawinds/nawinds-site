@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_from_directory, request, redirect
+from flask import Flask, render_template, send_file
 import datetime
 import requests
 import os
@@ -42,19 +42,26 @@ def social_click(site_name):
 
 
 @app.route("/favicon.ico")
+def favicon():
+    return send_file("static/icons/favicon/favicon.ico")
+
+
 @app.route("/robots.txt")
-def root():
-    return send_from_directory(app.static_folder, request.path[1:])
+def robots():
+    return send_file("static/robots.txt")
 
 
+@app.route("/lucky")
+def lucky():
+    return render_template("lucky.jinja2")
+
+
+@app.errorhandler(404)
 def not_found(e):
     return render_template("error.jinja2", status_code="404", error_heading="Страница не найдена",
                            error_description="Этой страницы не существует. "
                                              "Вы можете перейти на <a href=\"/\">главную</a>."), 404
 
 
-app.register_error_handler(404, not_found)
-
-
 if __name__ == '__main__':
-    app.run("127.0.0.1", port=80)
+    app.run("0.0.0.0", port=80)

@@ -15,20 +15,20 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgba(127, 127, 127, 0.7);
+  background-color: rgba(127, 127, 127, 0.7);
     border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(180, 180, 180, 0.7);
+  background-color: rgba(180, 180, 180, 0.7);
 }
 
 body::-webkit-scrollbar-thumb:active {
-    background-color: white;
+  background-color: white;
 }
 
 #scroll-up {
@@ -64,53 +64,6 @@ body::-webkit-scrollbar-thumb:active {
     background-color: black;
     color: white;
     text-align: center;
-}
-
-#navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    background-color: transparent;
-    transition: ease-in-out .3s;
-    font-size: 1rem;
-}
-
-#navbar img {
-    margin: 10px;
-    height: min-content;
-    max-height: 25px;
-    vertical-align: middle;
-    float: left;
-    z-index: 1000;
-}
-
-#navbar ul {
-    display: flex;
-    float: right;
-    margin: 15px;
-    padding-inline-start: 0;
-    padding-inline-end: 30px;
-}
-
-#navbar ul li {
-    list-style: none;
-}
-
-#navbar ul li a {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    text-decoration: none;
-    color: white;
-    font-family: system-ui,
-    -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-#navbar ul li a:hover {
-    color: rgb(200, 200, 200);
 }
 
 #headers {

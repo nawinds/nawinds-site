@@ -1,21 +1,11 @@
-#social, #menu {
+#social {
     animation: socialAnim 4.5s;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90%;
 }
 
-#menu {
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.social-btn, .menu-btn {
+.social-btn {
     width: 75px;
     height: 75px;
-    margin-top: 6px;
+    margin-top: 30px;
     margin-left: 3px;
     margin-right: 3px;
     border-radius: 15px;
@@ -24,31 +14,14 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.menu-btn {
-    width: 100%;
-    height: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-decoration: none;
-    color: white;
-    vertical-align: middle;
-}
-
-.social-btn:hover, .menu-btn:hover {
+.social-btn:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .social-btn img {
     width: 45px;
     height: 45px;
-    margin: 15px 15px;
-}
-
-#email-icon {
-    border-radius: 30%;
-    padding: 2px 2px 2px 2px;
-    width: 41px;
-    height: 41px;
+    padding: 15px 15px;
 }
 
 @keyframes socialAnim {
@@ -71,19 +44,10 @@
         height: 65px;
     }
 
-    .menu-btn {
-        height: 65px;
-    }
-
     .social-btn img {
         width: 35px;
         height: 35px;
-        margin: 15px 15px;
-    }
-
-    #email-icon {
-        width: 31px;
-        height: 31px;
+        padding: 15px 15px;
     }
 }
 
@@ -93,21 +57,11 @@
         height: 58px;
     }
 
-    .menu-btn {
-        height: 58px;
-    }
-
     .social-btn img {
         width: 30px;
         height: 30px;
-        margin: 14px 14px;
+        padding: 14px 14px;
     }
-
-    #email-icon {
-        width: 26px;
-        height: 26px;
-    }
-
 }
 
 @media (max-width: 460px) {
@@ -116,13 +70,9 @@
         height: 50px;
     }
 
-    .menu-btn {
-        height: 50px;
-    }
-
     .social-btn img {
         width: 30px;
         height: 30px;
-        margin: 10px 10px;
+        padding: 10px 10px;
     }
 }
