@@ -88,13 +88,20 @@
 
 @media (max-width: 460px) {
     .social-btn {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
+        margin-left: 1px;
+        margin-right: 1px;
     }
 
     .social-btn img {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         margin: 10px 10px;
+    }
+
+    #email-icon {
+        width: 21px;
+        height: 21px;
     }
 }

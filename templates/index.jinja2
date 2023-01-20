@@ -16,7 +16,7 @@
     на соцсети">
     <meta name="keywords" content="nawinds, @nawinds,
     Никита Аксенов сайт, Аксенов Никита, персональный сайт">
-    <meta name="og:image" content="">
+    <meta name="og:image" content="{{ url_for('static', filename='files/thumb.jpeg') }}">
     <meta name='theme-color' content='#fff537'>
 
     <link rel="icon" type="image/png" sizes="16x16"
@@ -74,7 +74,7 @@
             </span>
         </div>
         <div id="social">
-            <a class="social-btn" href="https://git.nawinds.top" target="_blank"
+            <a class="social-btn" href="{{ gitea }}" target="_blank"
                onclick="socialClick('Gitea')">
                 <img src="{{ url_for('static', filename='icons/gitea.svg') }}" alt="Gitea">
             </a>
@@ -92,7 +92,7 @@
             <a class="social-btn" href="https://vk.com/{{ vk }}" target="_blank" onclick="socialClick('VK')">
                 <img src="{{ url_for('static', filename='icons/vk.svg') }}" alt="VK">
             </a>
-            <a class="social-btn" href="mailto:{{ email }}" onclick="socialClick('Email')">
+            <a class="social-btn" href="mailto:{{ email }}" target="_blank" onclick="socialClick('Email')">
                 <img src="{{ url_for('static', filename='icons/mail.svg') }}" alt="Email" id="email-icon">
             </a>
         </div>

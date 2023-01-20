@@ -23,15 +23,17 @@ def index():
     if today < birthday:
         age -= 1
 
+    gitea = "https://git.nawinds.top/nawinds"
     telegram = "nawinds"
     github = "nawinds"
     instagram = "nawinds"
     vk = "nawinds"
     email = "me@nawinds.top"
 
-    return render_template("index.jinja2", sail_images=sail_images, age=age,
-                           telegram=telegram, github=github, instagram=instagram,
-                           vk=vk, email=email, year=today.year)
+    return render_template("index.jinja2",
+                           sail_images=sail_images, age=age, year=today.year,
+                           gitea=gitea, github=github, telegram=telegram,
+                           instagram=instagram, vk=vk, email=email)
 
 
 @app.route("/api/v1/stats/social-click/<site_name>")
