@@ -4,7 +4,7 @@
      Мне не подобрать слов, чтобы описать боль и унижение,
      которые я испытал сегодня.
      Моя жизнь поломана навсегда.
-     Я не нашел в шкафу нарнию.. но зато
+     Я не нашел в шкафу нарнию... но зато
      наконец-то ЗаДеПлОиЛ ЭТОТ СААААААЙТ
 -->
 <!DOCTYPE html>
@@ -53,10 +53,11 @@
 <div id="main">
     <div id="gallery">
         {% for img in sail_images[:-1] %}
-            <img data-lazysrc="{{ url_for('static', filename="sail/"+img) }}" class="gallery-image">
+            <img data-lazysrc="{{ url_for('static', filename="sail/"+img) }}"
+                 class="gallery-image" alt="Sailing photo">
         {% endfor %}
         <img data-lazysrc="{{ url_for('static', filename="sail/"+sail_images[-1]) }}"
-             class="gallery-image last-gallery-image">
+             class="gallery-image last-gallery-image" alt="Sailing photo">
     </div>
     <div id="vignette"></div>
     <div id="darker"></div>
@@ -138,7 +139,7 @@
             <div id="programming-skills">
                 <h3>Опыт в программировании</h3>
                 <p>
-                    Python я изучал в <a href="https://academy.yandex.ru/lyceum" target="_blank">Яндекс.Лицее</a>,
+                    Python я изучал в <a href="https://academy.yandex.ru/lyceum" target="_blank">Яндекс Лицее</a>,
                     где прошёл 2 курса (Основы программирования на языке Python и
                     Основы промышленного программирования).
                     Больше всего опыта у меня в написании бэкенда для
@@ -148,7 +149,7 @@
                 </p>
                 <p>
                     Обычно я программирую один, но мне доводилось работать в команде во время моего обучения
-                    в Яндекс.Лицее и на летней смене <a href="https://lksh.ru/" target="_blank">ЛКШ</a> Июль 2021
+                    в Яндекс Лицее и на летней смене <a href="https://lksh.ru/" target="_blank">ЛКШ</a> Июль 2021
                     в параллели P.
                     Я умею работать с системой контроля версий Git и репозиториями на Github и
                     Gitlab.
@@ -183,4 +184,3 @@
 <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
-<!-- ВСЁ! пара-пара-пам -->

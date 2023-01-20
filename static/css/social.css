@@ -1,11 +1,15 @@
 #social {
     animation: socialAnim 4.5s;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
 }
 
 .social-btn {
     width: 75px;
     height: 75px;
-    margin-top: 30px;
+    margin-top: 6px;
     margin-left: 3px;
     margin-right: 3px;
     border-radius: 15px;
@@ -54,7 +58,12 @@
     .social-btn img {
         width: 35px;
         height: 35px;
-        padding: 15px 15px;
+        margin: 15px 15px;
+    }
+
+    #email-icon {
+        width: 31px;
+        height: 31px;
     }
 }
 
@@ -67,8 +76,14 @@
     .social-btn img {
         width: 30px;
         height: 30px;
-        padding: 14px 14px;
+        margin: 14px 14px;
     }
+
+    #email-icon {
+        width: 26px;
+        height: 26px;
+    }
+
 }
 
 @media (max-width: 460px) {
@@ -80,6 +95,6 @@
     .social-btn img {
         width: 30px;
         height: 30px;
-        padding: 10px 10px;
+        margin: 10px 10px;
     }
 }
