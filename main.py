@@ -58,6 +58,11 @@ def lucky():
     return render_template("lucky.jinja2")
 
 
+@app.route("/killer")
+def killer():
+    return render_template("killer.jinja2")
+
+
 @app.errorhandler(404)
 def not_found(e):
     return render_template("error.jinja2", status_code="404", error_heading="Страница не найдена",
