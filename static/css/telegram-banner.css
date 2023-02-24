@@ -3,7 +3,6 @@
     background-image: url("/static/files/tg-background.webp");
     background-position: bottom;
     vertical-align: bottom;
-    background-attachment: fixed;
 }
 
 .tg-banner-spacing {
