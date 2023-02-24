@@ -4,6 +4,8 @@
 @import "gallery.css";
 @import "social.css";
 @import "about.css";
+@import "projects.css";
+@import "telegram-banner.css";
 
 html {
     scroll-behavior: smooth;
@@ -86,11 +88,10 @@ body::-webkit-scrollbar-thumb:active {
 
 footer {
     position: relative;
-    margin-top: -17px;
     padding-bottom: 12px;
     z-index: 0;
     bottom: 0;
-    background-color: #2a2a2a;
+    background-color: #1a1a1a;
 }
 
 footer p {
@@ -101,6 +102,7 @@ footer p {
     text-align: left;
     margin-left: 0;
     color: #cbcbcb;
+    font-family: "Georgia", cursive;
 }
 
 footer img {
@@ -115,10 +117,11 @@ footer .copyright {
     text-align: right;
     right: 20px;
     color: #a3a3a3;
+    font-family: "Arial", cursive;
 }
 
 @media (max-width: 460px) {
-    p {
+    p, li {
         font-size: 14px;
     }
 
