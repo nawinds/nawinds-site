@@ -4,7 +4,7 @@ function scrollUp() {
 
 function scrollDown() {
     const scrollDiv = document.getElementById("about").offsetTop;
-    window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
+    window.scrollTo({top: scrollDiv, behavior: 'smooth'});
 }
 
 function ReLoadImages() {
@@ -30,6 +30,42 @@ function httpGet(theUrl) {
 
 function socialClick(site) {
     httpGet("https://nawinds.top/api/v1/stats/social-click/" + site);
+}
+
+function projectLink(thisElem, projectName, linkNumber) {
+    let linkName;
+    switch (linkNumber) {
+        case 0:
+            linkName = "на сайт";
+            break;
+        case 1:
+            linkName = "на исходный код";
+            break;
+        default:
+            linkName = linkNumber;
+    }
+    socialClick("проект " + projectName + " (ссылка " + linkName + ")");
+}
+
+function showAllProjects() {
+    document.getElementById("show-more-projects-btn-text").innerText = "Свернуть";
+    document.getElementById("show-more-projects-btn").onclick = hideProjects;
+    document.getElementsByClassName("show-more-projects-btn-img")[0].style.transform = "none";
+    document.getElementsByClassName("show-more-projects-btn-img")[1].style.transform = "none";
+    const hiddenProjects = document.getElementsByClassName("hidden-project");
+    for (let i = 0; i < hiddenProjects.length; i++) {
+        hiddenProjects[i].style.display = "";
+    }
+}
+function hideProjects() {
+    document.getElementById("show-more-projects-btn-text").innerText = "Все проекты";
+    document.getElementById("show-more-projects-btn").onclick = showAllProjects;
+    document.getElementsByClassName("show-more-projects-btn-img")[0].style.transform = "rotate(180deg)";
+    document.getElementsByClassName("show-more-projects-btn-img")[1].style.transform = "rotate(180deg)";
+    const hiddenProjects = document.getElementsByClassName("hidden-project");
+    for (let i = 0; i < hiddenProjects.length; i++) {
+        hiddenProjects[i].style.display = "none";
+    }
 }
 
 // EVENT LISTENERS
@@ -61,8 +97,8 @@ window.addEventListener("scroll", (event) => {
 });
 
 console.log("%cHey there!",
-        "color: white; font-style: bold; background-color: black; font-size: 30px;");
+    "color: white; font-style: bold; background-color: black; font-size: 30px;");
 console.log("%cYou're lucky to find a surprise from me!",
-        "color: black; font-style: bold; background-color: white; font-size: 20px;");
+    "color: black; font-style: bold; background-color: white; font-size: 20px;");
 console.log("%cGo to https://nawinds.top/lucky and enjoy it!",
-        "color: black; font-style: bold; background-color: yellow; font-size: 20px;");
+    "color: black; font-style: bold; background-color: yellow; font-size: 20px;");

@@ -1,12 +1,3 @@
-<!--
-     Дорогой дневник,
-
-     Мне не подобрать слов, чтобы описать боль и унижение,
-     которые я испытал сегодня.
-     Моя жизнь поломана навсегда.
-     Я не нашел в шкафу нарнию... но зато
-     наконец-то ЗаДеПлОиЛ ЭТОТ СААААААЙТ
--->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -64,7 +55,6 @@
     <a id="scroll-up" onclick="scrollUp()">
         <img src="{{ url_for('static', filename='icons/angle-up.svg') }}" alt="Наверх">
     </a>
-
     <div id="headers">
         <img id="logo" src="{{ url_for('static', filename='logo.png') }}" alt="nawinds"><br>
         <div id="names">
@@ -125,7 +115,7 @@
                 <p>
                     <img src="{{ url_for('static', filename='icons/sailboat.svg') }}" alt="Парусный спорт">
                     Профессионально занимаюсь парусным спортом,
-                    на данный момент гоняюсь в классах яхт Лазер 4.7 и Лазер Радиал
+                    на данный момент гоняюсь в одиночных классах яхт Лазер 4.7 и Лазер Радиал
                 </p>
                 <p>
                     <img src="{{ url_for('static', filename='icons/photo-film.svg') }}" alt="Видеография">
@@ -171,6 +161,117 @@
                 </p>
             </div>
         </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1>Проекты</h1>
+            {% for project in projects[:3] %}
+            <div class="project-block">
+                <div class="project-header">
+                    <h2>{{ project["title"] }}</h2>
+                    {% if "hashtags" in project.keys() %}
+                    <div class="project-hashtags">
+                        {% for hashtag in project["hashtags"] %}
+                        <span class="hashtag {{ hashtag["color"] }}-hashtag">{{ hashtag["text"] }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="project-details">
+                    <div class="left-column">
+                        {% for paragraph in project["description"] %}
+                        {{ paragraph }}
+                        {% endfor %}
+                    </div>
+                    <div class="right-column">
+                        {% if "open_link" in project.keys() %}
+                        <a href="{{ project["open_link"]["url"] }}" class="btn"
+                           onclick="projectLink(this, {{ project["title"] }}, 0)" target="_blank">
+                            <img src="{{ url_for('static', filename='icons/arrow-up-right.svg') }}"
+                                 alt="open website">
+                            {{ project["open_link"]["title"] }}
+                        </a>
+                        {% endif %}
+                        {% if "source_link" in project.keys() %}
+                        <a href="{{ project["source_link"] }}" class="btn"
+                           onclick="projectLink(this, {{ project["title"] }}, 1)" target="_blank">
+                            <img src="{{ url_for('static', filename='icons/github-dark.svg') }}"
+                                 alt="GitHub">
+                            Исходный код
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% for project in projects[3:] %}
+            <div class="project-block hidden-project" style="display: none">
+                <div class="project-header">
+                    <h2>{{ project["title"] }}</h2>
+                    {% if "hashtags" in project.keys() %}
+                    <div class="project-hashtags">
+                        {% for hashtag in project["hashtags"] %}
+                        <span class="hashtag {{ hashtag["color"] }}-hashtag">{{ hashtag["text"] }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="project-details">
+                    <div class="left-column">
+                        {% for paragraph in project["description"] %}
+                        {{ paragraph }}
+                        {% endfor %}
+                    </div>
+                    <div class="right-column">
+                        {% if "open_link" in project.keys() %}
+                        <a href="{{ project["open_link"]["url"] }}" class="btn"
+                           onclick="projectLink(this, {{ project["title"] }}, 0)" target="_blank">
+                            <img src="{{ url_for('static', filename='icons/arrow-up-right.svg') }}"
+                                 alt="open website">
+                            {{ project["open_link"]["title"] }}
+                        </a>
+                        {% endif %}
+                        {% if "source_link" in project.keys() %}
+                        <a href="{{ project["source_link"] }}" class="btn"
+                           onclick="projectLink(this, {{ project["title"] }}, 1)" target="_blank">
+                            <img src="{{ url_for('static', filename='icons/github-dark.svg') }}"
+                                 alt="GitHub">
+                            Исходный код
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <div id="show-more-projects">
+                <button id="show-more-projects-btn" onclick="showAllProjects()">
+                    <img class="show-more-projects-btn-img"
+                         src="{{ url_for('static', filename='icons/angle-up.svg') }}"
+                         alt="down">
+                    <span id="show-more-projects-btn-text">Все проекты</span>
+                    <img class="show-more-projects-btn-img"
+                         src="{{ url_for('static', filename='icons/angle-up.svg') }}"
+                         alt="down">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="telegram-channel-banner">
+        <div class="tg-banner-spacing"></div>
+        <div class="tg-banner-container">
+            <div class="tg-left-column">
+                <h2>Пишу редко</h2>
+            </div>
+            <div class="tg-right-column">
+                <a href="tg://resolve?domain=ni_channel" class="telegram-channel-link"
+                   onclick="socialClick('Tg-channel')">
+                    <img alt="Telegram"
+                         src="{{ url_for('static', filename='icons/telegram-plane.svg') }}">
+                    Мой Telegram-канал
+                </a>
+            </div>
+        </div>
+        <div class="tg-banner-spacing"></div>
     </div>
     <footer>
         <p>

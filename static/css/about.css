@@ -11,7 +11,7 @@
     font-size: 16px;
 }
 
-#about h1, h3 {
+#about h1, #about h3 {
     font-family: 'Comfortaa', cursive;
     padding-top: 10px;
 }
