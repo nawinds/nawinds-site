@@ -73,7 +73,7 @@ def index():
             "hashtags": [
                 {
                     "color": "white",
-                    "text": "v1.0.0"
+                    "text": "v1.1.0"
                 },
                 {
                     "color": "yellow",
