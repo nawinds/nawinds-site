@@ -186,7 +186,7 @@
                     <div class="right-column">
                         {% if "open_link" in project.keys() %}
                         <a href="{{ project["open_link"]["url"] }}" class="btn"
-                           onclick="projectLink(this, {{ project["title"] }}, 0)" target="_blank">
+                           onclick="projectLink(this, '{{ project["title"] }}', 0)" target="_blank">
                             <img src="{{ url_for('static', filename='icons/arrow-up-right.svg') }}"
                                  alt="open website">
                             {{ project["open_link"]["title"] }}
@@ -194,7 +194,7 @@
                         {% endif %}
                         {% if "source_link" in project.keys() %}
                         <a href="{{ project["source_link"] }}" class="btn"
-                           onclick="projectLink(this, {{ project["title"] }}, 1)" target="_blank">
+                           onclick="projectLink(this, '{{ project["title"] }}', 1)" target="_blank">
                             <img src="{{ url_for('static', filename='icons/github-dark.svg') }}"
                                  alt="GitHub">
                             Исходный код
@@ -225,7 +225,7 @@
                     <div class="right-column">
                         {% if "open_link" in project.keys() %}
                         <a href="{{ project["open_link"]["url"] }}" class="btn"
-                           onclick="projectLink(this, {{ project["title"] }}, 0)" target="_blank">
+                           onclick="projectLink(this, '{{ project["title"] }}', 0)" target="_blank">
                             <img src="{{ url_for('static', filename='icons/arrow-up-right.svg') }}"
                                  alt="open website">
                             {{ project["open_link"]["title"] }}
@@ -233,7 +233,7 @@
                         {% endif %}
                         {% if "source_link" in project.keys() %}
                         <a href="{{ project["source_link"] }}" class="btn"
-                           onclick="projectLink(this, {{ project["title"] }}, 1)" target="_blank">
+                           onclick="projectLink(this, '{{ project["title"] }}', 1)" target="_blank">
                             <img src="{{ url_for('static', filename='icons/github-dark.svg') }}"
                                  alt="GitHub">
                             Исходный код
@@ -263,7 +263,7 @@
                 <h2>Пишу редко</h2>
             </div>
             <div class="tg-right-column">
-                <a href="tg://resolve?domain=ni_channel" class="telegram-channel-link"
+                <a href="tg://join?invite=QABEKQwWKcc1Zjgy" class="telegram-channel-link"
                    onclick="socialClick('Tg-channel')">
                     <img alt="Telegram"
                          src="{{ url_for('static', filename='icons/telegram-plane.svg') }}">
