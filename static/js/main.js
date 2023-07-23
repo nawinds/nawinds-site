@@ -57,6 +57,7 @@ function showAllProjects() {
         hiddenProjects[i].style.display = "";
     }
 }
+
 function hideProjects() {
     document.getElementById("show-more-projects-btn-text").innerText = "Все проекты";
     document.getElementById("show-more-projects-btn").onclick = showAllProjects;
@@ -102,3 +103,17 @@ console.log("%cYou're lucky to find a surprise from me!",
     "color: black; font-style: bold; background-color: white; font-size: 20px;");
 console.log("%cGo to https://nawinds.top/lucky and enjoy it!",
     "color: black; font-style: bold; background-color: yellow; font-size: 20px;");
+
+window.onload = function () {
+    let version_hashtags = document.getElementsByClassName("version-hashtag");
+    Array.prototype.forEach.call(version_hashtags, function (el) {
+        const ghRepo = el.innerText;
+
+        let xmlHttpReq = new XMLHttpRequest();
+        xmlHttpReq.open("GET", "/api/v1/projects/get_version?github_repo=" + ghRepo, false);
+        xmlHttpReq.send(null);
+
+        el.innerText = xmlHttpReq.responseText;
+        el.style = "";
+    });
+}

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_file
+from flask import Flask, render_template, send_file, request
 import datetime
 import requests
 import os
@@ -10,6 +10,7 @@ B_MONTH = int(os.getenv("B_MONTH"))
 B_YEAR = int(os.getenv("B_YEAR"))
 TG_BOT_TOKEN = os.getenv("TOKEN")
 TG_CHAT_ID = os.getenv("CHAT")
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
 
 @app.route("/")
@@ -31,12 +32,40 @@ def index():
 
     projects = [
         {
-            "title": "Private-Net.work Notes",
+            "title": "Telegram бот для inline-поиска стикеров",
             "hashtags": [
                 {
-                    "color": "white",
-                    "text": "v2.1.2"
+                    "color": "yellow",
+                    "text": "#Активный"
                 },
+                {
+                    "color": "green",
+                    "text": "#В_разработке"
+                },
+                {
+                    "color": "orange",
+                    "text": "#English"
+                }
+            ],
+            "open_link": {
+                "url": "https://t.me/SSrchBot",
+                "title": "Открыть бот"
+            },
+            "source_link": "https://github.com/nawinds/inline-stickers-search-bot",
+            "github_repo": "nawinds/inline-stickers-search-bot",
+            "description": [
+                "<p>Бот для поиска стикеров в инлайн-режиме. Описания всем стикерам пользователи задают сами "
+                "и поиск осуществляется по этим описаниям.</p>"
+                "<ul><li>При поиске могут быть исправлены раскладка клавиатуры и опечатки</li>"
+                "<li>Описания к стикерам объединяются в отдельные множества стикеров. Этими множествами "
+                "можно делиться с другими пользователями</li>"
+                "<li>В последующих версиях будет добавлена функция избранных стикеров (при пустом поисковом "
+                "запросе)</li></ul>"
+            ]
+        },
+        {
+            "title": "Private-Net.work Notes",
+            "hashtags": [
                 {
                     "color": "yellow",
                     "text": "#Активный"
@@ -55,6 +84,7 @@ def index():
                 "title": "Открыть сайт"
             },
             "source_link": "https://github.com/Private-Net-work/Private-Net.work-site",
+            "github_repo": "Private-Net-work/Private-Net.work-site",
             "description": [
                 "<p>Сайт, который поможет скрыть самые приватные данные от просмотра "
                 "третьими лицами при передаче собеседнику.</p>",
@@ -72,10 +102,6 @@ def index():
             "title": "Сайт nawinds.top",
             "hashtags": [
                 {
-                    "color": "white",
-                    "text": "v1.1.0"
-                },
-                {
                     "color": "yellow",
                     "text": "#Активный"
                 },
@@ -85,6 +111,7 @@ def index():
                 }
             ],
             "source_link": "https://github.com/nawinds/nawinds-site",
+            "github_repo": "nawinds/nawinds-site",
             "description": ["<p>Этот сайт :)</p>",
                             "<p>Бэкенд написан на Python с использованием фреймворка Flask, а фронтенд "
                             "написан вручную без использования каких-либо библиотек.</p>"]
@@ -92,10 +119,6 @@ def index():
         {
             "title": "Telegram бот для мониторинга сервисов systemd",
             "hashtags": [
-                {
-                    "color": "white",
-                    "text": "v1.0.0"
-                },
                 {
                     "color": "yellow",
                     "text": "#Активный"
@@ -114,6 +137,7 @@ def index():
                 }
             ],
             "source_link": "https://github.com/nawinds/systemd_services_monitoring",
+            "github_repo": "nawinds/systemd_services_monitoring",
             "description": ["<p>Telegram бот для мониторинга и управления сервисами systemd на сервере.</p>",
                             "<p>Реализованные функции:</p>",
                             "<ul style='margin-bottom:0'>"
@@ -135,8 +159,8 @@ def index():
                     "text": "#Активный"
                 },
                 {
-                    "color": "green",
-                    "text": "#В_разработке"
+                    "color": "red",
+                    "text": "#Разработка_приостановлена"
                 }
             ],
             "open_link":
@@ -149,7 +173,8 @@ def index():
                             "<p>В версии 1.0.0 бота реализованы функции просмотра информации о компании "
                             "и подсчёта суммы заказа в соответствии с установленным администраторами курсом.</p>",
                             "<p>Вы можете посмотреть незавершённую версию бота с корзиной, оформлением заказа и "
-                            "оплатой <a href='' target='_blank'>здесь</a>.</p>"]
+                            "оплатой <a href='https://git.nawinds.top/nawinds/order_tg_bot/src/branch/"
+                            "feature/db_models' target='_blank'>здесь</a>.</p>"]
         }
     ]
 
@@ -165,6 +190,15 @@ def social_click(site_name):
     requests.get(f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage?"
                  f"chat_id={TG_CHAT_ID}&text=Nawinds:%20Переход%20по%20ссылке%20на%20{site_name}")
     return "OK"
+
+
+@app.route("/api/v1/projects/get_version")
+def get_project_version():
+    github_repo = request.args.get("github_repo")
+    headers = {"Authorization": "Bearer " + GITHUB_TOKEN}
+    r = requests.get(f"https://api.github.com/repos/{github_repo.strip()}/releases",
+                     headers=headers)
+    return r.json()[0]["name"]
 
 
 @app.route("/favicon.ico")
@@ -195,4 +229,4 @@ def not_found(e):
 
 
 if __name__ == '__main__':
-    app.run("0.0.0.0", port=80)
+    app.run("0.0.0.0", port=5000)
