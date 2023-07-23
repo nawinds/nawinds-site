@@ -117,7 +117,7 @@
 }
 
 .btn:hover {
-    transform: translateY(-5px);
+    transform: scale(95%);
 }
 
 .btn:last-child {
