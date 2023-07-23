@@ -1,6 +1,7 @@
 #scroll-down {
     animation: scrollDownAnim 4.5s;
     transition: opacity .5s linear 0s;
+    cursor: pointer;
 }
 
 #scroll-down-btn {
