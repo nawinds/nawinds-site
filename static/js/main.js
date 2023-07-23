@@ -112,8 +112,9 @@ window.onload = function () {
         let xmlHttpReq = new XMLHttpRequest();
         xmlHttpReq.open("GET", "/api/v1/projects/get_version?github_repo=" + ghRepo, false);
         xmlHttpReq.send(null);
-
-        el.innerText = xmlHttpReq.responseText;
+        if (xmlHttpReq.status === 200) {
+            el.innerText = xmlHttpReq.responseText;
         el.style = "";
+        }
     });
 }
