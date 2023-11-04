@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ _('lang_code') }}">
+{% set LANG_NUM = 0 if _('lang_code') == "en" else 1 %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -136,7 +137,7 @@
             {% for project in projects[:3] %}
             <div class="project-block">
                 <div class="project-header">
-                    <h2>{{ project["title"] }}</h2>
+                    <h2>{{ project["title"][LANG_NUM] }}</h2>
                     {% if "hashtags" in project.keys() %}
                     <div class="project-hashtags">
                         {% if "github_repo" in project.keys() %}
@@ -145,14 +146,14 @@
                         </span>
                         {% endif %}
                         {% for hashtag in project["hashtags"] %}
-                        <span class="hashtag {{ hashtag["color"] }}-hashtag">{{ hashtag["text"] }}</span>
+                        <span class="hashtag {{ hashtag["color"] }}-hashtag">{{ hashtag["text"][LANG_NUM] }}</span>
                         {% endfor %}
                     </div>
                     {% endif %}
                 </div>
                 <div class="project-details">
                     <div class="left-column">
-                        {% for paragraph in project["description"] %}
+                        {% for paragraph in project["description"][LANG_NUM] %}
                         {{ paragraph }}
                         {% endfor %}
                     </div>
@@ -162,7 +163,7 @@
                            onclick="projectLink(this, '{{ project["title"] }}', 0)" target="_blank">
                             <img src="{{ url_for('static', filename='icons/arrow-up-right.svg') }}"
                                  alt="open website">
-                            {{ project["open_link"]["title"] }}
+                            {{ project["open_link"]["title"][LANG_NUM] }}
                         </a>
                         {% endif %}
                         {% if "source_link" in project.keys() %}
@@ -180,7 +181,7 @@
             {% for project in projects[3:] %}
             <div class="project-block hidden-project" style="display: none">
                 <div class="project-header">
-                    <h2>{{ project["title"] }}</h2>
+                    <h2>{{ project["title"][LANG_NUM] }}</h2>
                     {% if "hashtags" in project.keys() %}
                     <div class="project-hashtags">
                         {% if "github_repo" in project.keys() %}
@@ -189,14 +190,14 @@
                         </span>
                         {% endif %}
                         {% for hashtag in project["hashtags"] %}
-                        <span class="hashtag {{ hashtag["color"] }}-hashtag">{{ hashtag["text"] }}</span>
+                        <span class="hashtag {{ hashtag["color"] }}-hashtag">{{ hashtag["text"][LANG_NUM] }}</span>
                         {% endfor %}
                     </div>
                     {% endif %}
                 </div>
                 <div class="project-details">
                     <div class="left-column">
-                        {% for paragraph in project["description"] %}
+                        {% for paragraph in project["description"][LANG_NUM] %}
                         {{ paragraph }}
                         {% endfor %}
                     </div>
@@ -206,7 +207,7 @@
                            onclick="projectLink(this, '{{ project["title"] }}', 0)" target="_blank">
                             <img src="{{ url_for('static', filename='icons/arrow-up-right.svg') }}"
                                  alt="open website">
-                            {{ project["open_link"]["title"] }}
+                            {{ project["open_link"]["title"][LANG_NUM] }}
                         </a>
                         {% endif %}
                         {% if "source_link" in project.keys() %}
