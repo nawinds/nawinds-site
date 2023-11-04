@@ -1,3 +1,6 @@
+const ENGLISH = document.getElementsByTagNameNS("http://www.w3.org/1999/xhtml",
+    "html")[0].getAttribute("lang") === "en";
+
 function scrollUp() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
@@ -44,11 +47,12 @@ function projectLink(thisElem, projectName, linkNumber) {
         default:
             linkName = linkNumber;
     }
-    socialClick("проект " + projectName + " (ссылка " + linkName + ")");
+    socialClick("проект " + projectName +
+        " (ссылка " + linkName + ")");
 }
 
 function showAllProjects() {
-    document.getElementById("show-more-projects-btn-text").innerText = "Свернуть";
+    document.getElementById("show-more-projects-btn-text").innerText = (ENGLISH ? "Hide" : "Свернуть");
     document.getElementById("show-more-projects-btn").onclick = hideProjects;
     document.getElementsByClassName("show-more-projects-btn-img")[0].style.transform = "none";
     document.getElementsByClassName("show-more-projects-btn-img")[1].style.transform = "none";
@@ -59,7 +63,7 @@ function showAllProjects() {
 }
 
 function hideProjects() {
-    document.getElementById("show-more-projects-btn-text").innerText = "Все проекты";
+    document.getElementById("show-more-projects-btn-text").innerText = (ENGLISH ? "All projects" : "Все проекты");
     document.getElementById("show-more-projects-btn").onclick = showAllProjects;
     document.getElementsByClassName("show-more-projects-btn-img")[0].style.transform = "rotate(180deg)";
     document.getElementsByClassName("show-more-projects-btn-img")[1].style.transform = "rotate(180deg)";
@@ -114,7 +118,7 @@ window.onload = function () {
         xmlHttpReq.send(null);
         if (xmlHttpReq.status === 200) {
             el.innerText = xmlHttpReq.responseText;
-        el.style = "";
+            el.style = "";
         }
     });
 }
