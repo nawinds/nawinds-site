@@ -2,11 +2,12 @@ import datetime
 import json
 import os
 
-from flask import render_template, Blueprint, g
+from flask import render_template, Blueprint, g, request
 
 B_DAY = int(os.getenv("B_DAY"))
 B_MONTH = int(os.getenv("B_MONTH"))
 B_YEAR = int(os.getenv("B_YEAR"))
+LANGUAGES = ['en', 'ru']
 
 multilingual = Blueprint('multilingual', __name__, url_prefix='/<lang_code>')
 
@@ -41,8 +42,17 @@ def index():
     with open("projects.json", "r", encoding="UTF-8") as fcc_file:
         projects = json.load(fcc_file)
 
+    if (not request.cookies.get("lang", None) and g.lang_code !=
+        request.accept_languages.best_match(LANGUAGES)
+    ) or (request.cookies.get("lang", None) and g.lang_code !=
+          request.cookies.get("lang") and g.lang_code !=
+          request.accept_languages.best_match(LANGUAGES)):
+        show_switch_lang_popup = True
+    else:
+        show_switch_lang_popup = False
+
     return render_template("index.jinja2",
                            sail_images=sail_images, age=age, year=today.year,
                            gitea=gitea, github=github, telegram=telegram,
                            instagram=instagram, vk=vk, email=email,
-                           projects=projects)
+                           projects=projects, show_switch_lang_popup=show_switch_lang_popup)

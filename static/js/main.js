@@ -6,6 +6,10 @@ if (location.hash === '#force_lang') {
     window.location.href = window.location.href.split("#")[0];
 }
 
+function dismissLanguageSwitchPopup() {
+    document.getElementById("language-switch-popup").classList.toggle("hidden-popup");
+}
+
 function removeParam(key, sourceURL) {
     var rtn = sourceURL.split("?")[0],
         param,

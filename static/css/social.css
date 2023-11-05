@@ -1,21 +1,96 @@
 #language-switch {
-    text-decoration: none;
-    color: black;
-    right: 30px;
-    margin-top: 30px;
-    font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.99);
-    padding: 10px;
-    border-radius: 15px;
-    font-family: "Arial", cursive;
-    animation: langAnim 5s;
     position: absolute;
+    margin-top: 30px;
+    width: 100%;
 }
 
-#language-switch img {
+#language-switch-button {
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: "Exo", sans-serif;
+    animation: langAnim 5s;
+}
+
+#language-switch-button img {
     width: 20px;
     height: 20px;
     transform: translateY(4px);
+}
+
+#language-switch-popup {
+    right: 15px;
+    width: 200px;
+    background-color: #fff537;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: relative;
+    float: right;
+    margin-left: -80px;
+    font-family: Inter, sans-serif;
+    animation: popupAnim 5s;
+}
+
+.hidden-popup {
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+/* Popup arrow */
+#language-switch-popup::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 19px;
+    margin-left: -8px;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 9px solid #ffec00;
+}
+
+#language-switch-popup-buttons {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    margin-top: 10px;
+}
+
+#language-switch-popup a, #language-switch-popup button {
+    border: black 1px solid;
+    border-radius: 10px;
+    font-size: 13px;
+    font-family: Inter, sans-serif;
+    display: inline-block;
+    padding: 5px 10px;
+}
+#language-switch-popup a {
+    text-decoration: none;
+    color: black;
+}
+
+#language-switch-popup button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#language-switch-popup button img {
+
+    transform: translateY(3px);
+    margin-right: 1px;
+}
+
+#language-switch-popup a img {
+    transform: translateY(2px);
+    margin-right: 1px;
 }
 
 #social {
@@ -53,6 +128,25 @@
     padding: 2px 2px 2px 2px;
     width: 41px;
     height: 41px;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("../css/fonts2/Inter-Regular.ttf");
+}
+
+@keyframes popupAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    90% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes socialAnim {

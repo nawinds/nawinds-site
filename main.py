@@ -4,12 +4,11 @@ import requests
 from flask import Flask, render_template, send_file, request, g, redirect, url_for
 from flask_babel import Babel
 
-from blueprints.multilingual import multilingual
+from blueprints.multilingual import multilingual, LANGUAGES
 
 TG_BOT_TOKEN = os.getenv("TOKEN")
 TG_CHAT_ID = os.getenv("CHAT")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-LANGUAGES = ['en', 'ru']
 
 app = Flask(__name__)
 app.register_blueprint(multilingual)
