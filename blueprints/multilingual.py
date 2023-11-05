@@ -34,7 +34,7 @@ def index():
     if today < birthday:
         age -= 1
 
-    gitea = "https://git.nawinds.top/nawinds"
+    gitea = "https://gitlab.nawinds.top/nawinds"
     telegram = "nawinds"
     github = "nawinds"
     instagram = "nawinds"

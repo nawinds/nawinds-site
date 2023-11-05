@@ -133,7 +133,7 @@
 
 @font-face {
     font-family: Inter;
-    src: url("../css/fonts2/Inter-Regular.ttf");
+    src: url("../css/fonts2/Inter-Regular.woff2");
 }
 
 @keyframes popupAnim {
