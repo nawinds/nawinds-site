@@ -22,8 +22,8 @@
       {
         "color": "orange",
         "text": [
-          "#English",
-          "#English"
+          "#Multilingual",
+          "#Мультиязычный"
         ]
       }
     ],
@@ -79,8 +79,8 @@
       {
         "color": "orange",
         "text": [
-          "#English",
-          "#English"
+          "#Multilingual",
+          "#Мультиязычный"
         ]
       }
     ],
@@ -137,6 +137,13 @@
           "#Completed",
           "#Завершённый"
         ]
+      },
+      {
+        "color": "orange",
+        "text": [
+          "#Multilingual",
+          "#Мультиязычный"
+        ]
       }
     ],
     "source_link": "https://github.com/nawinds/nawinds-site",
@@ -184,8 +191,8 @@
       {
         "color": "orange",
         "text": [
-          "#English",
-          "#English"
+          "#Multilingual",
+          "#Мультиязычный"
         ]
       }
     ],
@@ -232,7 +239,7 @@
         ]
       },
       {
-        "color": "red",
+        "color": "violet",
         "text": [
           "#Development_paused",
           "#Разработка_приостановлена"
