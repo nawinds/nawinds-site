@@ -2,7 +2,7 @@ import datetime
 import json
 import os
 
-from flask import render_template, Blueprint, g, request
+from flask import render_template, Blueprint, g, request, abort
 
 B_DAY = int(os.getenv("B_DAY"))
 B_MONTH = int(os.getenv("B_MONTH"))
@@ -20,6 +20,8 @@ def add_language_code(endpoint, values):
 @multilingual.url_value_preprocessor
 def pull_lang_code(endpoint, values):
     g.lang_code = values.pop('lang_code')
+    if g.lang_code not in LANGUAGES:
+        abort(404)
 
 
 @multilingual.route('/')

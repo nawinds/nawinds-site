@@ -62,20 +62,20 @@
             {{ _('language_switch_text') }}
         </a>
         {% if show_switch_lang_popup %}
-        <div id="language-switch-popup">
-            {{ _('language_switch_popup_text') }}
-            <div id="language-switch-popup-buttons">
-                <a id="language-switch-popup-yes-btn" href="{{ url_for('multilingual.index',
+            <div id="language-switch-popup">
+                {{ _('language_switch_popup_text') }}
+                <div id="language-switch-popup-buttons">
+                    <a id="language-switch-popup-yes-btn" href="{{ url_for('multilingual.index',
                 lang_code=_('language_switch_link')) }}#force_lang">
-                    <img src="{{ url_for('static', filename='icons/sync.svg') }}" alt="Change language">
-                    {{ _('language_switch_popup_ok') }}
-                </a>
-                <button id="language-switch-popup-dismiss-btn" onclick="dismissLanguageSwitchPopup();">
-                    <img src="{{ url_for('static', filename='icons/close-popup.svg') }}" alt="Close">
-                    {{ _('language_switch_popup_dismiss') }}
-                </button>
+                        <img src="{{ url_for('static', filename='icons/sync.svg') }}" alt="Change language">
+                        {{ _('language_switch_popup_ok') }}
+                    </a>
+                    <button id="language-switch-popup-dismiss-btn" onclick="dismissLanguageSwitchPopup();">
+                        <img src="{{ url_for('static', filename='icons/close-popup.svg') }}" alt="Close">
+                        {{ _('language_switch_popup_dismiss') }}
+                    </button>
+                </div>
             </div>
-        </div>
         {% endif %}
     </div>
     <div id="headers">
