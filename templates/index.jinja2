@@ -67,12 +67,12 @@
                 <div id="language-switch-popup-buttons">
                     <a id="language-switch-popup-yes-btn" href="{{ url_for('multilingual.index',
                 lang_code=_('language_switch_link')) }}#force_lang">
-                        <img src="{{ url_for('static', filename='icons/sync.svg') }}" alt="Change language">
-                        {{ _('language_switch_popup_ok') }}
+                        <span><img src="{{ url_for('static', filename='icons/sync.svg') }}" alt="Change language"></span>
+                        <span>{{ _('language_switch_popup_ok') }}</span>
                     </a>
                     <button id="language-switch-popup-dismiss-btn" onclick="dismissLanguageSwitchPopup();">
                         <img src="{{ url_for('static', filename='icons/close-popup.svg') }}" alt="Close">
-                        {{ _('language_switch_popup_dismiss') }}
+                        <span>{{ _('language_switch_popup_dismiss') }}</span>
                     </button>
                 </div>
             </div>

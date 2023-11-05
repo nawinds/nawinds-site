@@ -25,6 +25,7 @@
 }
 
 #language-switch-popup {
+    font-size: 16px;
     right: 15px;
     width: 200px;
     background-color: #fff537;
@@ -178,16 +179,23 @@
 
 @media (max-width: 1350px) {
     #language-switch {
-        margin-right: 28px;
         margin-top: 28px;
+    }
+
+    #language-switch-button {
+        margin-right: 28px;
         font-size: 15px;
         padding: 9px;
         border-radius: 13px;
     }
 
-    #language-switch img {
+    #language-switch-button img {
         width: 18px;
         height: 18px;
+    }
+
+    #language-switch-popup::after {
+        top: 16px;
     }
 
     .social-btn {
@@ -209,16 +217,23 @@
 
 @media (max-width: 900px) {
     #language-switch {
-        margin-right: 21px;
         margin-top: 21px;
+    }
+
+    #language-switch-button {
+        margin-right: 21px;
         padding: 7px;
         font-size: 14px;
         border-radius: 12px;
     }
 
-    #language-switch img {
+    #language-switch-button img {
         width: 17px;
         height: 17px;
+    }
+
+    #language-switch-popup::after {
+        top: 13px;
     }
 
     .social-btn {
@@ -241,17 +256,40 @@
 
 @media (max-width: 460px) {
     #language-switch {
+        margin-top: 18px;
+    }
+
+    #language-switch-button {
         margin-right: 18px;
-        margin-top: 18;
         padding: 5px;
         font-size: 13px;
         border-radius: 10px;
     }
 
-    #language-switch img {
+    #language-switch-button img {
         width: 15px;
         height: 15px;
         transform: translateY(3px);
+    }
+
+    #language-switch-popup {
+        width: 160px;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #language-switch-popup::after {
+        top: 10px;
+    }
+
+    #language-switch-popup-yes-btn span {
+        display: block;
+        text-align: center;
+    }
+
+    #language-switch-popup-dismiss-btn span {
+        display: block;
+        text-align: center;
     }
 
     .social-btn {
