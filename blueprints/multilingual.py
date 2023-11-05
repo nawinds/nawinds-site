@@ -40,6 +40,7 @@ def index():
     instagram = "nawinds"
     vk = "nawinds"
     email = "me@nawinds.top"
+    tg_channel = "https://t.me/+bNmTupyrLWlmNTAy"
 
     with open("projects.json", "r", encoding="UTF-8") as fcc_file:
         projects = json.load(fcc_file)
@@ -56,5 +57,5 @@ def index():
     return render_template("index.jinja2",
                            sail_images=sail_images, age=age, year=today.year,
                            gitea=gitea, github=github, telegram=telegram,
-                           instagram=instagram, vk=vk, email=email,
+                           instagram=instagram, vk=vk, email=email, tg_channel=tg_channel,
                            projects=projects, show_switch_lang_popup=show_switch_lang_popup)
