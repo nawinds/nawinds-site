@@ -20,13 +20,19 @@ babel = Babel(app)
 @babel.localeselector
 def get_locale():
     if not g.get('lang_code', None):
-        g.lang_code = request.accept_languages.best_match(LANGUAGES)
+        if not request.cookies.get('lang', None):
+            g.lang_code = request.accept_languages.best_match(LANGUAGES)
+        else:
+            g.lang_code = request.cookies.get('lang')
     return g.lang_code
 
 
 @app.route('/')
 def index():
-    g.lang_code = request.accept_languages.best_match(LANGUAGES)
+    if not request.cookies.get('lang', None):
+        g.lang_code = request.accept_languages.best_match(LANGUAGES)
+    else:
+        g.lang_code = request.cookies.get('lang')
     return redirect(url_for('multilingual.index'))
 
 

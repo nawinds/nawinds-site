@@ -56,7 +56,7 @@
         <img src="{{ url_for('static', filename='icons/angle-up.svg') }}" alt="{{ _('up') }}">
     </a>
     <a id="language-switch" href="{{ url_for('multilingual.index',
-     lang_code=_('language_switch_link')) }}?force_switch=true">
+     lang_code=_('language_switch_link')) }}#force_lang">
         <img src="{{ url_for('static', filename='icons/globe-small-black.png') }}" alt="globe icon">
         {{ _('language_switch_text') }}
     </a>

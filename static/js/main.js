@@ -1,6 +1,29 @@
 const ENGLISH = document.getElementsByTagNameNS("http://www.w3.org/1999/xhtml",
     "html")[0].getAttribute("lang") === "en";
 
+if (location.hash === '#force_lang') {
+    document.cookie = "lang=" + (ENGLISH ? "en" : "ru") + ";path=/";
+    window.location.href = window.location.href.split("#")[0];
+}
+
+function removeParam(key, sourceURL) {
+    var rtn = sourceURL.split("?")[0],
+        param,
+        params_arr = [],
+        queryString = (sourceURL.indexOf("?") !== -1) ? sourceURL.split("?")[1] : "";
+    if (queryString !== "") {
+        params_arr = queryString.split("&");
+        for (var i = params_arr.length - 1; i >= 0; i -= 1) {
+            param = params_arr[i].split("=")[0];
+            if (param === key) {
+                params_arr.splice(i, 1);
+            }
+        }
+        if (params_arr.length) rtn = rtn + "?" + params_arr.join("&");
+    }
+    return rtn;
+}
+
 function scrollUp() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
