@@ -16,7 +16,6 @@ app.register_blueprint(multilingual)
 babel = Babel(app)
 
 
-@babel.localeselector
 def get_locale():
     if not g.get('lang_code', None):
         if not request.cookies.get('lang', None):
@@ -24,6 +23,9 @@ def get_locale():
         else:
             g.lang_code = request.cookies.get('lang')
     return g.lang_code
+
+
+babel.init_app(app, locale_selector=get_locale)
 
 
 @app.route('/')
@@ -79,4 +81,4 @@ def not_found(e):
 
 
 if __name__ == '__main__':
-    app.run("0.0.0.0", port=5000)
+    app.run("127.0.0.1", port=5000)
