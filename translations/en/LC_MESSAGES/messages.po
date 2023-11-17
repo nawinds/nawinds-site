@@ -1,0 +1,197 @@
+# Translations template for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-11-05 21:20+0000\n"
+"PO-Revision-Date: 2023-11-05 21:21+0000\n"
+"Last-Translator: Nikita Aksenov <me@nawinds.top>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: templates/index.jinja2:2 templates/index.jinja2:3
+msgid "lang_code"
+msgstr "en"
+
+#: templates/index.jinja2:8
+msgid "page_description"
+msgstr ""
+"Personal website of Nikita Aksenov (@nawinds). Info about me and social links"
+
+#: templates/index.jinja2:9
+msgid "page_keywords"
+msgstr ""
+"nawinds, @nawinds, Nikita Aksenov site, Aksenov Nikita, personal website"
+
+#: templates/index.jinja2:22
+msgid "page_title"
+msgstr "Nawinds | Nikita Aksenov"
+
+#: templates/index.jinja2:56
+msgid "up"
+msgstr "Up"
+
+#: templates/index.jinja2:60 templates/index.jinja2:68
+msgid "language_switch_link"
+msgstr "ru"
+
+#: templates/index.jinja2:62
+msgid "language_switch_text"
+msgstr "РУС"
+
+#: templates/index.jinja2:65
+msgid "language_switch_popup_text"
+msgstr "Переключить на русский?"
+
+#: templates/index.jinja2:70
+msgid "language_switch_popup_ok"
+msgstr "Да"
+
+#: templates/index.jinja2:74
+msgid "language_switch_popup_dismiss"
+msgstr "Dismiss"
+
+#: templates/index.jinja2:82 templates/index.jinja2:282
+msgid "name_header"
+msgstr "Nikita&nbsp;Aksenov"
+
+#: templates/index.jinja2:113
+msgid "scroll_further"
+msgstr "Scroll further"
+
+#: templates/index.jinja2:118
+msgid "about_header"
+msgstr "About me"
+
+#: templates/index.jinja2:125 templates/index.jinja2:126
+msgid "age"
+msgstr "Age"
+
+#: templates/index.jinja2:126
+msgid "age_years"
+msgstr "years old"
+
+#: templates/index.jinja2:129
+msgid "city"
+msgstr "Moscow"
+
+#: templates/index.jinja2:130
+msgid "city_desc"
+msgstr "From Moscow"
+
+#: templates/index.jinja2:133
+msgid "programmer_alt"
+msgstr "Python"
+
+#: templates/index.jinja2:134
+msgid "programmer_desc"
+msgstr "Mainly code in Python"
+
+#: templates/index.jinja2:137
+msgid "sailing"
+msgstr "Sailing"
+
+#: templates/index.jinja2:138
+msgid "sailing_desc"
+msgstr "Professional yachtsman, sail on Laser 4.7, Laser Radial and Firefly"
+
+#: templates/index.jinja2:141
+msgid "videography"
+msgstr "Videography"
+
+#: templates/index.jinja2:142
+msgid "videography_desc"
+msgstr "I love editing videos and shoot from my own drone"
+
+#: templates/index.jinja2:150
+msgid "programming_experience_header"
+msgstr "Programming experience"
+
+#: templates/index.jinja2:151
+msgid "programming_experience_text"
+msgstr ""
+"<p>\n"
+"                    I learned Python in the <a href=\"https://academy.yandex."
+"ru/lyceum\" target=\"_blank\">Yandex Lyceum</a>,\n"
+"                    where I finished 2 courses (Basics of programming in "
+"Python and\n"
+"                    Basics of industrial programming).\n"
+"                    I have the most experience in writing backend for\n"
+"                    sites(Flask, SqlAlchemy) and bot creation (for Telegram "
+"and VK). I am familiar with the basics\n"
+"                    of HTML, CSS, JS and I am able to make the frontend for "
+"a website (this website layout was made by me).\n"
+"                    My projects are deployed on a rented Linux server in "
+"Europe.\n"
+"                </p>\n"
+"                <p>\n"
+"                    I usually code on my own but I used to work in a team "
+"hile I was studying\n"
+"                    in Yandex Lyceum and during the summer term in <a "
+"href=\"https://lksh.ru/\" target=\"_blank\">SIS</a> in July 2021\n"
+"                    in the parallel P (parallel of industrial programming).\n"
+"                    I know how to work with a version control system Git and "
+"repositories on GitHub and\n"
+"                    Gitlab.\n"
+"                </p>\n"
+"                <p>\n"
+"                    I am constantly coming up with the ideas of new projects "
+"and enhancing old ones. In my free time\n"
+"                    I am improving my skills and learn new things by "
+"implementing my ideas.\n"
+"                </p>\n"
+"                <p>\n"
+"                    In 2021-2022, I learned C++, C# and blockchain in the\n"
+"                    <a href=\"https://informatics.ru/\" "
+"target=\"_blank\">School of programmers</a>.\n"
+"                    At the end of 2022, I passed a <a href=\"https://academy."
+"yandex.ru/intensive/bigdata\" target=\"_blank\">\n"
+"                    Big Data intensive by Yandex Academy</a>.\n"
+"                    In the future, I would like to delve into machine "
+"learning.\n"
+"                </p>\n"
+"                <p>\n"
+"                    I will be delighted to join any team project even if "
+"this will require learning lots of new technologies and stack.\n"
+"                </p>"
+
+#: templates/index.jinja2:157
+msgid "projects"
+msgstr "Projects"
+
+#: templates/index.jinja2:195 templates/index.jinja2:239
+msgid "source_code"
+msgstr "Source code"
+
+#: templates/index.jinja2:251
+msgid "all_projects"
+msgstr "All projects"
+
+#: templates/index.jinja2:263
+msgid "tg_channel_desc"
+msgstr "Like, follow"
+
+#: templates/index.jinja2:270
+msgid "tg_channel_btn"
+msgstr "My Telegram-channel"
+
+#: templates/index.jinja2:278
+msgid "footer_site_coded_with"
+msgstr "Website&nbsp;coded with"
+
+#: templates/index.jinja2:279
+msgid "footer_love"
+msgstr "love"
+
+#: templates/index.jinja2:280
+msgid "footer_by_me"
+msgstr "by myself"
