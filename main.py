@@ -63,6 +63,11 @@ def robots():
     return send_file("static/robots.txt")
 
 
+@app.route("/sitemap.xml")
+def sitemap():
+    return send_file("static/sitemap.xml")
+
+
 @app.route("/lucky")
 def lucky():
     return render_template("lucky.jinja2")
