@@ -20,7 +20,8 @@ def get_locale():
     if not g.get('lang_code', None):
         if not request.cookies.get('lang', None):
             if not request.accept_languages.best_match(LANGUAGES):
-                g.lang_code = request.headers.get("CF-Connecting-IP", "en")
+                ip_country = request.headers.get("CF-IPCountry")
+                g.lang_code = "ru" if ip_country == "RU" else "en"
             else:
                 g.lang_code = request.accept_languages.best_match(LANGUAGES)
         else:
