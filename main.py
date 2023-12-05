@@ -19,7 +19,10 @@ babel = Babel(app)
 def get_locale():
     if not g.get('lang_code', None):
         if not request.cookies.get('lang', None):
-            g.lang_code = request.accept_languages.best_match(LANGUAGES)
+            if not request.accept_languages.best_match(LANGUAGES):
+                g.lang_code = request.headers.get("CF-Connecting-IP", "en")
+            else:
+                g.lang_code = request.accept_languages.best_match(LANGUAGES)
         else:
             g.lang_code = request.cookies.get('lang')
     return g.lang_code
@@ -30,10 +33,7 @@ babel.init_app(app, locale_selector=get_locale)
 
 @app.route('/')
 def index():
-    if not request.cookies.get('lang', None):
-        g.lang_code = request.accept_languages.best_match(LANGUAGES)
-    else:
-        g.lang_code = request.cookies.get('lang')
+    g.lang_code = get_locale()
     return redirect(url_for('multilingual.index'))
 
 
@@ -86,4 +86,4 @@ def not_found(e):
 
 
 if __name__ == '__main__':
-    app.run("127.0.0.1", port=5000)
+    app.run("0.0.0.0", port=5000)
