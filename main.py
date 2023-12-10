@@ -35,6 +35,8 @@ babel.init_app(app, locale_selector=get_locale)
 @app.route('/')
 def index():
     g.lang_code = get_locale()
+    if request.args.get("new_domain") == "1":
+        return redirect(url_for('multilingual.index', new_domain="1"))
     return redirect(url_for('multilingual.index'))
 
 
@@ -98,4 +100,4 @@ def not_found(e):
 
 
 if __name__ == '__main__':
-    app.run("0.0.0.0", port=5000)
+    app.run("0.0.0.0", port=5001)
