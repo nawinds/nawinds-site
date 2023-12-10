@@ -63,17 +63,17 @@
     <!-- NEW DOMAIN MESSAGE -->
     <div id="new-domain-background">
     <div id="new-domain">
+        <a class="new-domain-lang" href="{{ url_for('multilingual.index',
+        lang_code=_('language_switch_link')) }}?new_domain=1#force_lang">{{ _('new_domain_lang') }}</a>
         <h1><span class="red">nawinds.top</span> &#8594; <span class="gr">nawinds.dev</span></h1>
-        <h3>Website moved!</h3>
-        <p>You have been redirected to the new domain. If you followed the link I provided,
-            please let me know by completing the form below, so I can update it,
-            as the old domain will become inactive soon. Thank you!</p>
+        <h3>{{ _('new_domain_header') }}</h3>
+        <p>{{ _('new_domain_text') }}</p>
         <form method="post" action="/new_domain">
-            <textarea name="msg" rows="4" placeholder="Describe how you got here"></textarea>
-            <input type="submit" value="Submit">
+            <textarea name="msg" rows="4" placeholder="{{ _('new_domain_form_placeholder') }}"></textarea>
+            <input type="submit" value="{{ _('new_domain_form_button') }}">
         </form>
         <div>
-            <button onclick="hideNewDomain()">Got it</button>
+            <button onclick="hideNewDomain()">{{ _('new_domain_close_button') }}</button>
         </div>
     </div></div>
     <!-- END NEW DOMAIN MESSAGE -->

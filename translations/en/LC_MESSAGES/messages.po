@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-11-05 21:20+0000\n"
-"PO-Revision-Date: 2023-11-05 21:21+0000\n"
+"POT-Creation-Date: 2023-12-10 18:41+0000\n"
+"PO-Revision-Date: 2023-12-10 18:42+0000\n"
 "Last-Translator: Nikita Aksenov <me@nawinds.top>\n"
 "Language-Team: \n"
 "Language: en\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #: templates/index.jinja2:2 templates/index.jinja2:3
 msgid "lang_code"
@@ -32,91 +32,119 @@ msgid "page_keywords"
 msgstr ""
 "nawinds, @nawinds, Nikita Aksenov site, Aksenov Nikita, personal website"
 
-#: templates/index.jinja2:22
+#: templates/index.jinja2:25
 msgid "page_title"
 msgstr "Nawinds | Nikita Aksenov"
 
-#: templates/index.jinja2:56
+#: templates/index.jinja2:59
 msgid "up"
 msgstr "Up"
 
-#: templates/index.jinja2:60 templates/index.jinja2:68
+#: templates/index.jinja2:67 templates/index.jinja2:84
+#: templates/index.jinja2:93
 msgid "language_switch_link"
 msgstr "ru"
 
-#: templates/index.jinja2:62
+#: templates/index.jinja2:67
+msgid "new_domain_lang"
+msgstr "Переключить на русский"
+
+#: templates/index.jinja2:69
+msgid "new_domain_header"
+msgstr "Website moved!"
+
+#: templates/index.jinja2:70
+msgid "new_domain_text"
+msgstr ""
+"You have been redirected to the new domain. If you followed the link I "
+"provided, please let me know by completing the form below, so I can update "
+"it, as the old domain will become inactive soon. Thank you!"
+
+#: templates/index.jinja2:72
+msgid "new_domain_form_placeholder"
+msgstr "Describe how you got here"
+
+#: templates/index.jinja2:73
+msgid "new_domain_form_button"
+msgstr "Submit"
+
+#: templates/index.jinja2:76
+msgid "new_domain_close_button"
+msgstr "Hide"
+
+#: templates/index.jinja2:86
 msgid "language_switch_text"
 msgstr "РУС"
 
-#: templates/index.jinja2:65
+#: templates/index.jinja2:90
 msgid "language_switch_popup_text"
 msgstr "Переключить на русский?"
 
-#: templates/index.jinja2:70
+#: templates/index.jinja2:95
 msgid "language_switch_popup_ok"
 msgstr "Да"
 
-#: templates/index.jinja2:74
+#: templates/index.jinja2:99
 msgid "language_switch_popup_dismiss"
 msgstr "Dismiss"
 
-#: templates/index.jinja2:82 templates/index.jinja2:282
+#: templates/index.jinja2:108 templates/index.jinja2:308
 msgid "name_header"
 msgstr "Nikita&nbsp;Aksenov"
 
-#: templates/index.jinja2:113
+#: templates/index.jinja2:139
 msgid "scroll_further"
 msgstr "Scroll further"
 
-#: templates/index.jinja2:118
+#: templates/index.jinja2:144
 msgid "about_header"
 msgstr "About me"
 
-#: templates/index.jinja2:125 templates/index.jinja2:126
+#: templates/index.jinja2:151 templates/index.jinja2:152
 msgid "age"
 msgstr "Age"
 
-#: templates/index.jinja2:126
+#: templates/index.jinja2:152
 msgid "age_years"
 msgstr "years old"
 
-#: templates/index.jinja2:129
+#: templates/index.jinja2:155
 msgid "city"
 msgstr "Moscow"
 
-#: templates/index.jinja2:130
+#: templates/index.jinja2:156
 msgid "city_desc"
 msgstr "From Moscow"
 
-#: templates/index.jinja2:133
+#: templates/index.jinja2:159
 msgid "programmer_alt"
 msgstr "Python"
 
-#: templates/index.jinja2:134
+#: templates/index.jinja2:160
 msgid "programmer_desc"
 msgstr "Mainly code in Python"
 
-#: templates/index.jinja2:137
+#: templates/index.jinja2:163
 msgid "sailing"
 msgstr "Sailing"
 
-#: templates/index.jinja2:138
+#: templates/index.jinja2:164
 msgid "sailing_desc"
 msgstr "Professional yachtsman, sail on Laser 4.7, Laser Radial and Firefly"
 
-#: templates/index.jinja2:141
+#: templates/index.jinja2:167
 msgid "videography"
 msgstr "Videography"
 
-#: templates/index.jinja2:142
+#: templates/index.jinja2:168
 msgid "videography_desc"
 msgstr "I love editing videos and shoot from my own drone"
 
-#: templates/index.jinja2:150
+#: templates/index.jinja2:176
 msgid "programming_experience_header"
 msgstr "Programming experience"
 
-#: templates/index.jinja2:151
+#: templates/index.jinja2:177
 msgid "programming_experience_text"
 msgstr ""
 "<p>\n"
@@ -164,34 +192,34 @@ msgstr ""
 "this will require learning lots of new technologies and stack.\n"
 "                </p>"
 
-#: templates/index.jinja2:157
+#: templates/index.jinja2:183
 msgid "projects"
 msgstr "Projects"
 
-#: templates/index.jinja2:195 templates/index.jinja2:239
+#: templates/index.jinja2:221 templates/index.jinja2:265
 msgid "source_code"
 msgstr "Source code"
 
-#: templates/index.jinja2:251
+#: templates/index.jinja2:277
 msgid "all_projects"
 msgstr "All projects"
 
-#: templates/index.jinja2:263
+#: templates/index.jinja2:289
 msgid "tg_channel_desc"
 msgstr "Like, follow"
 
-#: templates/index.jinja2:270
+#: templates/index.jinja2:296
 msgid "tg_channel_btn"
 msgstr "My Telegram-channel"
 
-#: templates/index.jinja2:278
+#: templates/index.jinja2:304
 msgid "footer_site_coded_with"
 msgstr "Website&nbsp;coded with"
 
-#: templates/index.jinja2:279
+#: templates/index.jinja2:305
 msgid "footer_love"
 msgstr "love"
 
-#: templates/index.jinja2:280
+#: templates/index.jinja2:306
 msgid "footer_by_me"
 msgstr "by myself"

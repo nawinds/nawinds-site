@@ -150,7 +150,7 @@ footer .copyright {
     display: inline-block;
     text-align: center;
     background: black;
-    padding: 30px 30px 10px 30px;
+    padding: 25px 30px 10px 30px;
     max-width: 50em;
     width: 70vw;
     z-index: 999;
@@ -225,6 +225,7 @@ footer .copyright {
 
 #new-domain h1 {
     padding: 6px;
+    display: block;
 }
 
 .red {
@@ -237,4 +238,11 @@ footer .copyright {
     color: black;
     padding: 3px;
     border-radius: 5px;
+}
+
+.new-domain-lang {
+    color: #b1b1b1;
+    position: absolute;
+    right: 10px;
+    margin-bottom: 10px;
 }
