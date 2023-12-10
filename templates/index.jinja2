@@ -19,8 +19,8 @@
 
     <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
 
-    <link rel="alternate" hreflang="en" href="https://nawinds.top/en/" >
-    <link rel="alternate" hreflang="ru" href="https://nawinds.top/ru/" >
+    <link rel="alternate" hreflang="en" href="{{ url_for('multilingual.index', lang_code='en') }}">
+    <link rel="alternate" hreflang="ru" href="{{ url_for('multilingual.index', lang_code='ru') }}">
 
     <title>{{ _('page_title') }}</title>
 
