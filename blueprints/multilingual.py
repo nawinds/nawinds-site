@@ -26,6 +26,8 @@ def pull_lang_code(endpoint, values):
 
 @multilingual.route('/')
 def index():
+    show_new_domain_msg = request.args.get("new_domain", "0") == "1"
+
     sail_images = os.listdir("static/sail/")
 
     today = datetime.date.today()
@@ -45,17 +47,15 @@ def index():
     with open("projects.json", "r", encoding="UTF-8") as fcc_file:
         projects = json.load(fcc_file)
 
-    if (not request.cookies.get("lang", None) and g.lang_code !=
-        request.accept_languages.best_match(LANGUAGES)
-    ) or (request.cookies.get("lang", None) and g.lang_code !=
-          request.cookies.get("lang") and g.lang_code !=
-          request.accept_languages.best_match(LANGUAGES)):
-        show_switch_lang_popup = True
-    else:
-        show_switch_lang_popup = False
+    show_switch_lang_popup = (not request.cookies.get("lang", None) and g.lang_code !=
+                              request.accept_languages.best_match(LANGUAGES)
+                              ) or (request.cookies.get("lang", None) and g.lang_code !=
+                                    request.cookies.get("lang") and g.lang_code !=
+                                    request.accept_languages.best_match(LANGUAGES))
 
     return render_template("index.jinja2",
                            sail_images=sail_images, age=age, year=today.year,
                            gitea=gitea, github=github, telegram=telegram,
                            instagram=instagram, vk=vk, email=email, tg_channel=tg_channel,
-                           projects=projects, show_switch_lang_popup=show_switch_lang_popup)
+                           projects=projects, show_switch_lang_popup=show_switch_lang_popup,
+                           show_new_domain_msg=show_new_domain_msg)

@@ -38,6 +38,17 @@ def index():
     return redirect(url_for('multilingual.index'))
 
 
+# NEW DOMAIN MESSAGE FORM HANDLER
+@app.route("/new_domain", methods=["POST"])
+def new_domain_form():
+    message = request.form.get("msg", None)
+    if message:
+        requests.get(f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage?"
+                     f"chat_id={TG_CHAT_ID}&text=Nawinds:%20OLD_DOMAIN_FEEDBACK:%20{message}")
+    g.lang_code = get_locale()
+    return redirect(url_for('multilingual.index'))
+
+
 @app.route("/api/v1/stats/social-click/<site_name>")
 def social_click(site_name):
     requests.get(f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage?"

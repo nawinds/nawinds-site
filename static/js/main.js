@@ -132,3 +132,13 @@ window.onload = function () {
         }
     });
 }
+
+// NEW DOMAIN
+
+function hideNewDomain()
+{
+    const background = document.getElementById("new-domain-background");
+    const banner = document.getElementById("new-domain");
+    background.style.display = "none";
+    banner.style.display = "none";
+}
