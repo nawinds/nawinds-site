@@ -4,25 +4,25 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://nawinds.top/en/</loc>
+        <loc>https://nawinds.dev/en/</loc>
         <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://nawinds.top/ru/"/>
+                href="https://nawinds.dev/ru/"/>
         <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://nawinds.top/en/"/>
+                href="https://nawinds.dev/en/"/>
     </url>
     <url>
-        <loc>https://nawinds.top/ru/</loc>
+        <loc>https://nawinds.dev/ru/</loc>
         <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://nawinds.top/ru/"/>
+                href="https://nawinds.dev/ru/"/>
         <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://nawinds.top/en/"/>
+                href="https://nawinds.dev/en/"/>
     </url>
 </urlset>
