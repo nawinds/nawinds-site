@@ -19,8 +19,8 @@
 
     <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
 
-    <link rel="alternate" hreflang="en" href="https://nawinds.top/en/" >
-    <link rel="alternate" hreflang="ru" href="https://nawinds.top/ru/" >
+    <link rel="alternate" hreflang="en" href="https://nawinds.top/en/">
+    <link rel="alternate" hreflang="ru" href="https://nawinds.top/ru/">
 
     <title>{{ _('page_title') }}</title>
 
@@ -49,6 +49,10 @@
         <div><img src="https://mc.yandex.ru/watch/95838932" style="position:absolute; left:-9999px;" alt=""/></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWNRDDJTM3"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/ya-metrika.js') }}"></script>
+    <!-- /Google tag -->
 </head>
 <body>
 <div id="main">
@@ -77,7 +81,8 @@
                 <div id="language-switch-popup-buttons">
                     <a id="language-switch-popup-yes-btn" href="{{ url_for('multilingual.index',
                 lang_code=_('language_switch_link')) }}#force_lang">
-                        <span><img src="{{ url_for('static', filename='icons/sync.svg') }}" alt="Change language"></span>
+                        <span><img src="{{ url_for('static', filename='icons/sync.svg') }}"
+                                   alt="Change language"></span>
                         <span>{{ _('language_switch_popup_ok') }}</span>
                     </a>
                     <button id="language-switch-popup-dismiss-btn" onclick="dismissLanguageSwitchPopup();">
