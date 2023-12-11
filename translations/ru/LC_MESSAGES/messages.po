@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-11-05 21:20+0000\n"
-"PO-Revision-Date: 2023-11-05 21:21+0000\n"
+"POT-Creation-Date: 2023-12-10 23:28+0000\n"
+"PO-Revision-Date: 2023-12-10 23:36+0000\n"
 "Last-Translator: Nikita Aksenov <me@nawinds.top>\n"
 "Language-Team: ru <LL@li.org>\n"
 "Language: ru\n"
@@ -18,11 +18,20 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.10.3\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4.1\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-KeywordsList: {{ _('%') }};{{ _(\"%\") }}\n"
 "X-Poedit-SearchPath-0: blueprints/multilingual.py\n"
 "X-Poedit-SearchPath-1: templates/index.jinja2\n"
+
+#: main.py:97
+msgid "not_found_header"
+msgstr "Страница не найдена"
+
+#: main.py:98
+msgid "not_found_desc"
+msgstr ""
+"Этой страницы не существует. Вы можете перейти на <a href=\"/\">главную</a>."
 
 #: templates/index.jinja2:2 templates/index.jinja2:3
 msgid "lang_code"
@@ -39,93 +48,121 @@ msgid "page_keywords"
 msgstr ""
 "nawinds, @nawinds, Никита Аксенов сайт, Аксенов Никита, персональный сайт"
 
-#: templates/index.jinja2:22
+#: templates/index.jinja2:25
 msgid "page_title"
 msgstr "Nawinds | Никита Аксенов"
 
-#: templates/index.jinja2:56
+#: templates/index.jinja2:59
 msgid "up"
 msgstr "Наверх"
 
-#: templates/index.jinja2:60 templates/index.jinja2:68
+#: templates/index.jinja2:67 templates/index.jinja2:84
+#: templates/index.jinja2:93
 msgid "language_switch_link"
 msgstr "en"
 
-#: templates/index.jinja2:62
+#: templates/index.jinja2:67
+msgid "new_domain_lang"
+msgstr "Switch to English"
+
+#: templates/index.jinja2:69
+msgid "new_domain_header"
+msgstr "Сайт переехал!"
+
+#: templates/index.jinja2:70
+msgid "new_domain_text"
+msgstr ""
+"Вы были перенаправлены на новый домен. Если Вы использовали ссылку, "
+"оставленную мной, пожалуйста, сообщите об этом мне, воспользовавшись формой "
+"ниже, чтобы я успел исправить, пока старый домен еще доступен. Спасибо!"
+
+#: templates/index.jinja2:72
+msgid "new_domain_form_placeholder"
+msgstr "Опишите, как Вы попали на эту страницу"
+
+#: templates/index.jinja2:73
+msgid "new_domain_form_button"
+msgstr "Отправить"
+
+#: templates/index.jinja2:76
+msgid "new_domain_close_button"
+msgstr "Закрыть"
+
+#: templates/index.jinja2:86
 msgid "language_switch_text"
 msgstr "ENG"
 
-#: templates/index.jinja2:65
+#: templates/index.jinja2:90
 msgid "language_switch_popup_text"
 msgstr "Switch to English?"
 
-#: templates/index.jinja2:70
+#: templates/index.jinja2:95
 msgid "language_switch_popup_ok"
 msgstr "Yes"
 
-#: templates/index.jinja2:74
+#: templates/index.jinja2:99
 msgid "language_switch_popup_dismiss"
 msgstr "Закрыть"
 
-#: templates/index.jinja2:82 templates/index.jinja2:282
+#: templates/index.jinja2:108 templates/index.jinja2:308
 msgid "name_header"
 msgstr "Никита&nbsp;Аксенов"
 
-#: templates/index.jinja2:113
+#: templates/index.jinja2:139
 msgid "scroll_further"
 msgstr "Листать дальше"
 
-#: templates/index.jinja2:118
+#: templates/index.jinja2:144
 msgid "about_header"
 msgstr "О себе"
 
-#: templates/index.jinja2:125 templates/index.jinja2:126
+#: templates/index.jinja2:151 templates/index.jinja2:152
 msgid "age"
 msgstr "Возраст"
 
-#: templates/index.jinja2:126
+#: templates/index.jinja2:152
 msgid "age_years"
 msgstr "лет"
 
-#: templates/index.jinja2:129
+#: templates/index.jinja2:155
 msgid "city"
 msgstr "Москва"
 
-#: templates/index.jinja2:130
+#: templates/index.jinja2:156
 msgid "city_desc"
 msgstr "Из Москвы"
 
-#: templates/index.jinja2:133
+#: templates/index.jinja2:159
 msgid "programmer_alt"
 msgstr "Python"
 
-#: templates/index.jinja2:134
+#: templates/index.jinja2:160
 msgid "programmer_desc"
 msgstr "Программист, в основном пишу на Python"
 
-#: templates/index.jinja2:137
+#: templates/index.jinja2:163
 msgid "sailing"
 msgstr "Парусный спорт"
 
-#: templates/index.jinja2:138
+#: templates/index.jinja2:164
 msgid "sailing_desc"
 msgstr ""
 "Профессионально занимаюсь парусным спортом, гоняюсь в классах яхт Лазер 4.7, "
 "Лазер Радиал и Светлячок"
 
-#: templates/index.jinja2:141
+#: templates/index.jinja2:167
 msgid "videography"
 msgstr "Видеография"
 
-#: templates/index.jinja2:142
+#: templates/index.jinja2:168
 msgid "videography_desc"
 msgstr "Люблю монтировать видеоролики и сам снимаю с дрона"
 
-#: templates/index.jinja2:150
+#: templates/index.jinja2:176
 msgid "programming_experience_header"
 msgstr "Опыт в программировании"
 
-#: templates/index.jinja2:151
+#: templates/index.jinja2:177
 msgid "programming_experience_text"
 msgstr ""
 "<p>\n"
@@ -175,35 +212,35 @@ msgstr ""
 "                    изучить много нового материала.\n"
 "                </p>"
 
-#: templates/index.jinja2:157
+#: templates/index.jinja2:183
 msgid "projects"
 msgstr "Проекты"
 
-#: templates/index.jinja2:195 templates/index.jinja2:239
+#: templates/index.jinja2:221 templates/index.jinja2:265
 msgid "source_code"
 msgstr "Исходный код"
 
-#: templates/index.jinja2:251
+#: templates/index.jinja2:277
 msgid "all_projects"
 msgstr "Все проекты"
 
-#: templates/index.jinja2:263
+#: templates/index.jinja2:289
 msgid "tg_channel_desc"
 msgstr "Лайк, подписка"
 
-#: templates/index.jinja2:270
+#: templates/index.jinja2:296
 msgid "tg_channel_btn"
 msgstr "Мой Telegram-канал"
 
-#: templates/index.jinja2:278
+#: templates/index.jinja2:304
 msgid "footer_site_coded_with"
 msgstr "Сайт&nbsp;написан с"
 
-#: templates/index.jinja2:279
+#: templates/index.jinja2:305
 msgid "footer_love"
 msgstr "любовью"
 
-#: templates/index.jinja2:280
+#: templates/index.jinja2:306
 msgid "footer_by_me"
 msgstr "мной&nbsp;самим"
 

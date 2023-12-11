@@ -19,8 +19,8 @@
 
     <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
 
-    <link rel="alternate" hreflang="en" href="https://nawinds.top/en/">
-    <link rel="alternate" hreflang="ru" href="https://nawinds.top/ru/">
+    <link rel="alternate" hreflang="en" href="{{ url_for('multilingual.index', lang_code='en') }}">
+    <link rel="alternate" hreflang="ru" href="{{ url_for('multilingual.index', lang_code='ru') }}">
 
     <title>{{ _('page_title') }}</title>
 
@@ -69,6 +69,27 @@
     <a id="scroll-up" onclick="scrollUp()">
         <img src="{{ url_for('static', filename='icons/angle-up.svg') }}" alt="{{ _('up') }}">
     </a>
+
+    {% if show_new_domain_msg %}
+    <!-- NEW DOMAIN MESSAGE -->
+    <div id="new-domain-background">
+    <div id="new-domain">
+        <a class="new-domain-lang" href="{{ url_for('multilingual.index',
+        lang_code=_('language_switch_link')) }}?new_domain=1#force_lang">{{ _('new_domain_lang') }}</a>
+        <h1><span class="red">nawinds.top</span> &#8594; <span class="gr">nawinds.dev</span></h1>
+        <h3>{{ _('new_domain_header') }}</h3>
+        <p>{{ _('new_domain_text') }}</p>
+        <form method="post" action="/new_domain">
+            <textarea name="msg" rows="4" placeholder="{{ _('new_domain_form_placeholder') }}"></textarea>
+            <input type="submit" value="{{ _('new_domain_form_button') }}">
+        </form>
+        <div>
+            <button onclick="hideNewDomain()">{{ _('new_domain_close_button') }}</button>
+        </div>
+    </div></div>
+    <!-- END NEW DOMAIN MESSAGE -->
+    {% endif %}
+
     <div id="language-switch">
         <a id="language-switch-button" href="{{ url_for('multilingual.index',
         lang_code=_('language_switch_link')) }}#force_lang">

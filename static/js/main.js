@@ -132,3 +132,18 @@ window.onload = function () {
         }
     });
 }
+
+// NEW DOMAIN
+
+function hideNewDomain() {
+    const background = document.getElementById("new-domain-background");
+    const banner = document.getElementById("new-domain");
+    background.style.display = "none";
+    banner.style.display = "none";
+
+    const url = window.location.href;
+    const urlObj = new URL(url);
+    urlObj.search = '';
+    const result = urlObj.toString();
+    history.pushState({}, null, result);
+}

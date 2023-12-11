@@ -131,3 +131,118 @@ footer .copyright {
     }
 }
 
+/* NEW DOMAIN MESSAGE */
+
+#new-domain-background {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    z-index: 900;
+    position: fixed;
+}
+
+#new-domain {
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    text-align: center;
+    background: black;
+    padding: 25px 30px 10px 30px;
+    max-width: 50em;
+    width: 70vw;
+    z-index: 999;
+    border-radius: 15px;
+    font-family: "Arial", sans-serif;
+    height: max-content;
+}
+
+#new-domain form {
+    max-width: 40em;
+    width: 80%;
+    display: inline-block;
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+}
+
+#new-domain form textarea {
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    padding: 0;
+}
+
+#new-domain form input[type=submit] {
+    margin-top: 5px;
+    border: solid 1px white;
+    color: white;
+    border-radius: 7px;
+    background-color: transparent;
+    padding: 7px;
+    display: block;
+    margin-left: auto;
+    width: 100%;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+#new-domain form input[type=submit]:hover {
+    background-color: white;
+    color: black;
+}
+
+#new-domain form textarea {
+    font: 1em / 1.5 sans-serif;
+    padding: 7px;
+    width: calc(100% - 14px);
+}
+
+#new-domain div {
+    display: block;
+    margin-top: 20px;
+}
+
+#new-domain div button {
+    background-color: yellow;
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+    border-radius: 15px;
+    border: 1px solid yellow;
+    display: inline;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+#new-domain div button:hover {
+    background-color: black;
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+#new-domain h1 {
+    padding: 6px;
+    display: block;
+}
+
+.red {
+    text-decoration: line-through;
+    color: red;
+}
+
+.gr {
+    background-color: yellow;
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.new-domain-lang {
+    color: #b1b1b1;
+    position: absolute;
+    right: 10px;
+    margin-bottom: 10px;
+}

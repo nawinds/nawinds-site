@@ -3,18 +3,18 @@ Allow: /
 Disallow: /lucky$
 Disallow: /killer$
 Disallow: /api/*
-Sitemap: https://nawinds.top/sitemap.xml
+Sitemap: https://nawinds.dev/sitemap.xml
 
 User-agent: Yandex
 Allow: /
 Disallow: /lucky$
 Disallow: /killer$
 Disallow: /api/*
-Sitemap: https://nawinds.top/sitemap.xml
+Sitemap: https://nawinds.dev/sitemap.xml
 
 User-agent: Googlebot
 Allow: /
 Disallow: /lucky$
 Disallow: /killer$
 Disallow: /api/*
-Sitemap: https://nawinds.top/sitemap.xml
+Sitemap: https://nawinds.dev/sitemap.xml
