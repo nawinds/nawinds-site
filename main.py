@@ -2,7 +2,7 @@ import os
 
 import requests
 from flask import Flask, render_template, send_file, request, g, redirect, url_for
-from flask_babel import Babel
+from flask_babel import Babel, _
 
 from blueprints.multilingual import multilingual, LANGUAGES
 
@@ -17,8 +17,8 @@ babel = Babel(app)
 
 
 def get_locale():
-    if not g.get('lang_code', None):
-        if not request.cookies.get('lang', None):
+    if g.get('lang_code', None) not in LANGUAGES:
+        if request.cookies.get('lang', None) not in LANGUAGES:
             if not request.accept_languages.best_match(LANGUAGES):
                 ip_country = request.headers.get("CF-IPCountry")
                 g.lang_code = "ru" if ip_country == "RU" else "en"
@@ -94,9 +94,9 @@ def killer():
 
 @app.errorhandler(404)
 def not_found(e):
-    return render_template("error.jinja2", status_code="404", error_heading="Страница не найдена",
-                           error_description="Этой страницы не существует. "
-                                             "Вы можете перейти на <a href=\"/\">главную</a>."), 404
+    return render_template("error.jinja2", status_code="404",
+                           error_heading=_("not_found_header"),
+                           error_description=_("not_found_desc")), 404
 
 
 if __name__ == '__main__':

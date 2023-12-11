@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-12-10 18:41+0000\n"
-"PO-Revision-Date: 2023-12-10 18:42+0000\n"
+"POT-Creation-Date: 2023-12-10 23:28+0000\n"
+"PO-Revision-Date: 2023-12-10 23:36+0000\n"
 "Last-Translator: Nikita Aksenov <me@nawinds.top>\n"
 "Language-Team: ru <LL@li.org>\n"
 "Language: ru\n"
@@ -23,6 +23,15 @@ msgstr ""
 "X-Poedit-KeywordsList: {{ _('%') }};{{ _(\"%\") }}\n"
 "X-Poedit-SearchPath-0: blueprints/multilingual.py\n"
 "X-Poedit-SearchPath-1: templates/index.jinja2\n"
+
+#: main.py:97
+msgid "not_found_header"
+msgstr "Страница не найдена"
+
+#: main.py:98
+msgid "not_found_desc"
+msgstr ""
+"Этой страницы не существует. Вы можете перейти на <a href=\"/\">главную</a>."
 
 #: templates/index.jinja2:2 templates/index.jinja2:3
 msgid "lang_code"
