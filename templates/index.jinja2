@@ -71,23 +71,24 @@
     </a>
 
     {% if show_new_domain_msg %}
-    <!-- NEW DOMAIN MESSAGE -->
-    <div id="new-domain-background">
-    <div id="new-domain">
-        <a class="new-domain-lang" href="{{ url_for('multilingual.index',
+        <!-- NEW DOMAIN MESSAGE -->
+        <div id="new-domain-background">
+            <div id="new-domain">
+                <a class="new-domain-lang" href="{{ url_for('multilingual.index',
         lang_code=_('language_switch_link')) }}?new_domain=1#force_lang">{{ _('new_domain_lang') }}</a>
-        <h1><span class="red">nawinds.top</span> &#8594; <span class="gr">nawinds.dev</span></h1>
-        <h3>{{ _('new_domain_header') }}</h3>
-        <p>{{ _('new_domain_text') }}</p>
-        <form method="post" action="/new_domain">
-            <textarea name="msg" rows="4" placeholder="{{ _('new_domain_form_placeholder') }}"></textarea>
-            <input type="submit" value="{{ _('new_domain_form_button') }}">
-        </form>
-        <div>
-            <button onclick="hideNewDomain()">{{ _('new_domain_close_button') }}</button>
+                <h1><span class="red">nawinds.top</span> &#8594; <span class="gr">nawinds.dev</span></h1>
+                <h3>{{ _('new_domain_header') }}</h3>
+                <p>{{ _('new_domain_text') }}</p>
+                <form method="post" action="/new_domain">
+                    <textarea name="msg" rows="4" placeholder="{{ _('new_domain_form_placeholder') }}"></textarea>
+                    <input type="submit" value="{{ _('new_domain_form_button') }}">
+                </form>
+                <div>
+                    <button onclick="hideNewDomain()">{{ _('new_domain_close_button') }}</button>
+                </div>
+            </div>
         </div>
-    </div></div>
-    <!-- END NEW DOMAIN MESSAGE -->
+        <!-- END NEW DOMAIN MESSAGE -->
     {% endif %}
 
     <div id="language-switch">
@@ -123,26 +124,28 @@
             </span>
         </div>
         <div id="social">
-            <a class="social-btn" href="{{ gitea }}" target="_blank"
-               onclick="socialClick('Gitea')">
-                <img src="{{ url_for('static', filename='icons/gitea.svg') }}" alt="Gitea">
+            <a class="social-btn" href="{{ linkedin }}" target="_blank"
+               onclick="socialClick('LinkedIn')" title="LinkedIn">
+                <img src="{{ url_for('static', filename='icons/linkedin.svg') }}" alt="LinkedIn">
             </a>
             <a class="social-btn" href="https://github.com/{{ github }}" target="_blank"
-               onclick="socialClick('Github')">
+               onclick="socialClick('Github')" title="GitHub">
                 <img src="{{ url_for('static', filename='icons/github.svg') }}" alt="GitHub">
             </a>
-            <a class="social-btn" href="tg://resolve?domain={{ telegram }}" onclick="socialClick('Telegram')">
+            <a class="social-btn" href="tg://resolve?domain={{ telegram }}" onclick="socialClick('Telegram')"
+               title="Telegram">
                 <img src="{{ url_for('static', filename='icons/tg2.svg') }}" alt="Telegram">
             </a>
             <a class="social-btn" href="https://instagram.com/{{ instagram }}" target="_blank"
-               onclick="socialClick('Instagram')">
+               onclick="socialClick('Instagram')" title="Instagram">
                 <img src="{{ url_for('static', filename='icons/instagram.svg') }}" alt="Instagram">
             </a>
-            <a class="social-btn" href="https://vk.com/{{ vk }}" target="_blank" onclick="socialClick('VK')">
+            <a class="social-btn" href="https://vk.com/{{ vk }}" target="_blank" onclick="socialClick('VK')"
+               title="VK">
                 <img src="{{ url_for('static', filename='icons/vk.svg') }}" alt="VK">
             </a>
-            <a class="social-btn" href="mailto:{{ email }}" target="_blank" onclick="socialClick('Email')">
-                <img src="{{ url_for('static', filename='icons/mail.svg') }}" alt="Email" id="email-icon">
+            <a class="social-btn" href="#contacts" onclick="socialClick('Other')" title="Contacts">
+                <img src="{{ url_for('static', filename='icons/other.svg') }}" alt="Other">
             </a>
         </div>
     </div>
@@ -292,6 +295,21 @@
                          alt="down">
                 </button>
             </div>
+        </div>
+    </div>
+    <div id="contacts">
+        <div class="container">
+            <h1>Contacts</h1>
+            <table>
+                <tr>
+                    <td>Email:</td>
+                    <td><a href="mailto:me@nawinds.dev" onclick="socialClick('contacts:email')">me@nawinds.dev</a></td>
+                </tr>
+                <tr>
+                    <td>Telegram:</td>
+                    <td><a href="https://t.me/nawinds" onclick="socialClick('contacts:telegram')">@nawinds</a></td>
+                </tr>
+            </table>
         </div>
     </div>
     <div id="telegram-channel-banner">

@@ -36,7 +36,7 @@ def index():
     if today < birthday:
         age -= 1
 
-    gitea = "https://gitlab.nawinds.top/nawinds"
+    linkedin = "https://www.linkedin.com/in/nikitaaksenov"
     telegram = "nawinds"
     github = "nawinds"
     instagram = "nawinds"
@@ -55,7 +55,7 @@ def index():
 
     return render_template("index.jinja2",
                            sail_images=sail_images, age=age, year=today.year,
-                           gitea=gitea, github=github, telegram=telegram,
+                           linkedin=linkedin, github=github, telegram=telegram,
                            instagram=instagram, vk=vk, email=email, tg_channel=tg_channel,
                            projects=projects, show_switch_lang_popup=show_switch_lang_popup,
                            show_new_domain_msg=show_new_domain_msg)
