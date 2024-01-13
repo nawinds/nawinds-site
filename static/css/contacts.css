@@ -22,4 +22,5 @@ td {
 a {
     text-decoration: none;
     color: #1b669b;
+    cursor: pointer;
 }

@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /en/?new_domain=1
+Disallow: /ru/?new_domain=1
 Disallow: /lucky$
 Disallow: /killer$
 Disallow: /api/*
@@ -7,6 +9,8 @@ Sitemap: https://nawinds.dev/sitemap.xml
 
 User-agent: Yandex
 Allow: /
+Disallow: /en/?new_domain=1
+Disallow: /ru/?new_domain=1
 Disallow: /lucky$
 Disallow: /killer$
 Disallow: /api/*
@@ -14,6 +18,8 @@ Sitemap: https://nawinds.dev/sitemap.xml
 
 User-agent: Googlebot
 Allow: /
+Disallow: /en/?new_domain=1
+Disallow: /ru/?new_domain=1
 Disallow: /lucky$
 Disallow: /killer$
 Disallow: /api/*
