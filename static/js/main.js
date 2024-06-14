@@ -42,7 +42,7 @@ function httpGet(theUrl) {
 }
 
 function socialClick(site) {
-    httpGet("https://nawinds.top/api/v1/stats/social-click/" + site);
+    httpGet("https://nawinds.dev/api/v1/stats/social-click/" + site);
 }
 
 function projectLink(thisElem, projectName, linkNumber) {
@@ -115,7 +115,7 @@ console.log("%cHey there!",
     "color: white; font-style: bold; background-color: black; font-size: 30px;");
 console.log("%cYou're lucky to find a surprise from me!",
     "color: black; font-style: bold; background-color: white; font-size: 20px;");
-console.log("%cGo to https://nawinds.top/lucky and enjoy it!",
+console.log("%cGo to https://nawinds.dev/lucky and enjoy it!",
     "color: black; font-style: bold; background-color: yellow; font-size: 20px;");
 
 window.onload = function () {
