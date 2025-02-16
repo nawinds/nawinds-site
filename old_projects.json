@@ -1,0 +1,48 @@
+[
+  {
+    "title": ["Telegram bot EAS", "Telegram бот EAS"],
+    "hashtags": [
+      {
+        "color": "white",
+        "text": [
+          "v1.0.0",
+          "v1.0.0"
+        ]
+      },
+      {
+        "color": "red",
+        "text": [
+          "#Inactive",
+          "#Неактивный"
+        ]
+      },
+      {
+        "color": "violet",
+        "text": [
+          "#Development_paused",
+          "#Разработка_приостановлена"
+        ]
+      }
+    ],
+    "open_link": {
+      "url": "https://t.me/EASPoizon_bot",
+      "title": [
+        "Open bot",
+        "Открыть бота"
+      ]
+    },
+    "source_link": "https://git.nawinds.top/nawinds/order_tg_bot",
+    "description": [
+      [
+        "<p>Telegram bot for ordering items from China.</p>",
+        "<p>Version 1.0.0 of the bot introduces features of viewing info about company ",
+        "and calculating the sum of the order according to the exchange rate (preset by the admins).</p>"
+      ],
+      [
+        "<p>Telegram бот для совершения заказов на доставку товаров.</p>",
+        "<p>В версии 1.0.0 бота реализованы функции просмотра информации о компании ",
+        "и подсчёта суммы заказа в соответствии с установленным администраторами курсом.</p>"
+      ]
+    ]
+  }
+]

@@ -1,6 +1,72 @@
 [
   {
     "title": [
+      "M3104 useful links website",
+      "Сайт полезных ссылок M3104"
+    ],
+    "hashtags": [
+      {
+        "color": "yellow",
+        "text": [
+          "#Active",
+          "#Активный"
+        ]
+      },
+      {
+        "color": "green",
+        "text": [
+          "#Completed",
+          "#Завершённый"
+        ]
+      },
+      {
+        "color": "azure",
+        "text": [
+          "#For_ITMO",
+          "#Для_ИТМО"
+        ]
+      }
+    ],
+    "source_link": "https://github.com/nawinds/m3104-links",
+    "github_repo": "nawinds/m3104-links",
+    "open_link": {
+      "url": "https://m3104.nawinds.dev",
+      "title": [
+        "Open website",
+        "Открыть сайт"
+      ]
+    },
+    "description": [
+      [
+        "<p>Useful links website for M3104 group @ ITMO University.</p>",
+        "<p>Created based on the Docusaurus project.</p>",
+        "<p>Used by 25-35 users weekly, starting from September 2024, ",
+        "including my fellow students from the M3104 group at ITMO University where I currently study.</p>",
+        "<p>The website provides a quick access to the useful study resources, such as grades, ",
+        "grading system, labs, homework, lecture recordings, etc. There is an archive with links from past semesters as well. </p>",
+        "<ul><li>Relevant deadlines with dynamic timer and easy adding to Google Calendar</li>",
+        "<li>Fast website editing using Markdown language (via GitHub)</li>",
+        "<li>Quick hotkeys navigation</li>",
+        "<li>PWA support (Web apps, that are installed on the device by browser)</li>",
+        "<li>Light and dark theme</li></ul>"
+      ],
+      [
+        "<p>Сайт полезных ссылок группы M3104 Университета ИТМО.</p>",
+        "<p>Создан на базе проекта Docusaurus.</p>",
+        "<p>Активно используется 25-35 пользователями еженедельно, начиная с сентября 2024, ",
+        "в частности, моими одногруппниками из M3104 Университета ИТМО, в которой я сам состою.</p>",
+        "<p>Сайт позволяет получить быстрый доступ к полезным ресурсам по всем предметам, таким как оценки, ",
+        "правила оценивания, лабораторные, домашки, записи лекций и т.д. Есть архив со ссылками прошлых семестров. </p>",
+        "<ul><li>Актуальные дедлайны с динамическим таймером и возможность их добавления в Google Календарь</li>",
+        "<li>Простое редактирование информации на сайте в Markdown на GitHub</li>",
+        "<li>Быстрая навигация с помощью горячих клавиш</li>",
+        "<li>Поддержка PWA (веб-приложений, устанавливаемых на устройство через браузер)</li>",
+        "<li>Светлая и темная тема</li></ul>"
+      ]
+    ]
+  },
+  {
+    "title": [
       "Telegram bot for inline stickers search",
       "Telegram бот для inline-поиска стикеров"
     ],
@@ -15,8 +81,8 @@
       {
         "color": "green",
         "text": [
-          "#In_development",
-          "#В_разработке"
+          "#Completed",
+          "#Завершённый"
         ]
       },
       {
@@ -120,8 +186,8 @@
   },
   {
     "title": [
-      "Nawinds.top website",
-      "Сайт nawinds.top"
+      "Nawinds.dev website",
+      "Сайт nawinds.dev"
     ],
     "hashtags": [
       {
@@ -222,48 +288,157 @@
     ]
   },
   {
-    "title": ["Telegram bot EAS", "Telegram бот EAS"],
+    "title": [
+      "Queue bot",
+      "Queue bot"
+    ],
     "hashtags": [
       {
-        "color": "white",
+        "color": "yellow",
         "text": [
-          "v1.0.0",
-          "v1.0.0"
+          "#Active",
+          "#Активный"
         ]
       },
       {
-        "color": "red",
+        "color": "green",
         "text": [
-          "#Inactive",
-          "#Неактивный"
+          "#Completed",
+          "#Завершённый"
         ]
       },
       {
-        "color": "violet",
+        "color": "azure",
         "text": [
-          "#Development_paused",
-          "#Разработка_приостановлена"
+          "#For_ITMO",
+          "#Для_ИТМО"
         ]
       }
     ],
+    "source_link": "https://github.com/nawinds/queue_bot",
+    "github_repo": "nawinds/queue_bot",
     "open_link": {
-      "url": "https://t.me/EASPoizon_bot",
+      "url": "https://t.me/m3104_queue_bot",
       "title": [
         "Open bot",
-        "Открыть бота"
+        "Открыть бот"
       ]
     },
-    "source_link": "https://git.nawinds.top/nawinds/order_tg_bot",
     "description": [
       [
-        "<p>Telegram bot for ordering items from China.</p>",
-        "<p>Version 1.0.0 of the bot introduces features of viewing info about company ",
-        "and calculating the sum of the order according to the exchange rate (preset by the admins).</p>"
+        "<p>Bot for creating queues in Telegram group chats</p>",
+        "<p>Used for creating queues for lab submissions in the M3104 group at ITMO University</p>"
       ],
       [
-        "<p>Telegram бот для совершения заказов на доставку товаров.</p>",
-        "<p>В версии 1.0.0 бота реализованы функции просмотра информации о компании ",
-        "и подсчёта суммы заказа в соответствии с установленным администраторами курсом.</p>"
+        "<p>Бот для создания очередей в группах Telegram</p>",
+        "<p>Используется для создания очередей на сдачу лаб в группе M3104 Университета ИТМО</p>"
+      ]
+    ]
+  },
+  {
+    "title": [
+      "Attendance bot",
+      "Бот учета посещаемости"
+    ],
+    "hashtags": [
+      {
+        "color": "yellow",
+        "text": [
+          "#Active",
+          "#Активный"
+        ]
+      },
+      {
+        "color": "green",
+        "text": [
+          "#Completed",
+          "#Завершённый"
+        ]
+      },
+      {
+        "color": "azure",
+        "text": [
+          "#For_ITMO",
+          "#Для_ИТМО"
+        ]
+      }
+    ],
+    "source_link": "https://github.com/nawinds/attendance_bot",
+    "github_repo": "nawinds/attendance_bot",
+    "open_link": {
+      "url": "https://t.me/m3104_attendance_bot",
+      "title": [
+        "Open bot",
+        "Открыть бот"
+      ]
+    },
+    "description": [
+      [
+        "<p>Bot for tracking attendance in Telegram group chats</p>",
+        "<p>Used for sending attendance polls in the M3104 group at ITMO University</p>"
+      ],
+      [
+        "<p>Бот для учета посещаемости в группах Telegram</p>",
+        "<p>Используется для отправки опросов о посещаемости в группе M3104 Университета ИТМО</p>"
+      ]
+    ]
+  },
+  {
+    "title": [
+      "Deadline bot",
+      "Бот-дедлайнер"
+    ],
+    "hashtags": [
+      {
+        "color": "yellow",
+        "text": [
+          "#Active",
+          "#Активный"
+        ]
+      },
+      {
+        "color": "green",
+        "text": [
+          "#Completed",
+          "#Завершённый"
+        ]
+      },
+      {
+        "color": "azure",
+        "text": [
+          "#For_ITMO",
+          "#Для_ИТМО"
+        ]
+      }
+    ],
+    "source_link": "https://github.com/nawinds/deadline_bot",
+    "github_repo": "nawinds/deadline_bot",
+    "open_link": {
+      "url": "https://t.me/m3104_deadliner_bot",
+      "title": [
+        "Open bot",
+        "Открыть бот"
+      ]
+    },
+    "description": [
+      [
+        "<p>Bot for tracking attendance in Telegram group chats</p>",
+        "<p>Used for sending attendance polls in the M3104 group at ITMO University</p>",
+        "<ul><li>Daily sending of relevant deadlines to the group</li>",
+        "<li>Minute-by-minute deadline timer update</li>",
+        "<li>Deadlines synchronization with the <a href='https://m3104.nawinds.dev' target='_blank'>m3104.nawinds.dev</a> website</li>",
+        "<li>Easy deadlines adding to Google Calendar</li>",
+        "<li>Separation of deadlines into assignments and test sessions</li>",
+        "<li>Convenient deadlines adding in Markdown (via GitHub)</li></ul>"
+      ],
+      [
+        "<p>Бот для отправки дедлайнов группы M3104 Университета ИТМО</p>",
+        "<ul><li>Ежедневная отправка актуальных дедлайнов в группу</li>",
+        "<li>Ежеминутное обновление таймера дедлайнов</li>",
+        "<li>Синхронизация дедлайнов с сайтом <a href='https://m3104.nawinds.dev' target='_blank'>m3104.nawinds.dev</a></li>",
+        "<li>Возможность добавления дедлайнов в Google Calendar</li>",
+        "<li>Разделение дедлайнов на обычные и тесты</li>",
+        "<li>Удобное добавление дедлайнов в Markdown (через GitHub)</li></ul>"
       ]
     ]
   }
