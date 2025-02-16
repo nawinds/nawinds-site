@@ -49,7 +49,7 @@ jobs:
 
       - name: Check if Service is Active
         run: |
-          service_status=$(ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.SERVER_IP }} "sudo systemctl is-active <service-name>")
+          service_status=$(ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.SERVER_IP }} "sudo systemctl is-active ${{ secrets.SERVICE_NAME }}")
           if [[ "$service_status" != "active" ]]; then
             echo "Service <service-name> is not running or failed."
             exit 1
