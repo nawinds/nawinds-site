@@ -27,3 +27,21 @@ jobs:
       - name: Restart systemd service
         run: |
           ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "sudo systemctl restart ${{ secrets.SERVICE_NAME }}"
+
+  check_running_state:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check service status
+        run: |
+          ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "sudo systemctl status ${{ secrets.SERVICE_NAME }} --quiet || echo 'Service is not running or failed'"
+
+      - name: Check if Service is Active
+        run: |
+          service_status=$(ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.SERVER_IP }} "sudo systemctl is-active <service-name>")
+          if [[ "$service_status" != "active" ]]; then
+            echo "Service <service-name> is not running or failed."
+            exit 1
+          else
+            echo "Service <service-name> is active."
+          fi
