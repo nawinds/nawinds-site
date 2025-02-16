@@ -4,7 +4,7 @@ import requests
 from flask import Flask, render_template, send_file, request, g, redirect, url_for
 from flask_babel import Babel, _
 
-from bluepjlkrints.multilingual import multilingual, LANGUAGES
+from blueprints.multilingual import multilingual, LANGUAGES
 
 TG_BOT_TOKEN = os.getenv("TOKEN")
 TG_CHAT_ID = os.getenv("CHAT")

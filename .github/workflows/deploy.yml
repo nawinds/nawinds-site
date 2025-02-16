@@ -43,10 +43,6 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Check service status
-        run: |
-          ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "sudo systemctl status ${{ secrets.SERVICE_NAME }} --quiet || echo 'Service is not running or failed'"
-
       - name: Check if Service is Active
         run: |
           service_status=$(ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "sudo systemctl is-active ${{ secrets.SERVICE_NAME }}")
