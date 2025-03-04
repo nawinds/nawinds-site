@@ -48,9 +48,13 @@ def social_click(site_name):
 @app.route("/api/v1/projects/get_version")
 def get_project_version():
     github_repo = request.args.get("github_repo")
-    headers = {"Authorization": "Bearer " + GITHUB_TOKEN}
+    headers = {"Accept": "application/vnd.github+json",
+               "Authorization": "Bearer " + GITHUB_TOKEN,
+               "X-GitHub-Api-Version": "2022-11-28"}
     r = requests.get(f"https://api.github.com/repos/{github_repo.strip()}/releases",
                      headers=headers)
+    if not r.json():
+        return "No releases for this project", 404
     return r.json()[0]["name"]
 
 
