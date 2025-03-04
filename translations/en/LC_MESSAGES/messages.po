@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-13 01:11+0000\n"
-"PO-Revision-Date: 2024-01-13 01:12+0000\n"
+"POT-Creation-Date: 2025-03-04 16:20+0300\n"
+"PO-Revision-Date: 2025-03-04 16:31+0300\n"
 "Last-Translator: Nikita Aksenov <me@nawinds.top>\n"
 "Language-Team: \n"
 "Language: en\n"
@@ -27,210 +27,232 @@ msgstr "Not found"
 msgid "not_found_desc"
 msgstr "This page does not exist. You can go to <a href=\"/\">HomePage</a>. "
 
-#: templates/index.jinja2:2 templates/index.jinja2:3
+#: templates/edit.jinja2:2 templates/edit.jinja2:3 templates/index.jinja2:2
+#: templates/index.jinja2:3
 msgid "lang_code"
 msgstr "en"
 
-#: templates/index.jinja2:8
+#: templates/edit.jinja2:8 templates/index.jinja2:8
 msgid "page_description"
 msgstr ""
 "Personal website of Nikita Aksenov (@nawinds). Info about me and social links"
 
-#: templates/index.jinja2:9
+#: templates/edit.jinja2:9 templates/index.jinja2:9
 msgid "page_keywords"
-msgstr "nawinds, @nawinds, Nikita Aksenov site, Aksenov Nikita, personal website"
+msgstr ""
+"nawinds, @nawinds, Nikita Aksenov site, Aksenov Nikita, personal website"
 
-#: templates/index.jinja2:25
+#: templates/edit.jinja2:26 templates/index.jinja2:26
 msgid "page_title"
 msgstr "Nawinds | Nikita Aksenov"
 
-#: templates/index.jinja2:70
+#: templates/edit.jinja2:60 templates/index.jinja2:72
 msgid "up"
 msgstr "Up"
 
-#: templates/index.jinja2:78 templates/index.jinja2:96 templates/index.jinja2:105
+#: templates/edit.jinja2:65 templates/edit.jinja2:74 templates/index.jinja2:80
+#: templates/index.jinja2:98 templates/index.jinja2:107
 msgid "language_switch_link"
 msgstr "ru"
 
-#: templates/index.jinja2:78
-msgid "new_domain_lang"
-msgstr "Переключить на русский"
-
-#: templates/index.jinja2:80
-msgid "new_domain_header"
-msgstr "Website moved!"
-
-#: templates/index.jinja2:81
-msgid "new_domain_text"
-msgstr ""
-"You have been redirected to the new domain. If you followed the link I "
-"provided, please let me know by completing the form below, so I can update it, "
-"as the old domain will become inactive soon. Thank you!"
-
-#: templates/index.jinja2:83
-msgid "new_domain_form_placeholder"
-msgstr "Describe how you got here"
-
-#: templates/index.jinja2:84
-msgid "new_domain_form_button"
-msgstr "Submit"
-
-#: templates/index.jinja2:87
-msgid "new_domain_close_button"
-msgstr "Hide"
-
-#: templates/index.jinja2:98
+#: templates/edit.jinja2:67 templates/index.jinja2:100
 msgid "language_switch_text"
 msgstr "РУС"
 
-#: templates/index.jinja2:102
+#: templates/edit.jinja2:71 templates/index.jinja2:104
 msgid "language_switch_popup_text"
 msgstr "Переключить на русский?"
 
-#: templates/index.jinja2:108
+#: templates/edit.jinja2:77 templates/index.jinja2:110
 msgid "language_switch_popup_ok"
 msgstr "Да"
 
-#: templates/index.jinja2:112
+#: templates/edit.jinja2:81 templates/index.jinja2:114
 msgid "language_switch_popup_dismiss"
 msgstr "Dismiss"
 
-#: templates/index.jinja2:121 templates/index.jinja2:338
+#: templates/edit.jinja2:90 templates/edit.jinja2:307
+#: templates/index.jinja2:123 templates/index.jinja2:348
 msgid "name_header"
 msgstr "Nikita&nbsp;Aksenov"
 
-#: templates/index.jinja2:154
+#: templates/edit.jinja2:123 templates/index.jinja2:156
 msgid "scroll_further"
 msgstr "Scroll further"
 
-#: templates/index.jinja2:159
+#: templates/edit.jinja2:128 templates/index.jinja2:161
 msgid "about_header"
 msgstr "About me"
 
-#: templates/index.jinja2:166 templates/index.jinja2:167
+#: templates/edit.jinja2:135 templates/edit.jinja2:136
+#: templates/index.jinja2:168 templates/index.jinja2:169
 msgid "age"
 msgstr "Age"
 
-#: templates/index.jinja2:167
+#: templates/edit.jinja2:136 templates/index.jinja2:169
 msgid "age_years"
 msgstr "years old"
 
-#: templates/index.jinja2:170
+#: templates/edit.jinja2:139 templates/index.jinja2:172
 msgid "city"
 msgstr "Moscow"
 
-#: templates/index.jinja2:171
+#: templates/edit.jinja2:140 templates/index.jinja2:173
 msgid "city_desc"
 msgstr "From Moscow"
 
-#: templates/index.jinja2:174
+#: templates/edit.jinja2:143 templates/index.jinja2:176
 msgid "programmer_alt"
 msgstr "Python"
 
-#: templates/index.jinja2:175
+#: templates/edit.jinja2:144 templates/index.jinja2:177
 msgid "programmer_desc"
 msgstr "Mainly code in Python"
 
-#: templates/index.jinja2:178
+#: templates/edit.jinja2:147 templates/index.jinja2:180
 msgid "sailing"
 msgstr "Sailing"
 
-#: templates/index.jinja2:179
+#: templates/edit.jinja2:148 templates/index.jinja2:181
 msgid "sailing_desc"
 msgstr "Professional yachtsman, sail on Laser 4.7, Laser Radial and Firefly"
 
-#: templates/index.jinja2:182
+#: templates/edit.jinja2:151 templates/index.jinja2:184
 msgid "videography"
 msgstr "Videography"
 
-#: templates/index.jinja2:183
+#: templates/edit.jinja2:152 templates/index.jinja2:185
 msgid "videography_desc"
 msgstr "I love editing videos and shoot from my own drone"
 
-#: templates/index.jinja2:191
+#: templates/edit.jinja2:160 templates/index.jinja2:193
 msgid "programming_experience_header"
 msgstr "Programming experience"
 
-#: templates/index.jinja2:192
+#: templates/edit.jinja2:161 templates/index.jinja2:194
 msgid "programming_experience_text"
 msgstr ""
 "<p>\n"
-"                    I learned Python in the <a href=\"https://academy.yandex."
-"ru/lyceum\" target=\"_blank\">Yandex Lyceum</a>,\n"
-"                    where I finished 2 courses (Basics of programming in "
-"Python and\n"
-"                    Basics of industrial programming).\n"
-"                    I have the most experience in writing backend for\n"
-"                    sites(Flask, SqlAlchemy) and bot creation (for Telegram "
-"and VK). I am familiar with the basics\n"
-"                    of HTML, CSS, JS and I am able to make the frontend for a "
-"website (this website layout was made by me).\n"
-"                    My projects are deployed on a rented Linux server in "
-"Europe.\n"
-"                </p>\n"
-"                <p>\n"
-"                    I usually code on my own but I used to work in a team hile "
-"I was studying\n"
-"                    in Yandex Lyceum and during the summer term in <a "
-"href=\"https://lksh.ru/\" target=\"_blank\">SIS</a> in July 2021\n"
-"                    in the parallel P (parallel of industrial programming).\n"
-"                    I know how to work with a version control system Git and "
-"repositories on GitHub and\n"
-"                    Gitlab.\n"
-"                </p>\n"
-"                <p>\n"
-"                    I am constantly coming up with the ideas of new projects "
-"and enhancing old ones. In my free time\n"
-"                    I am improving my skills and learn new things by "
-"implementing my ideas.\n"
-"                </p>\n"
-"                <p>\n"
-"                    In 2021-2022, I learned C++, C# and blockchain in the\n"
-"                    <a href=\"https://informatics.ru/\" "
-"target=\"_blank\">School of programmers</a>.\n"
-"                    At the end of 2022, I passed a <a href=\"https://academy."
-"yandex.ru/intensive/bigdata\" target=\"_blank\">\n"
-"                    Big Data intensive by Yandex Academy</a>.\n"
-"                    In the future, I would like to delve into machine "
-"learning.\n"
-"                </p>\n"
-"                <p>\n"
-"                    I will be delighted to join any team project even if this "
-"will require learning lots of new technologies and stack.\n"
-"                </p>"
+" I learned Python in the <a href=\"https://academy.yandex.ru/lyceum\" "
+"target=\"_blank\">Yandex Lyceum</a>,\n"
+" where I finished 2 courses (Basics of programming in Python and\n"
+" Basics of industrial programming).\n"
+" I have the most experience in writing backend for\n"
+" sites(Flask, SqlAlchemy) and bot creation (for Telegram and VK). I am "
+"familiar with the basics\n"
+" of HTML, CSS, JS and I am able to make the frontend for a website (this "
+"website layout was made by me).\n"
+" My projects are deployed on a rented Linux server in Europe.\n"
+" </p>\n"
+" <p>\n"
+" I usually code on my own but I used to work in a team hile I was studying\n"
+" in Yandex Lyceum and during the summer term in <a href=\"https://lksh.ru/\" "
+"target=\"_blank\">SIS</a> in July 2021\n"
+" in the parallel P (parallel of industrial programming).\n"
+" I know how to work with a version control system Git and repositories on "
+"GitHub and\n"
+" Gitlab.\n"
+" </p>\n"
+" <p>\n"
+" I am constantly coming up with the ideas of new projects and enhancing old "
+"ones. In my free time\n"
+" I am improving my skills and learn new things by implementing my ideas.\n"
+" </p>\n"
+" <p>\n"
+" In 2021-2022, I learned C++, C# and blockchain in the\n"
+" <a href=\"https://informatics.ru/\" target=\"_blank\">School of "
+"programmers</a>.\n"
+" At the end of 2022, I passed a <a href=\"https://academy.yandex.ru/"
+"intensive/bigdata\" target=\"_blank\">\n"
+" Big Data intensive by Yandex Academy</a>.\n"
+" In the future, I would like to delve into machine learning.\n"
+" </p>\n"
+" <p>\n"
+" I will be delighted to join any team project even if this will require "
+"learning lots of new technologies and stack.\n"
+" </p>"
 
-#: templates/index.jinja2:198
+#: templates/edit.jinja2:167 templates/index.jinja2:200
 msgid "projects"
 msgstr "Projects"
 
-#: templates/index.jinja2:236 templates/index.jinja2:280
+#: templates/edit.jinja2:205 templates/edit.jinja2:249
+#: templates/index.jinja2:238 templates/index.jinja2:282
 msgid "source_code"
 msgstr "Source code"
 
-#: templates/index.jinja2:292
+#: templates/edit.jinja2:261 templates/index.jinja2:294
 msgid "all_projects"
 msgstr "All projects"
 
-#: templates/index.jinja2:302
+#: templates/edit.jinja2:271 templates/index.jinja2:312
 msgid "contacts"
 msgstr "Contacts"
 
-#: templates/index.jinja2:319
+#: templates/edit.jinja2:288 templates/index.jinja2:329
 msgid "tg_channel_desc"
 msgstr "Like, follow"
 
-#: templates/index.jinja2:326
+#: templates/edit.jinja2:295 templates/index.jinja2:336
 msgid "tg_channel_btn"
 msgstr "My Telegram-channel"
 
-#: templates/index.jinja2:334
+#: templates/edit.jinja2:303 templates/index.jinja2:344
 msgid "footer_site_coded_with"
 msgstr "Website&nbsp;coded with"
 
-#: templates/index.jinja2:335
+#: templates/edit.jinja2:304 templates/index.jinja2:345
 msgid "footer_love"
 msgstr "love"
 
-#: templates/index.jinja2:336
+#: templates/edit.jinja2:305 templates/index.jinja2:346
 msgid "footer_by_me"
 msgstr "by myself"
+
+#: templates/index.jinja2:80
+msgid "new_domain_lang"
+msgstr "Переключить на русский"
+
+#: templates/index.jinja2:82
+msgid "new_domain_header"
+msgstr "Website moved!"
+
+#: templates/index.jinja2:83
+msgid "new_domain_text"
+msgstr ""
+"You have been redirected to the new domain. If you followed the link I "
+"provided, please let me know by completing the form below, so I can update "
+"it, as the old domain will become inactive soon. Thank you!"
+
+#: templates/index.jinja2:85
+msgid "new_domain_form_placeholder"
+msgstr "Describe how you got here"
+
+#: templates/index.jinja2:86
+msgid "new_domain_form_button"
+msgstr "Submit"
+
+#: templates/index.jinja2:89
+msgid "new_domain_close_button"
+msgstr "Hide"
+
+#: templates/index.jinja2:304
+msgid "donate"
+msgstr "Donations"
+
+#: templates/index.jinja2:305
+msgid "donate_description"
+msgstr ""
+"Support the development of any of my projects by donating me! <br />1.5%% of "
+"your donation will also be contributed to removing CO<span class='fake-"
+"subscript'>₂</span> from the atmosphere"
+
+#: templates/index.jinja2:306
+msgid "donate_button"
+msgstr "Donate with Stripe"
+
+#~ msgid "donate_text"
+#~ msgstr ""
+#~ "Support the development of any of my projects by donating me! <br />1.5% "
+#~ "of your donation will also be contributed to removing CO from the "
+#~ "atmosphere"

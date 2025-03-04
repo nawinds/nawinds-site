@@ -1,0 +1,88 @@
+#donate {
+    width: 100%;
+    background: #fff537;
+    color: black;
+}
+
+#donate .container {
+    padding-bottom: 40px !important;
+}
+
+#donate h1, #donate a {
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#donate p {
+    margin-bottom: 50px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.4em;
+}
+
+#donate a {
+    padding: 20px 45px 20px 20px;
+    border-radius: 45px;
+    border: 2px solid black;
+    background: linear-gradient(180deg, #ffffff, #f4ecec);
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#donate a:hover {
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+#donate a::after {
+    content: "\f004"; /* Unicode for a heart icon (Font Awesome) */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+}
+
+.fake-subscript {
+    font-size: 1.2em;
+    vertical-align: sub;
+    position: relative;
+    bottom: 0.3em;
+}
+
+.fa-leaf {
+    color: #3e9c3e;
+}
+
+.black-line {
+    height: 8px;
+    background-color: black;
+}
+
+@media (max-width: 1010px) {
+    #donate a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    #donate a {
+        padding: 15px 42px 15px 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 460px) {
+    #donate a {
+        padding: 13px 42px 13px 13px;
+    }
+}

@@ -41,6 +41,7 @@
           as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ url_for('static', filename='css/fonts2/Comfortaa-VariableFont_wght.woff2') }}"
           as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
 
@@ -297,6 +298,14 @@
                 </button>
             </div>
         </div>
+    </div>
+    <div id="donate">
+        <div class="container">
+            <h1>{{ _('donate') }}</h1>
+            <p>{{ _('donate_description') }} <span class="fas fa-leaf"></span> </p>
+            <a href="https://donate.nawinds.dev/stripe" target="_blank">{{ _('donate_button') }}</a>
+        </div>
+        <div class="black-line"></div>
     </div>
     <div id="contacts">
         <div class="container">

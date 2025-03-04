@@ -164,10 +164,27 @@
     cursor: pointer;
     font-size: 16px;
     color: black;
-    background-color: white;
-    border-radius: 20px;
+    background: linear-gradient(45deg, #ffffff, #ffffff);
+    border-radius: 30px;
     border: none;
-    padding: 10px 22px;
+    padding: 12px 30px;
+    box-shadow: 0 4px 15px rgba(255, 235, 59, 0.3);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 1px;
+}
+
+#show-more-projects-btn:hover {
+    background: linear-gradient(45deg, #ffffff, #ffffff);
+    box-shadow: 0 6px 20px rgba(255, 235, 59, 0.5);
+    transform: translateY(-2px);
+}
+
+#show-more-projects-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(255, 235, 59, 0.3);
 }
 
 #show-more-projects-btn img {
@@ -205,6 +222,10 @@
     .btn {
         margin-top: 20px;
     }
+
+    #show-more-projects-btn {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -217,5 +238,10 @@
         margin-right: 3px;
         height: 14px;
         width: 14px;
+    }
+
+    #show-more-projects-btn {
+        font-size: 12px;
+        padding: 10px 27px;
     }
 }

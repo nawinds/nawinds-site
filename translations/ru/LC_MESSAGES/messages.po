@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-13 01:11+0000\n"
-"PO-Revision-Date: 2024-01-13 01:12+0000\n"
+"POT-Creation-Date: 2025-03-04 16:20+0300\n"
+"PO-Revision-Date: 2025-03-04 16:31+0300\n"
 "Last-Translator: Nikita Aksenov <me@nawinds.top>\n"
 "Language-Team: ru <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 "
-"&& (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.13.1\n"
 "X-Generator: Poedit 3.4.1\n"
 
@@ -29,156 +29,135 @@ msgid "not_found_desc"
 msgstr ""
 "Этой страницы не существует. Вы можете перейти на <a href=\"/\">главную</a>."
 
-#: templates/index.jinja2:2 templates/index.jinja2:3
+#: templates/edit.jinja2:2 templates/edit.jinja2:3 templates/index.jinja2:2
+#: templates/index.jinja2:3
 msgid "lang_code"
 msgstr "ru"
 
-#: templates/index.jinja2:8
+#: templates/edit.jinja2:8 templates/index.jinja2:8
 msgid "page_description"
 msgstr ""
 "Персональный сайт Никиты Аксенова (@nawinds). Информация обо мне и ссылки на "
 "соцсети"
 
-#: templates/index.jinja2:9
+#: templates/edit.jinja2:9 templates/index.jinja2:9
 msgid "page_keywords"
-msgstr "nawinds, @nawinds, Никита Аксенов сайт, Аксенов Никита, персональный сайт"
+msgstr ""
+"nawinds, @nawinds, Никита Аксенов сайт, Аксенов Никита, персональный сайт"
 
-#: templates/index.jinja2:25
+#: templates/edit.jinja2:26 templates/index.jinja2:26
 msgid "page_title"
 msgstr "Nawinds | Никита Аксенов"
 
-#: templates/index.jinja2:70
+#: templates/edit.jinja2:60 templates/index.jinja2:72
 msgid "up"
 msgstr "Наверх"
 
-#: templates/index.jinja2:78 templates/index.jinja2:96 templates/index.jinja2:105
+#: templates/edit.jinja2:65 templates/edit.jinja2:74 templates/index.jinja2:80
+#: templates/index.jinja2:98 templates/index.jinja2:107
 msgid "language_switch_link"
 msgstr "en"
 
-#: templates/index.jinja2:78
-msgid "new_domain_lang"
-msgstr "Switch to English"
-
-#: templates/index.jinja2:80
-msgid "new_domain_header"
-msgstr "Сайт переехал!"
-
-#: templates/index.jinja2:81
-msgid "new_domain_text"
-msgstr ""
-"Вы были перенаправлены на новый домен. Если Вы использовали ссылку, оставленную "
-"мной, пожалуйста, сообщите об этом мне, воспользовавшись формой ниже, чтобы я "
-"успел исправить, пока старый домен еще доступен. Спасибо!"
-
-#: templates/index.jinja2:83
-msgid "new_domain_form_placeholder"
-msgstr "Опишите, как Вы попали на эту страницу"
-
-#: templates/index.jinja2:84
-msgid "new_domain_form_button"
-msgstr "Отправить"
-
-#: templates/index.jinja2:87
-msgid "new_domain_close_button"
-msgstr "Закрыть"
-
-#: templates/index.jinja2:98
+#: templates/edit.jinja2:67 templates/index.jinja2:100
 msgid "language_switch_text"
 msgstr "ENG"
 
-#: templates/index.jinja2:102
+#: templates/edit.jinja2:71 templates/index.jinja2:104
 msgid "language_switch_popup_text"
 msgstr "Switch to English?"
 
-#: templates/index.jinja2:108
+#: templates/edit.jinja2:77 templates/index.jinja2:110
 msgid "language_switch_popup_ok"
 msgstr "Yes"
 
-#: templates/index.jinja2:112
+#: templates/edit.jinja2:81 templates/index.jinja2:114
 msgid "language_switch_popup_dismiss"
 msgstr "Закрыть"
 
-#: templates/index.jinja2:121 templates/index.jinja2:338
+#: templates/edit.jinja2:90 templates/edit.jinja2:307
+#: templates/index.jinja2:123 templates/index.jinja2:348
 msgid "name_header"
 msgstr "Никита&nbsp;Аксенов"
 
-#: templates/index.jinja2:154
+#: templates/edit.jinja2:123 templates/index.jinja2:156
 msgid "scroll_further"
 msgstr "Листать дальше"
 
-#: templates/index.jinja2:159
+#: templates/edit.jinja2:128 templates/index.jinja2:161
 msgid "about_header"
 msgstr "О себе"
 
-#: templates/index.jinja2:166 templates/index.jinja2:167
+#: templates/edit.jinja2:135 templates/edit.jinja2:136
+#: templates/index.jinja2:168 templates/index.jinja2:169
 msgid "age"
 msgstr "Возраст"
 
-#: templates/index.jinja2:167
+#: templates/edit.jinja2:136 templates/index.jinja2:169
 msgid "age_years"
 msgstr "лет"
 
-#: templates/index.jinja2:170
+#: templates/edit.jinja2:139 templates/index.jinja2:172
 msgid "city"
 msgstr "Москва"
 
-#: templates/index.jinja2:171
+#: templates/edit.jinja2:140 templates/index.jinja2:173
 msgid "city_desc"
 msgstr "Из Москвы"
 
-#: templates/index.jinja2:174
+#: templates/edit.jinja2:143 templates/index.jinja2:176
 msgid "programmer_alt"
 msgstr "Python"
 
-#: templates/index.jinja2:175
+#: templates/edit.jinja2:144 templates/index.jinja2:177
 msgid "programmer_desc"
 msgstr "Программист, в основном пишу на Python"
 
-#: templates/index.jinja2:178
+#: templates/edit.jinja2:147 templates/index.jinja2:180
 msgid "sailing"
 msgstr "Парусный спорт"
 
-#: templates/index.jinja2:179
+#: templates/edit.jinja2:148 templates/index.jinja2:181
 msgid "sailing_desc"
 msgstr ""
 "Профессионально занимаюсь парусным спортом, гоняюсь в классах яхт Лазер 4.7, "
 "Лазер Радиал и Светлячок"
 
-#: templates/index.jinja2:182
+#: templates/edit.jinja2:151 templates/index.jinja2:184
 msgid "videography"
 msgstr "Видеография"
 
-#: templates/index.jinja2:183
+#: templates/edit.jinja2:152 templates/index.jinja2:185
 msgid "videography_desc"
 msgstr "Люблю монтировать видеоролики и сам снимаю с дрона"
 
-#: templates/index.jinja2:191
+#: templates/edit.jinja2:160 templates/index.jinja2:193
 msgid "programming_experience_header"
 msgstr "Опыт в программировании"
 
-#: templates/index.jinja2:192
+#: templates/edit.jinja2:161 templates/index.jinja2:194
 msgid "programming_experience_text"
 msgstr ""
 "<p>\n"
 "                    Python я изучал в <a href=\"https://academy.yandex.ru/"
 "lyceum\" target=\"_blank\">Яндекс Лицее</a>,\n"
-"                    где прошёл 2 курса (Основы программирования на языке Python "
-"и\n"
+"                    где прошёл 2 курса (Основы программирования на языке "
+"Python и\n"
 "                    Основы промышленного программирования).\n"
 "                    Больше всего опыта у меня в написании бэкенда для\n"
-"                    сайтов (Flask, SqlAlchemy) и создании ботов (для Telegram и "
-"VK). Я знаком с основами\n"
-"                    HTML, CSS, JS и могу написать фронтенд для сайта (версткой "
-"этого сайта я занимался сам).\n"
+"                    сайтов (Flask, SqlAlchemy) и создании ботов (для "
+"Telegram и VK). Я знаком с основами\n"
+"                    HTML, CSS, JS и могу написать фронтенд для сайта "
+"(версткой этого сайта я занимался сам).\n"
 "                    Свои проекты я размещаю на арендованном Linux сервере в "
 "Европе.\n"
 "                </p>\n"
 "                <p>\n"
 "                    Обычно я программирую один, но мне доводилось работать в "
 "команде во время моего обучения\n"
-"                    в Яндекс Лицее и на летней смене <a href=\"https://lksh.ru/"
-"\" target=\"_blank\">ЛКШ</a> Июль 2021\n"
-"                    в параллели P (параллель промышленного программирования).\n"
+"                    в Яндекс Лицее и на летней смене <a href=\"https://lksh."
+"ru/\" target=\"_blank\">ЛКШ</a> Июль 2021\n"
+"                    в параллели P (параллель промышленного "
+"программирования).\n"
 "                    Я умею работать с системой контроля версий Git и "
 "репозиториями на GitHub и\n"
 "                    Gitlab.\n"
@@ -186,71 +165,105 @@ msgstr ""
 "                <p>\n"
 "                    Мне постоянно приходят идеи новых проектов и улучшения "
 "старых. В своё свободное\n"
-"                    время я совершенствую свои навыки и изучаю новое, работая "
-"над реализацией своих идей.\n"
+"                    время я совершенствую свои навыки и изучаю новое, "
+"работая над реализацией своих идей.\n"
 "                </p>\n"
 "                <p>\n"
 "                    В 2021-2022 году изучал C++, C# и блокчейн в\n"
-"                    <a href=\"https://informatics.ru/\" target=\"_blank\">Школе "
-"программистов</a>.\n"
-"                    В конце 2022 года прошёл <a href=\"https://academy.yandex."
-"ru/intensive/bigdata\" target=\"_blank\">\n"
+"                    <a href=\"https://informatics.ru/\" "
+"target=\"_blank\">Школе программистов</a>.\n"
+"                    В конце 2022 года прошёл <a href=\"https://academy."
+"yandex.ru/intensive/bigdata\" target=\"_blank\">\n"
 "                    интенсив Академии Яндекса по большим данным</a>.\n"
 "                    В будущем хочу углубиться в тему машинного обучения и "
 "нейросетей.\n"
 "                </p>\n"
 "                <p>\n"
-"                    Я буду рад присоединиться к работе над совместным проектом, "
-"даже если для этого нужно будет\n"
+"                    Я буду рад присоединиться к работе над совместным "
+"проектом, даже если для этого нужно будет\n"
 "                    изучить много нового материала.\n"
 "                </p>"
 
-#: templates/index.jinja2:198
+#: templates/edit.jinja2:167 templates/index.jinja2:200
 msgid "projects"
 msgstr "Проекты"
 
-#: templates/index.jinja2:236 templates/index.jinja2:280
+#: templates/edit.jinja2:205 templates/edit.jinja2:249
+#: templates/index.jinja2:238 templates/index.jinja2:282
 msgid "source_code"
 msgstr "Исходный код"
 
-#: templates/index.jinja2:292
+#: templates/edit.jinja2:261 templates/index.jinja2:294
 msgid "all_projects"
 msgstr "Все проекты"
 
-#: templates/index.jinja2:302
+#: templates/edit.jinja2:271 templates/index.jinja2:312
 msgid "contacts"
 msgstr "Контакты"
 
-#: templates/index.jinja2:319
+#: templates/edit.jinja2:288 templates/index.jinja2:329
 msgid "tg_channel_desc"
 msgstr "Лайк, подписка"
 
-#: templates/index.jinja2:326
+#: templates/edit.jinja2:295 templates/index.jinja2:336
 msgid "tg_channel_btn"
 msgstr "Мой Telegram-канал"
 
-#: templates/index.jinja2:334
+#: templates/edit.jinja2:303 templates/index.jinja2:344
 msgid "footer_site_coded_with"
 msgstr "Сайт&nbsp;написан с"
 
-#: templates/index.jinja2:335
+#: templates/edit.jinja2:304 templates/index.jinja2:345
 msgid "footer_love"
 msgstr "любовью"
 
-#: templates/index.jinja2:336
+#: templates/edit.jinja2:305 templates/index.jinja2:346
 msgid "footer_by_me"
 msgstr "мной&nbsp;самим"
 
-#~ msgid "scroll_down"
-#~ msgstr "Листать дальше"
+#: templates/index.jinja2:80
+msgid "new_domain_lang"
+msgstr "Switch to English"
 
-#~ msgid "moscow"
-#~ msgstr "Москва"
+#: templates/index.jinja2:82
+msgid "new_domain_header"
+msgstr "Сайт переехал!"
 
-#~ msgid "sailing_info"
+#: templates/index.jinja2:83
+msgid "new_domain_text"
+msgstr ""
+"Вы были перенаправлены на новый домен. Если Вы использовали ссылку, "
+"оставленную мной, пожалуйста, сообщите об этом мне, воспользовавшись формой "
+"ниже, чтобы я успел исправить, пока старый домен еще доступен. Спасибо!"
+
+#: templates/index.jinja2:85
+msgid "new_domain_form_placeholder"
+msgstr "Опишите, как Вы попали на эту страницу"
+
+#: templates/index.jinja2:86
+msgid "new_domain_form_button"
+msgstr "Отправить"
+
+#: templates/index.jinja2:89
+msgid "new_domain_close_button"
+msgstr "Закрыть"
+
+#: templates/index.jinja2:304
+msgid "donate"
+msgstr "Донаты"
+
+#: templates/index.jinja2:305
+msgid "donate_description"
+msgstr ""
+"Поддержите разработку любого моего проекта, сделав пожертвование! <br />1.5%"
+"% вашего доната пойдёт на удаление CO<span class='fake-subscript'>₂</span> "
+"из атмосферы"
+
+#: templates/index.jinja2:306
+msgid "donate_button"
+msgstr "Пожертвовать через Stripe"
+
+#~ msgid "donate_text"
 #~ msgstr ""
-#~ "Профессионально занимаюсь парусным спортом,на данный момент гоняюсь в "
-#~ "классах яхт Лазер 4.7 и Лазер Радиал"
-
-#~ msgid "videoeditor_info"
-#~ msgstr "Люблю монтировать видеоролики и сам снимаю с дрона"
+#~ "Поддержите разработку любого моего проекта, сделав пожертвование! <br /"
+#~ ">1.5% вашего доната пойдёт на удаление CO из атмосферы"

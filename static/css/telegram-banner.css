@@ -42,11 +42,22 @@
     margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень по умолчанию */
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+    transition: all 0.3s ease; /* Плавный переход для всех свойств */
+}
+
+.telegram-channel-link:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Увеличенная тень при наведении */
+    transform: translateY(-2px); /* Легкий подъем кнопки */
+}
+
+.telegram-channel-link:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Возвращаем тень при нажатии */
+    transform: translateY(0); /* Возвращаем кнопку в исходное положение */
 }
 
 .telegram-channel-link img {
