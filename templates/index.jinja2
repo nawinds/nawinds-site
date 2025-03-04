@@ -224,7 +224,7 @@
                         <div class="right-column">
                             {% if "open_link" in project.keys() %}
                                 <a href="{{ project["open_link"]["url"] }}" class="btn"
-                                   onclick="projectLink(this, '{{ project["title"] }}', 0)" target="_blank">
+                                   onclick="projectLink(this, '{{ project["title"][0] }}', 0)" target="_blank">
                                     <img src="{{ url_for('static', filename='icons/arrow-up-right.svg') }}"
                                          alt="open website">
                                     {{ project["open_link"]["title"][LANG_NUM] }}
@@ -232,7 +232,7 @@
                             {% endif %}
                             {% if "source_link" in project.keys() %}
                                 <a href="{{ project["source_link"] }}" class="btn"
-                                   onclick="projectLink(this, '{{ project["title"] }}', 1)" target="_blank">
+                                   onclick="projectLink(this, '{{ project["title"][0] }}', 1)" target="_blank">
                                     <img src="{{ url_for('static', filename='icons/github-dark.svg') }}"
                                          alt="GitHub">
                                     {{ _('source_code') }}
@@ -268,7 +268,7 @@
                         <div class="right-column">
                             {% if "open_link" in project.keys() %}
                                 <a href="{{ project["open_link"]["url"] }}" class="btn"
-                                   onclick="projectLink(this, '{{ project["title"] }}', 0)" target="_blank">
+                                   onclick="projectLink(this, '{{ project["title"][0] }}', 0)" target="_blank">
                                     <img src="{{ url_for('static', filename='icons/arrow-up-right.svg') }}"
                                          alt="open website">
                                     {{ project["open_link"]["title"][LANG_NUM] }}
@@ -276,7 +276,7 @@
                             {% endif %}
                             {% if "source_link" in project.keys() %}
                                 <a href="{{ project["source_link"] }}" class="btn"
-                                   onclick="projectLink(this, '{{ project["title"] }}', 1)" target="_blank">
+                                   onclick="projectLink(this, '{{ project["title"][0] }}', 1)" target="_blank">
                                     <img src="{{ url_for('static', filename='icons/github-dark.svg') }}"
                                          alt="GitHub">
                                     {{ _('source_code') }}
@@ -303,7 +303,7 @@
         <div class="container">
             <h1>{{ _('donate') }}</h1>
             <p>{{ _('donate_description') }} <span class="fas fa-leaf"></span> </p>
-            <a href="https://donate.nawinds.dev/stripe" target="_blank">{{ _('donate_button') }}</a>
+            <a href="https://donate.nawinds.dev/stripe" onclick="socialClick('Stripe Donate')" target="_blank">{{ _('donate_button') }}</a>
         </div>
         <div class="black-line"></div>
     </div>
