@@ -15,6 +15,12 @@
 .project-block {
     margin-top: 20px;
     color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-block:hover {
+    transform: scale(1.005);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-block:last-child {
@@ -27,6 +33,11 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-color: #191919;
+    transition: background-color 0.3s ease;
+}
+
+.project-block:hover .project-header {
+    background-color: #222;
 }
 
 .project-header h2 {
@@ -91,6 +102,11 @@
     font-family: 'Calibri', sans-serif;
     font-size: 17px;
     font-weight: normal;
+    transition: background-color 0.3s ease;
+}
+
+.project-block:hover .project-details {
+    background-color: #333;
 }
 
 .btn {

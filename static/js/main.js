@@ -123,15 +123,26 @@ window.onload = function () {
     Array.prototype.forEach.call(version_hashtags, function (el) {
         const ghRepo = el.innerText;
 
-        let xmlHttpReq = new XMLHttpRequest();
-        xmlHttpReq.open("GET", "/api/v1/projects/get_version?github_repo=" + ghRepo, false);
-        xmlHttpReq.send(null);
-        if (xmlHttpReq.status === 200) {
-            el.innerText = xmlHttpReq.responseText;
-            el.style = "";
-        }
+        el.innerText = "Loading...";
+
+        fetch("/api/v1/projects/get_version?github_repo=" + ghRepo)
+            .then(response => {
+                if (response.ok) {
+                    return response.text();
+                } else {
+                    throw new Error("Failed to fetch version");
+                }
+            })
+            .then(version => {
+                el.innerText = version;
+                el.style = "";
+            })
+            .catch(error => {
+                console.error("Error fetching version:", error);
+                el.innerText = "Version unavailable";
+            });
     });
-}
+};
 
 // NEW DOMAIN
 
