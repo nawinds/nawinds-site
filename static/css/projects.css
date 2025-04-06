@@ -5,6 +5,27 @@
     text-align: left;
     color: white;
     background-color: rgb(10, 10, 10);
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.shadow-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 16px;
+    background: linear-gradient(to top, rgba(255, 230, 100, 0.3), transparent);
+    pointer-events: none;
+}
+
+.shadow-bottom-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: rgba(255, 230, 100, 0.1);
 }
 
 #projects h1 {

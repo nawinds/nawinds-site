@@ -46,6 +46,9 @@ def index():
     with open("projects.json", "r", encoding="UTF-8") as fcc_file:
         projects = json.load(fcc_file)
 
+    with open("resume.json", "r", encoding="UTF-8") as resume_file:
+        resume = json.load(resume_file)
+
     show_switch_lang_popup = (not request.cookies.get("lang", None) and g.lang_code !=
                               request.accept_languages.best_match(LANGUAGES)
                               ) or (request.cookies.get("lang", None) and g.lang_code !=
@@ -56,7 +59,8 @@ def index():
                            sail_images=sail_images, age=age, year=today.year,
                            linkedin=linkedin, github=github, telegram=telegram,
                            instagram=instagram, vk=vk, tg_channel=tg_channel,
-                           projects=projects, show_switch_lang_popup=show_switch_lang_popup,
+                           projects=projects, resume=resume,
+                           show_switch_lang_popup=show_switch_lang_popup,
                            show_new_domain_msg=show_new_domain_msg)
 
 

@@ -1,0 +1,352 @@
+{
+  "en": [
+    {
+      "title": "Education",
+      "timeline": [
+        {
+          "company": "ITMO University",
+          "title": "Bachelor of Science in Software Engineering, 1st year",
+          "years": "2024 – Present",
+          "location": "Saint-Petersburg, Russia",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                "Launched a website for university group resources, achieving <b>1.2k</b> monthly visits, and <b>100+</b> active users; managed the GitHub repository with 4 contributors and 300+ commits [m3104.nawinds.dev | g.nawinds.dev/04].",
+                "Built and deployed 3 Telegram bots addressing real student needs [g.nawinds.dev/d | g.nawinds.dev/q | g.nawinds.dev/a].",
+                "Implemented more than 4 C++ projects, such as a custom uint239_t type with byte-level operations, an argument parser, a CLI log analyser, and a sandpile model with BMP visualisation."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "Technological University Dublin",
+          "title": "Bachelor of Science (Honours) in Computer Science (International), 1st year.",
+          "years": "2023 – 2024",
+          "location": "Dublin, Ireland",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                "<b>Module final grades</b>: Mathematics: <b>97</b><sub>/100</sub> | Program Design: <b>96</b><sub>/100</sub> | Web Development: <b>94</b><sub>/100</sub>",
+                "<b>Achievements</b>: 2nd place in Zero Days CTF, “Best User Experience” award at Workday Hackathon with a posture monitoring app for developers.",
+                "Public Relations Officer, Computer Science society (Summer 2024)."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "“Kurchatovskaya School”",
+          "title": "",
+          "years": "2019 – 2023",
+          "location": "Moscow, Russia",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                "Graduated with <b>honours (5 / 5 for all subjects)</b>.",
+                "2021 – 2023: Physics and Technology class. Higher mathematics solving in C, C++; Algorithms in Python.",
+                "Produced real-time widgets for the school social media as an admin.",
+                "Winner of numerous city and national Olympiads in programming, mathematics, physics."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Work experience",
+      "timeline": [
+        {
+          "company": "Mohu",
+          "title": "Backend Developer",
+          "years": "2024",
+          "location": "Remote",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                "Rewrote key website modules using the Django REST framework, enhancing scalability and code readability.",
+                "Reduced page load time by 40% by optimising the website for use in distributed high-load systems."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "DataAnnotation",
+          "title": "Data Annotator (Freelance)",
+          "years": "2024",
+          "location": "Remote",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                "Conducted in-depth analysis of over 80 code-related LLMs responses (e.g. GPTs), generating actionablefeedback that directly influenced the enhancement of programming topic accuracy and relevance within a 2-week period.",
+                "Performed similar analyses continuously for 10 months, contributing to sustained improvements in\nprogramming accuracy."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "Legal Solutions, LLC",
+          "title": "Web developer",
+          "years": "2022",
+          "location": "Moscow, Russia",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                "Designed, coded, and deployed the whole mediation centre’s website within 3 days — погашениедолга.рф[g.nawinds.dev/dc]."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personal projects",
+      "timeline": [
+        {
+          "company": "Personal Website",
+          "title": "",
+          "years": "2022 – 2023",
+          "location": "",
+          "content": [
+            {
+              "type": "text",
+              "text": "Landing page in pure HTML, CSS, and JS, without any external libraries, supporting 2 languages [nawinds.dev | g.nawinds.dev/nw]."
+            }
+          ]
+        },
+        {
+          "company": "Inline stickers search bot",
+          "title": "",
+          "years": "2023",
+          "location": "",
+          "content": [
+            {
+              "type": "text",
+              "text": "Multilingual Telegram bot for any chat inline sticker search with 4.3k stickers added. Optimal personalised search, typos and keyboard layout fixes [t.me/SSrchBot | g.nawinds.dev/sb]."
+            }
+          ]
+        },
+        {
+          "company": "Private-Net.work Notes",
+          "title": "",
+          "years": "2021 – 2022",
+          "location": "",
+          "content": [
+            {
+              "type": "text",
+              "text": "Website for sharing private data by making one-time client-side encrypted notes with 8k notes created [private-net.work | g.nawinds.dev/pn]."
+            }
+          ]
+        },
+        {
+          "company": "Systemd services monitoring bot ",
+          "title": "",
+          "years": "2022",
+          "location": "",
+          "content": [
+            {
+              "type": "text",
+              "text": " Bot for monitoring and management of systemd services on the Linux\nserver via Telegram [g.nawinds.dev/ss]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Volunteering",
+      "timeline": [
+        {
+          "company": "UCI Cyclo-cross World Cup",
+          "title": "",
+          "years": "2023",
+          "location": "Dublin, Ireland",
+          "content": [
+            {
+              "type": "text",
+              "text": "Ensured coordination at a crossing point during a high-profile event, showcasing teamwork and reliability."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ru": [
+    {
+      "title": "Education",
+      "timeline": [
+        {
+          "company": "ITMO University",
+          "title": "Bachelor of Science in Software Engineering, 1st year",
+          "years": "2024 – Present",
+          "location": "Saint-Petersburg, Russia",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                "Launched a website for university group resources, achieving <b>1.2k</b> monthly visits, and <b>100+</b> active users; managed the GitHub repository with 4 contributors and 300+ commits [m3104.nawinds.dev | g.nawinds.dev/04].",
+                "Built and deployed 3 Telegram bots addressing real student needs [g.nawinds.dev/d | g.nawinds.dev/q | g.nawinds.dev/a].",
+                "Implemented more than 4 C++ projects, such as a custom uint239_t type with byte-level operations, an argument parser, a CLI log analyser, and a sandpile model with BMP visualisation."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "Technological University Dublin",
+          "title": "Bachelor of Science (Honours) in Computer Science (International), 1st year.",
+          "years": "2023 – 2024",
+          "location": "Dublin, Ireland",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                "<b>Module final grades</b>: Mathematics: <b>97</b><sub>/100</sub> | Program Design: <b>96</b><sub>/100</sub> | Web Development: <b>94</b><sub>/100</sub>",
+                "<b>Achievements</b>: 2nd place in Zero Days CTF, “Best User Experience” award at Workday Hackathon with a posture monitoring app for developers.",
+                "Public Relations Officer, Computer Science society (Summer 2024)."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "“Kurchatovskaya School”",
+          "title": "",
+          "years": "2019 – 2023",
+          "location": "Moscow, Russia",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                "Graduated with <b>honours (5 / 5 for all subjects)</b>.",
+                "2021 – 2023: Physics and Technology class. Higher mathematics solving in C, C++; Algorithms in Python.",
+                "Produced real-time widgets for the school social media as an admin.",
+                "Winner of numerous city and national Olympiads in programming, mathematics, physics."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Work experience",
+      "timeline": [
+        {
+          "company": "Mohu",
+          "title": "Backend Developer",
+          "years": "2024",
+          "location": "Remote",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                "Rewrote key website modules using the Django REST framework, enhancing scalability and code readability.",
+                "Reduced page load time by 40% by optimising the website for use in distributed high-load systems."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "DataAnnotation",
+          "title": "Data Annotator (Freelance)",
+          "years": "2024",
+          "location": "Remote",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                "Conducted in-depth analysis of over 80 code-related LLMs responses (e.g. GPTs), generating actionablefeedback that directly influenced the enhancement of programming topic accuracy and relevance within a 2-week period.",
+                "Performed similar analyses continuously for 10 months, contributing to sustained improvements in\nprogramming accuracy."
+              ]
+            }
+          ]
+        },
+        {
+          "company": "Legal Solutions, LLC",
+          "title": "Web developer",
+          "years": "2022",
+          "location": "Moscow, Russia",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                "Designed, coded, and deployed the whole mediation centre’s website within 3 days — погашениедолга.рф[g.nawinds.dev/dc]."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personal projects",
+      "timeline": [
+        {
+          "company": "Personal Website",
+          "title": "",
+          "years": "2022 – 2023",
+          "location": "",
+          "content": [
+            {
+              "type": "text",
+              "text": "Landing page in pure HTML, CSS, and JS, without any external libraries, supporting 2 languages [nawinds.dev | g.nawinds.dev/nw]."
+            }
+          ]
+        },
+        {
+          "company": "Inline stickers search bot",
+          "title": "",
+          "years": "2023",
+          "location": "",
+          "content": [
+            {
+              "type": "text",
+              "text": "Multilingual Telegram bot for any chat inline sticker search with 4.3k stickers added. Optimal personalised search, typos and keyboard layout fixes [t.me/SSrchBot | g.nawinds.dev/sb]."
+            }
+          ]
+        },
+        {
+          "company": "Private-Net.work Notes",
+          "title": "",
+          "years": "2021 – 2022",
+          "location": "",
+          "content": [
+            {
+              "type": "text",
+              "text": "Website for sharing private data by making one-time client-side encrypted notes with 8k notes created [private-net.work | g.nawinds.dev/pn]."
+            }
+          ]
+        },
+        {
+          "company": "Systemd services monitoring bot ",
+          "title": "",
+          "years": "2022",
+          "location": "",
+          "content": [
+            {
+              "type": "text",
+              "text": " Bot for monitoring and management of systemd services on the Linux\nserver via Telegram [g.nawinds.dev/ss]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Volunteering",
+      "timeline": [
+        {
+          "company": "UCI Cyclo-cross World Cup",
+          "title": "",
+          "years": "2023",
+          "location": "Dublin, Ireland",
+          "content": [
+            {
+              "type": "text",
+              "text": "Ensured coordination at a crossing point during a high-profile event, showcasing teamwork and reliability."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
