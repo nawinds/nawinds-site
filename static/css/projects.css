@@ -12,6 +12,14 @@
     font-family: 'Trebuchet MS', sans-serif;
 }
 
+#projects p a, #projects ul a {
+    color: #8ec4ff;
+}
+
+#projects ul {
+    margin-bottom: 0;
+}
+
 .project-block {
     margin-top: 20px;
     color: #fff;
