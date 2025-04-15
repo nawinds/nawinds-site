@@ -123,17 +123,85 @@
     order: 5;
 }
 
-.timeline-content ul {
-    padding-left: 20px;
+.timeline-content, .timeline-project-content ul {
     margin: 0;
 }
 
-.timeline-content li {
+.timeline-content, .timeline-project-content li {
     margin-bottom: 5px;
 }
 
-.timeline-content p {
+.timeline-content, .timeline-project-content p {
     margin: 0;
+}
+
+.timeline-project {
+    width: 25%;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #c1c1c1;
+    order: 1;
+    margin-bottom: 3px;
+}
+
+.timeline-project-content {
+    width: 70%;
+    margin-left: 0;
+    order: 2;
+}
+
+.timeline-project-content-inner {
+    background: #252525;
+    color: #c6c6c6;
+    line-height: 1.4rem;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.cv-website {
+    color: #fff537;
+    opacity: 0.9;
+    white-space: nowrap;
+}
+
+.cv-website a {
+    color: #fff537;
+    opacity: 0.9;
+    text-decoration: none;
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+
+.cv-website a:hover {
+    text-decoration: underline;
+}
+
+.cv-website-vert-ln {
+    margin: 0 3px;
+    display: inline-block;
+    height: 11px;
+    width: 1px;
+    background: #ffffff;
+    opacity: 0.6;
+}
+
+.cv-website a img {
+    height: 8px;
+    margin-inline-end: 4px;
+    vertical-align: middle;
+}
+
+.cv-section-textblock {
+    color: #c6c6c6;
+    line-height: 1.4rem;
+}
+
+.cv-section-textblock ul {
+    padding-left: 10px;
+}
+
+.cv-section-textblock li {
+    margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {

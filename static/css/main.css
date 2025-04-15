@@ -10,13 +10,8 @@
 @import "contacts.css";
 @import "telegram-banner.css";
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0;
-    overflow: overlay;
 }
 
 body::-webkit-scrollbar {

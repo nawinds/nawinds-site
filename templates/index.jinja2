@@ -298,10 +298,11 @@
     </div>
     <div id="cv">
         <div class="container">
-            <h1>Резюме</h1>
+            <h1>CV</h1>
             {% for resume_section in resume[_('lang_code')] %}
             <div class="resume-section">
                 <h2 class="section-title">{{ resume_section["title"] }}</h2>
+                {% if resume_section["timeline"] %}
                 <div class="timeline">
                     {% for timeline_item in resume_section["timeline"] %}
                     <div class="timeline-item">
@@ -324,7 +325,15 @@
                         {% if content_item["type"] == "ul" %}
                             <ul>
                             {% for ul_item in content_item["items"] %}
-                                <li>{{ ul_item }}</li>
+                                <li>
+                                    {{ ul_item["text"] }}
+                                    <span class="cv-website">
+                                    {% for link in ul_item["links"] %}
+                                        <a href="{{ link["url"] }}" target="_blank"><img src="/static/icons/arrow-up-right.svg" alt="open website">{{ link["title"] }}</a>
+                                        {% if not loop.last %}<span class="cv-website-vert-ln"></span>{% endif %}
+                                    {% endfor %}
+                                    </span>
+                                </li>
                             {% endfor %}
                             </ul>
                         {% else %}
@@ -335,8 +344,51 @@
                     </div>
                     {% endfor %}
                 </div>
+                {% elif resume_section["projects-timeline"] %}
+                <div class="timeline">
+                    {% for timeline_item in resume_section["projects-timeline"] %}
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <div class="timeline-project">{{ timeline_item["title"] }}</div>
+                            <div class="timeline-project-content">
+                            <div class="timeline-project-content-inner">
+                                {{ timeline_item["content"] }}
+                                <span class="cv-website">
+                                {% for link in timeline_item["links"] %}
+                                    <a href="{{ link["url"] }}" target="_blank"><img src="/static/icons/arrow-up-right.svg" alt="open website">{{ link["title"] }}</a>
+                                    {% if not loop.last %}<span class="cv-website-vert-ln"></span>{% endif %}
+                                {% endfor %}
+                                </span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% elif resume_section["textblock"] %}
+                <div class="timeline">
+                    <div class="cv-section-textblock">
+                        {% if resume_section["textblock"]["type"] == "ul" %}
+                        <ul>
+                            {% for ul_item in resume_section["textblock"]["items"] %}
+                            <li>
+                                {{ ul_item["text"] }}
+                                <span class="cv-website">
+                                {% for link in ul_item["links"] %}
+                                    <a href="{{ link["url"] }}" target="_blank"><img src="/static/icons/arrow-up-right.svg" alt="open website">{{ link["title"] }}</a>
+                                    {% if not loop.last %}<span class="cv-website-vert-ln"></span>{% endif %}
+                                {% endfor %}
+                                </span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
             </div>
-            {% endfor %}
+        {% endfor %}
         </div>
     </div>
     <div id="donate">

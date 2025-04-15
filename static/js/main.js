@@ -1,3 +1,8 @@
+window.addEventListener('load', () => {
+    document.style.scrollBehavior = 'smooth';
+});
+
+
 const ENGLISH = document.getElementsByTagNameNS("http://www.w3.org/1999/xhtml",
     "html")[0].getAttribute("lang") === "en";
 
