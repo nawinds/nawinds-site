@@ -2,9 +2,10 @@ import os
 
 import requests
 from flask import Flask, render_template, send_file, request, g, redirect, url_for
-from flask_babel import Babel, _
+from flask_babel import Babel
 
 from blueprints.multilingual import multilingual, LANGUAGES
+from translations import tr
 
 TG_BOT_TOKEN = os.getenv("TOKEN")
 TG_CHAT_ID = os.getenv("CHAT")
@@ -14,7 +15,6 @@ app = Flask(__name__)
 app.register_blueprint(multilingual)
 
 babel = Babel(app)
-
 
 def get_locale():
     if g.get('lang_code', None) not in LANGUAGES:
@@ -28,8 +28,16 @@ def get_locale():
             g.lang_code = request.cookies.get('lang')
     return g.lang_code
 
+babel.init_app(
+    app,
+    locale_selector=get_locale,
+    default_locale="ru",
+    default_domain="messages",
+    default_translation_directories="translations",
+)
 
-babel.init_app(app, locale_selector=get_locale)
+app.jinja_env.globals["tr"] = tr
+app.jinja_env.globals["_"] = tr
 
 
 @app.route('/')
