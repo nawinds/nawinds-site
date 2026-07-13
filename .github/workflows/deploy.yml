@@ -18,15 +18,19 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+          ssh-keyscan -p "${{ secrets.SSH_PORT }}" -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
       - name: Deploy Files using Rsync
         run: |
-          rsync -avz --exclude='.git' -e "ssh" $GITHUB_WORKSPACE/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.PROJECT_PATH }}
+          rsync -avz \
+            --exclude='.git' \
+            -e "ssh -p ${{ secrets.SSH_PORT }}" \
+            "$GITHUB_WORKSPACE/" \
+            "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.PROJECT_PATH }}"
 
       - name: Restart systemd service
         run: |
-          ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "sudo systemctl restart ${{ secrets.SERVICE_NAME }}"
+          ssh -p "${{ secrets.SSH_PORT }}" ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "sudo systemctl restart ${{ secrets.SERVICE_NAME }}"
 
   check_running_state:
     runs-on: ubuntu-latest
@@ -41,11 +45,15 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+          ssh-keyscan -p "${{ secrets.SSH_PORT }}" -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
       - name: Check if Service is Active
         run: |
-          service_status=$(ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "sudo systemctl is-active ${{ secrets.SERVICE_NAME }}")
+          service_status=$(ssh \
+            -p "${{ secrets.SSH_PORT }}" \
+            "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}" \
+            "sudo systemctl is-active '${{ secrets.SERVICE_NAME }}'")
+          
           if [[ "$service_status" != "active" ]]; then
             echo "Service <service-name> is not running or failed."
             exit 1
