@@ -1,8 +1,122 @@
 [
   {
     "title": [
-      "M3104 useful links website",
-      "Сайт полезных ссылок M3104"
+      "ParkTrack — map of available parking spaces",
+      "ParkTrack — карта свободных городских парковок"
+    ],
+    "hashtags": [
+      {
+        "color": "yellow",
+        "text": [
+          "#Active",
+          "#Активный"
+        ]
+      },
+      {
+        "color": "blue",
+        "text": [
+          "#Team_project",
+          "#Командный_проект"
+        ]
+      },
+      {
+        "color": "orange",
+        "text": [
+          "#Computer_Vision",
+          "#Компьютерное_зрение"
+        ]
+      },
+      {
+        "color": "azure",
+        "text": [
+          "#Machine_Learning",
+          "#Машинное_обучение"
+        ]
+      }
+    ],
+    "source_link": "https://github.com/ParkTrack-Project",
+    "github_repo": "ParkTrack-Project/api-server",
+    "open_link": {
+      "url": "https://parktrack.live",
+      "title": [
+        "Open website",
+        "Открыть сайт"
+      ]
+    },
+    "description": [
+      [
+        "<p>ParkTrack is a map of available parking spaces powered by computer vision, real-time occupancy data and machine learning.</p>",
+        "<p>The system detects vehicles on city camera feeds, shows current parking availability, forecasts occupancy and helps drivers choose and navigate to a suitable parking area.</p>",
+        "<p>I lead an engineering team of eight people and work on system architecture, backend development, service integration, CI/CD, monitoring and technical documentation. I also trained the computer vision model used to detect occupied parking spaces.</p>",
+        "<ul><li>FastAPI backend and PostgreSQL database</li><li>Interactive web map and Android application</li><li>Partner administration panel</li><li>Vehicle detection and parking occupancy analysis</li><li>ML-based occupancy forecasting</li><li><a href='https://docs.parktrack.live' target='_blank'>Public documentation</a></li></ul>"
+      ],
+      [
+        "<p>ParkTrack — карта свободных городских парковок, использующая компьютерное зрение, данные о занятости в реальном времени и машинное обучение.</p>",
+        "<p>Система обнаруживает автомобили на городских камерах, показывает текущую доступность парковочных мест, прогнозирует занятость и помогает водителю выбрать подходящую парковку и построить до неё маршрут.</p>",
+        "<p>Я руковожу инженерной командой из восьми человек и работаю над архитектурой системы, бэкендом, интеграцией сервисов, CI/CD, мониторингом и технической документацией. Также я обучил модель компьютерного зрения для определения занятых парковочных мест.</p>",
+        "<ul><li>Бэкенд на FastAPI и база данных PostgreSQL</li><li>Интерактивная веб-карта и Android-приложение</li><li>Панель управления для партнёров</li><li>Обнаружение автомобилей и анализ занятости парковок</li><li>ML-прогнозирование занятости</li><li><a href='https://docs.parktrack.live' target='_blank'>Публичная документация</a></li></ul>"
+      ]
+    ]
+  },
+  {
+    "title": [
+      "PO Editor for JetBrains IDEs",
+      "Редактор PO-файлов для JetBrains IDE"
+    ],
+    "hashtags": [
+      {
+        "color": "yellow",
+        "text": [
+          "#Active",
+          "#Активный"
+        ]
+      },
+      {
+        "color": "green",
+        "text": [
+          "#Open_Source",
+          "#Открытый_код"
+        ]
+      },
+      {
+        "color": "blue",
+        "text": [
+          "#For_programmers",
+          "#Для_программистов"
+        ]
+      },
+      {
+        "color": "orange",
+        "text": [
+          "#Multilingual",
+          "#Мультиязычный"
+        ]
+      }
+    ],
+    "source_link": "https://github.com/nawinds/poeditor",
+    "github_repo": "nawinds/poeditor",
+    "open_link": {
+      "url": "https://plugins.jetbrains.com/plugin/32877-po-editor",
+      "title": [
+        "Open in Marketplace",
+        "Открыть в Marketplace"
+      ]
+    },
+    "description": [
+      [
+        "<p>An open-source JetBrains IDE plugin for editing GNU gettext <code>.po</code> translations and <code>.pot</code> templates in a table.</p>",
+        "<ul><li>Create and edit PO/POT files directly in the IDE</li><li>Scan project source code for translation keys</li><li>Synchronize translations with templates without overwriting existing values</li><li>Validate syntax and compile PO files into MO</li><li>Highlight untranslated, fuzzy, completed and removed entries</li></ul>"
+      ],
+      [
+        "<p>Open-source плагин для JetBrains IDE, позволяющий редактировать переводы GNU gettext в файлах <code>.po</code> и шаблоны <code>.pot</code> в виде таблицы.</p>",
+        "<ul><li>Создание и редактирование PO/POT прямо в IDE</li><li>Сканирование исходного кода для поиска ключей перевода</li><li>Синхронизация переводов с шаблонами без перезаписи существующих значений</li><li>Проверка синтаксиса и компиляция PO в MO</li><li>Подсветка непереведённых, fuzzy, завершённых и удалённых записей</li></ul>"
+      ]
+    ]
+  },
+  {
+    "title": [
+      "ITMO Links Platform",
+      "Платформа учебных материалов ИТМО"
     ],
     "hashtags": [
       {
@@ -27,10 +141,10 @@
         ]
       }
     ],
-    "source_link": "https://github.com/nawinds/m3104-links",
-    "github_repo": "nawinds/m3104-links",
+    "source_link": "https://github.com/nawinds/m3204-links",
+    "github_repo": "nawinds/m3204-links",
     "open_link": {
-      "url": "https://m3104.nawinds.dev",
+      "url": "https://m3204.nawinds.dev",
       "title": [
         "Open website",
         "Открыть сайт"
@@ -38,103 +152,14 @@
     },
     "description": [
       [
-        "<p>Useful links website for M3104 group @ ITMO University. ",
-        "Created based on the Docusaurus project.</p>",
-        "<p>Used by 25-35 users weekly, starting from September 2024, ",
-        "including my fellow students from the M3104 group at ITMO University where I currently study.</p>",
-        "<p>In the 2 semester, on my initiative and agreement with the class reps, similar websites were launched for the university groups ",
-        "<a href='https://m3100.nawinds.dev' target='_blank'>M3100</a>, <a href='https://m3101.nawinds.dev' target='_blank'>M3101</a>, and ",
-        "<a href='https://m3102.nawinds.dev' target='_blank'>M3102</a>, that is, almost the whole course (about 100 people in total).</p>",
-        "<p>The website provides a quick access to the useful study resources, such as grades, ",
-        "grading system, labs, homework, lecture recordings, etc. There is an archive with links from past semesters as well. </p>",
-        "<ul><li><a href='https://github.com/nawinds/m3104-links#блок-дедлайнов--deadlines-block' target='_blank'>Relevant deadlines with dynamic timer and easy adding to Google Calendar</a></li>",
-        "<li><a href='https://github.com/nawinds/m3104-links#удобное-редактирование-контента-в-markdown--easy-editing-in-markdown' target='_blank'>Fast website editing using Markdown language (via GitHub)</a></li>",
-        "<li><a href='https://github.com/nawinds/m3104-links#горячие-клавиши--shortcuts' target='_blank'>Quick hotkeys navigation</a></li>",
-        "<li><a href='https://github.com/nawinds/m3104-links#веб-приложение--pwa-web-app' target='_blank'>PWA support (Web apps, that are installed on the device by browser)</a></li>",
-        "<li><a href='https://github.com/nawinds/m3104-links#светлая-и-темная-тема--light--dark-color-theme' target='_blank'>Light and dark theme</a></li></ul>",
-        "<p>The website is continuously enhanced to address user needs and to achieve the ideal user experience. ",
-        "The copies of the website for other groups combine both general edits, available in all of those copies, ",
-        "and personalized features, based on the preferences of these groups. </p>",
-        "<p>On April 5, <a href='https://github.com/nawinds/m3104-links#ab-тестирование--ab-test' target='_blank'>the first A/B testing was launched</a> ",
-        "on the <a href='https://m3104.nawinds.dev' target='_blank'>m3104.nawinds.dev</a> website.</p>"
+        "<p>A Docusaurus-based platform for study materials, deadlines, lecture recordings, grades and other university resources.</p>",
+        "<p>The project grew from one ITMO group website into four websites used by more than 100 students and reaching over 1,200 monthly visits.</p>",
+        "<ul><li>Dynamic deadlines and Google Calendar integration</li><li>Collaborative Markdown editing through GitHub</li><li>Semester archive and grades pages</li><li>Keyboard shortcuts, PWA and light/dark themes</li><li>Automated deployment with GitHub Actions</li></ul>"
       ],
       [
-        "<p>Сайт полезных ссылок группы M3104 Университета ИТМО. ",
-        "Создан на базе проекта Docusaurus.</p>",
-        "<p>Активно используется 25-35 пользователями еженедельно, начиная с сентября 2024, ",
-        "в частности, моими одногруппниками из M3104 Университета ИТМО, в которой я сам состою.</p>",
-        "<p>Во 2 семестре по моей инициативе и договоренности со старостами такие же сайты появились также у групп ",
-        "<a href='https://m3100.nawinds.dev' target='_blank'>M3100</a>, <a href='https://m3101.nawinds.dev' target='_blank'>M3101</a>, и ",
-        "<a href='https://m3102.nawinds.dev' target='_blank'>M3102</a>, то есть почти у всего 1 потока (всего около 100 человек).</p>",
-        "<p>Сайт позволяет получить быстрый доступ к полезным ресурсам по всем предметам, таким как оценки, ",
-        "правила оценивания, лабораторные, домашки, записи лекций и т.д. Есть архив со ссылками прошлых семестров. </p>",
-        "<ul><li><a href='https://github.com/nawinds/m3104-links#блок-дедлайнов--deadlines-block' target='_blank'>Актуальные дедлайны с динамическим таймером и возможность их добавления в Google Календарь</a></li>",
-        "<li><a href='https://github.com/nawinds/m3104-links#удобное-редактирование-контента-в-markdown--easy-editing-in-markdown' target='_blank'>Простое редактирование информации на сайте в Markdown на GitHub</a></li>",
-        "<li><a href='https://github.com/nawinds/m3104-links#горячие-клавиши--shortcuts' target='_blank'>Быстрая навигация с помощью горячих клавиш</a></li>",
-        "<li><a href='https://github.com/nawinds/m3104-links#веб-приложение--pwa-web-app' target='_blank'>Поддержка PWA (веб-приложений, устанавливаемых на устройство через браузер)</a></li>",
-        "<li><a href='https://github.com/nawinds/m3104-links#светлая-и-темная-тема--light--dark-color-theme' target='_blank'>Светлая и темная тема</a></li></ul>",
-        "<p>Сайт постоянно улучшается для обеспечения максимального удобства в использовании и для удовлетворения ",
-        "потребностей пользователей. Копии сайта для других групп сочетают в себе как общие правки, ",
-        "доступные на всех копиях, так и персонализированные изменения, основанные на предпочтениях этих групп. </p>",
-        "<p>5 апреля на сайте <a href='https://m3104.nawinds.dev' target='_blank'>m3104.nawinds.dev</a> было ",
-        "<a href='https://github.com/nawinds/m3104-links#ab-тестирование--ab-test' target='_blank'>запущено первое A/B тестирование</a>.</p>"
-      ]
-    ]
-  },
-  {
-    "title": [
-      "Telegram bot for inline stickers search",
-      "Telegram бот для inline-поиска стикеров"
-    ],
-    "hashtags": [
-      {
-        "color": "yellow",
-        "text": [
-          "#Active",
-          "#Активный"
-        ]
-      },
-      {
-        "color": "green",
-        "text": [
-          "#Completed",
-          "#Завершённый"
-        ]
-      },
-      {
-        "color": "orange",
-        "text": [
-          "#Multilingual",
-          "#Мультиязычный"
-        ]
-      }
-    ],
-    "open_link": {
-      "url": "https://t.me/SSrchBot",
-      "title": [
-        "Open bot",
-        "Открыть бот"
-      ]
-    },
-    "source_link": "https://github.com/nawinds/inline-stickers-search-bot",
-    "github_repo": "nawinds/inline-stickers-search-bot",
-    "description": [
-      [
-        "<p>Bot for stickers search in inline mode. Search is based on the stickers' descriptions ",
-        "provided by the users.</p>",
-        "<ul><li>The search engine automatically fixes the typos and keyboard layout (English and Russian is ",
-        "supported only)</li><li>Stickers' descriptions are united in separate sets of stickers. These sets",
-        " can be shared with other users</li>",
-        "<li>In the following versions a feature of favourite stickers will be added (in case of empty query)</li></ul>"
-      ],
-      [
-        "<p>Бот для поиска стикеров в инлайн-режиме. Описания всем стикерам пользователи задают сами ",
-        "и поиск осуществляется по этим описаниям.</p>",
-        "<ul><li>При поиске могут быть исправлены раскладка клавиатуры и опечатки</li>",
-        "<li>Описания к стикерам объединяются в отдельные множества стикеров. Этими множествами ",
-        "можно делиться с другими пользователями</li>",
-        "<li>В последующих версиях будет добавлена функция избранных стикеров (при пустом поисковом ",
-        "запросе)</li></ul>"
+        "<p>Платформа на базе Docusaurus для учебных материалов, дедлайнов, записей лекций, оценок и других университетских ресурсов.</p>",
+        "<p>Проект вырос из сайта одной группы ИТМО в четыре сайта, которыми пользуются более 100 студентов и которые получают свыше 1 200 посещений в месяц.</p>",
+        "<ul><li>Динамические дедлайны и интеграция с Google Календарём</li><li>Совместное редактирование Markdown через GitHub</li><li>Архив семестров и страницы ведомостей</li><li>Горячие клавиши, PWA, светлая и тёмная темы</li><li>Автоматическое развёртывание через GitHub Actions</li></ul>"
       ]
     ]
   },
@@ -202,6 +227,49 @@
   },
   {
     "title": [
+      "Distributed calculator in Go",
+      "Распределённый калькулятор на Go"
+    ],
+    "hashtags": [
+      {
+        "color": "green",
+        "text": [
+          "#Completed",
+          "#Завершённый"
+        ]
+      },
+      {
+        "color": "blue",
+        "text": [
+          "#Backend",
+          "#Бэкенд"
+        ]
+      },
+      {
+        "color": "azure",
+        "text": [
+          "#Educational",
+          "#Учебный"
+        ]
+      }
+    ],
+    "source_link": "https://github.com/nawinds/distributed_calculator_golang",
+    "github_repo": "nawinds/distributed_calculator_golang",
+    "description": [
+      [
+        "<p>A distributed arithmetic expression calculator written in Go for the Yandex Academy Programming in Go course.</p>",
+        "<p>The HTTP API accepts expressions, converts them into postfix notation and divides independent operations into tasks executed in parallel by worker goroutines.</p>",
+        "<ul><li>Expression and task queues</li><li>REST-style API for submitting expressions and checking results</li><li>Parallel calculations with configurable workers</li><li>Configurable execution time for arithmetic operations</li></ul>"
+      ],
+      [
+        "<p>Распределённый вычислитель арифметических выражений на Go, созданный на курсе Яндекс Лицея по разработке на Go.</p>",
+        "<p>HTTP API принимает выражения, преобразует их в постфиксную запись и разделяет независимые операции на задачи, которые параллельно выполняются горутинами-воркерами.</p>",
+        "<ul><li>Очереди выражений и задач</li><li>REST-подобный API для отправки выражений и получения результатов</li><li>Параллельные вычисления с настраиваемым числом воркеров</li><li>Настраиваемое время выполнения арифметических операций</li></ul>"
+      ]
+    ]
+  },
+  {
+    "title": [
       "Nawinds.dev website",
       "Сайт nawinds.dev"
     ],
@@ -240,6 +308,63 @@
         "<p>Этот сайт :)</p>",
         "<p>Бэкенд написан на Python с использованием фреймворка Flask, а фронтенд ",
         "написан вручную без использования каких-либо библиотек.</p>"
+      ]
+    ]
+  },
+  {
+    "title": [
+      "Telegram bot for inline stickers search",
+      "Telegram бот для inline-поиска стикеров"
+    ],
+    "hashtags": [
+      {
+        "color": "yellow",
+        "text": [
+          "#Active",
+          "#Активный"
+        ]
+      },
+      {
+        "color": "green",
+        "text": [
+          "#Completed",
+          "#Завершённый"
+        ]
+      },
+      {
+        "color": "orange",
+        "text": [
+          "#Multilingual",
+          "#Мультиязычный"
+        ]
+      }
+    ],
+    "open_link": {
+      "url": "https://t.me/SSrchBot",
+      "title": [
+        "Open bot",
+        "Открыть бот"
+      ]
+    },
+    "source_link": "https://github.com/nawinds/inline-stickers-search-bot",
+    "github_repo": "nawinds/inline-stickers-search-bot",
+    "description": [
+      [
+        "<p>Bot for stickers search in inline mode. Search is based on the stickers' descriptions ",
+        "provided by the users.</p>",
+        "<ul><li>The search engine automatically fixes the typos and keyboard layout (English and Russian is ",
+        "supported only)</li><li>Stickers' descriptions are united in separate sets of stickers. These sets",
+        " can be shared with other users</li>",
+        "<li>In the following versions a feature of favourite stickers will be added (in case of empty query)</li></ul>"
+      ],
+      [
+        "<p>Бот для поиска стикеров в инлайн-режиме. Описания всем стикерам пользователи задают сами ",
+        "и поиск осуществляется по этим описаниям.</p>",
+        "<ul><li>При поиске могут быть исправлены раскладка клавиатуры и опечатки</li>",
+        "<li>Описания к стикерам объединяются в отдельные множества стикеров. Этими множествами ",
+        "можно делиться с другими пользователями</li>",
+        "<li>В последующих версиях будет добавлена функция избранных стикеров (при пустом поисковом ",
+        "запросе)</li></ul>"
       ]
     ]
   },
