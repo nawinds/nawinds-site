@@ -5,102 +5,56 @@
       "timeline": [
         {
           "company": "ITMO University",
-          "title": "Bachelor of Science in Software Engineering, 1st year",
+          "title": "Software Engineering",
           "years": "2024 – Present",
-          "location": "Saint-Petersburg, Russia",
-          "content": [
-            {
-              "type": "ul",
-              "items": [
-                {
-                  "text": "Launched a website for university group resources, achieving <b>1.2k</b> monthly visits, and <b>100+</b> active users; managed the GitHub repository with 4 contributors and 300+ commits.",
-                  "links": [
-                    {
-                      "title": "m3104.nawinds.dev",
-                      "url": "https://m3104.nawinds.dev"
-                    },
-                    {
-                      "title": "Code",
-                      "url": "https://github.com/nawinds/m3104-links"
-                    }
-                  ]
-                },
-                {
-                  "text": "Built and deployed 3 Telegram bots addressing real student needs.",
-                  "links": [
-                    {
-                      "title": "Deadline bot",
-                      "url": "https://github.com/nawinds/deadline_bot"
-                    },
-                    {
-                      "title": "Queue bot",
-                      "url": "https://github.com/nawinds/queue_bot"
-                    },
-                    {
-                      "title": "Attendance bot",
-                      "url": "https://github.com/nawinds/attendance_bot"
-                    }
-                  ]
-                },
-                {
-                  "text": "Implemented more than 4 C++ projects, such as a custom uint239_t type with byte-level operations, an argument parser, a CLI log analyser, and a sandpile model with BMP visualisation."
-                }
-              ]
-            }
-          ]
+          "location": "Saint Petersburg, Russia",
+          "content": []
+        },
+        {
+          "company": "Beijing Institute of Technology",
+          "title": "Hands-on Learning for Emerging Technologies in Electronics Engineering",
+          "years": "2024",
+          "location": "Beijing, China",
+          "content": []
         },
         {
           "company": "Technological University Dublin",
-          "title": "Bachelor of Science (Honours) in Computer Science (International), 1st year.",
+          "title": "Bachelor of Science (Honours) in Computer Science (International)",
           "years": "2023 – 2024",
           "location": "Dublin, Ireland",
-          "content": [
-            {
-              "type": "ul",
-              "items": [
-                {
-                  "text": "<b>Module final grades</b>: Mathematics: <b>97</b><sub>/100</sub> | Program Design: <b>96</b><sub>/100</sub> | Web Development: <b>94</b><sub>/100</sub>"
-                },
-                {
-                  "text": "<b>Achievements</b>: 2nd place in Zero Days CTF, “Best User Experience” award at Workday Hackathon with a posture monitoring app for developers."
-                },
-                {
-                  "text": "Public Relations Officer, Computer Science society (Summer 2024)."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "company": "“Kurchatovskaya School”",
-          "title": "",
-          "years": "2019 – 2023",
-          "location": "Moscow, Russia",
-          "content": [
-            {
-              "type": "ul",
-              "items": [
-                {
-                  "text": "Graduated with <b>honours (5 / 5 for all subjects)</b>."
-                },
-                {
-                  "text": "2021 – 2023: Physics and Technology class. Higher mathematics solving in C, C++; Algorithms in Python."
-                },
-                {
-                  "text": "Produced real-time widgets for the school social media as an admin."
-                },
-                {
-                  "text": "Winner of numerous city and national Olympiads in programming, mathematics, physics."
-                }
-              ]
-            }
-          ]
+          "content": []
         }
       ]
     },
     {
       "title": "Work Experience",
       "timeline": [
+        {
+          "company": "ParkTrack — map of available parking spaces",
+          "title": "Engineering Lead",
+          "years": "2026",
+          "location": "",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
+                {
+                  "text": "Led a team of eight from product idea to project pitch; personally trained a computer vision model on city camera footage to detect occupied parking spaces, configured CI/CD, implemented monitoring with Prometheus and Grafana, and led partner outreach and project presentations.",
+                  "links": [
+                    {
+                      "title": "parktrack.live",
+                      "url": "https://parktrack.live"
+                    },
+                    {
+                      "title": "docs.parktrack.live",
+                      "url": "https://docs.parktrack.live"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "company": "Mohu",
           "title": "Backend Developer",
@@ -111,10 +65,7 @@
               "type": "ul",
               "items": [
                 {
-                  "text": "Rewrote key website modules using the Django REST framework, enhancing scalability and code readability."
-                },
-                {
-                  "text": "Reduced page load time by 40% by optimising the website for use in distributed high-load systems."
+                  "text": "Rewrote key website modules using Django REST, improving the API structure, code readability and maintainability; reduced page load time by 40%."
                 }
               ]
             }
@@ -122,7 +73,7 @@
         },
         {
           "company": "DataAnnotation",
-          "title": "Data Annotator (Freelance)",
+          "title": "Freelance Data Annotator",
           "years": "2024",
           "location": "Remote",
           "content": [
@@ -130,32 +81,7 @@
               "type": "ul",
               "items": [
                 {
-                  "text": "Conducted in-depth analysis of over 80 code-related LLMs responses (e.g. GPTs), generating actionable feedback that directly influenced the enhancement of programming topic accuracy and relevance within a 2-week period."
-                },
-                {
-                  "text": "Performed similar analyses continuously for 10 months, contributing to sustained improvements in programming accuracy."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "company": "Legal Solutions, LLC",
-          "title": "Web developer",
-          "years": "2022",
-          "location": "Moscow, Russia",
-          "content": [
-            {
-              "type": "ul",
-              "items": [
-                {
-                  "text": "Designed, coded, and deployed the whole mediation centre’s website within 3 days.",
-                  "links": [
-                    {
-                      "title": "погашениедолга.рф",
-                      "url": "https://xn--80aahbefax3aqhhe3k.xn--p1ai"
-                    }
-                  ]
+                  "text": "Analysed more than 80 code-related LLM responses and provided actionable feedback that directly improved answer accuracy and relevance over a two-week period."
                 }
               ]
             }
@@ -164,39 +90,25 @@
       ]
     },
     {
-      "title": "Personal Projects",
+      "title": "Projects",
       "projects-timeline": [
         {
-          "title": "<b>Personal Website (2022–2023)</b>",
-          "content": "Landing page in pure HTML, CSS, and JS, without any external libraries, supporting 2 languages.",
+          "title": "<b>ITMO study materials and deadlines platform (2024–2025)</b>",
+          "content": "Launched four websites for my university group and other groups in the same cohort, reaching 1.2k monthly visits and more than 100 active users.",
           "links": [
             {
-              "title": "nawinds.dev",
-              "url": "https://nawinds.dev/"
+              "title": "m3204.nawinds.dev",
+              "url": "https://m3204.nawinds.dev"
             },
             {
               "title": "Code",
-              "url": "https://github.com/nawinds/nawinds-site"
+              "url": "https://github.com/nawinds/m3204-links"
             }
           ]
         },
         {
-          "title": "Inline stickers search bot (2023)",
-          "content": "Multilingual Telegram bot for any chat inline sticker search with 4.3k stickers added. Optimal personalised search, typos and keyboard layout fixes.",
-          "links": [
-            {
-              "title": "@SSrchBot",
-              "url": "https://t.me/SSrchBot"
-            },
-            {
-              "title": "Code",
-              "url": "https://github.com/nawinds/inline-stickers-search-bot"
-            }
-          ]
-        },
-        {
-          "title": "Private-Net.work Notes (2021–2022)",
-          "content": "Website for sharing private data by making one-time client-side encrypted notes with 8k notes created.",
+          "title": "<b>Private-Net.work Notes (2021–2022)</b>",
+          "content": "Built a Flask service for sharing confidential data through one-time notes encrypted on the client side; more than 8,000 notes have been created.",
           "links": [
             {
               "title": "private-net.work",
@@ -209,8 +121,8 @@
           ]
         },
         {
-          "title": "Systemd services monitoring bot (2022)",
-          "content": "Bot for monitoring and management of systemd services on the Linux server via Telegram.",
+          "title": "<b>Systemd services monitoring bot (2022)</b>",
+          "content": "Developed a Telegram bot for monitoring and managing systemd services on a Linux server.",
           "links": [
             {
               "title": "Code",
@@ -221,12 +133,26 @@
       ]
     },
     {
+      "title": "Achievements",
+      "textblock": {
+        "type": "ul",
+        "items": [
+          {
+            "text": "2nd place at Zero Days CTF; received the “Best User Experience” award at the Workday Hackathon for a posture-monitoring application for developers."
+          },
+          {
+            "text": "Public Relations Officer of the Computer Science Society at Technological University Dublin (Summer 2024)."
+          }
+        ]
+      }
+    },
+    {
       "title": "Courses & Camps",
       "textblock": {
         "type": "ul",
         "items": [
           {
-            "text": "<b>Go course, Yandex Lyceum (2024)</b>: Built a distributed calculator in Go by implementing parallel computations.",
+            "text": "<b>Programming in Go, Yandex Lyceum (2024)</b>: built a distributed calculator in Go with parallel computation.",
             "links": [
               {
                 "title": "Code",
@@ -235,36 +161,16 @@
             ]
           },
           {
-            "text": "<b>Big Data Intensive, Yandex Lyceum (2022)</b>. Completed a group team project in detection of anomalies in data."
+            "text": "<b>Big Data Intensive, Yandex Lyceum (2022)</b>."
           },
           {
-            "text": "“Programming in C++”, “Linux Administration”, “Machine Learning”, “Discrete mathematics”, “Blockchain”, “Computer hardware” courses, School of Programmers (2021 – 2022)."
+            "text": "<b>Summer Computer School (2021)</b>: organised the work of a subteam and developed a Telegram bot for teachers, reducing solution-checking time by 60%."
           },
           {
-            "text": "<b>Summer IT School, industrial programming team (2021)</b>: Collaborated on a team project to develop a bot for SIS teachers, reducing solution-checking time by 60%."
-          },
-          {
-            "text": "<b>“Industrial Python programming”, Yandex Lyceum (2020 – 2021)</b>.  Led 4 team projects, automated birthday emails at school."
+            "text": "Courses in Programming in C++, Linux Administration, Machine Learning, Discrete Mathematics, Blockchain and Computer Hardware, School of Programmers (2021–2022)."
           }
         ]
       }
-    },
-    {
-      "title": "Volunteering",
-      "timeline": [
-        {
-          "company": "UCI Cyclo-cross World Cup",
-          "title": "",
-          "years": "2023",
-          "location": "Dublin, Ireland",
-          "content": [
-            {
-              "type": "text",
-              "text": "Ensured coordination at a crossing point during a high-profile event, showcasing teamwork and reliability."
-            }
-          ]
-        }
-      ]
     },
     {
       "title": "Hard Skills",
@@ -272,27 +178,22 @@
         "type": "ul",
         "items": [
           {
-            "text": "Python, C++, C, Go, SQL; HTML/CSS, JavaScript;"
+            "text": "<b>Languages:</b> Python, Go, C++, C, Java, C#, SQL, Bash, HTML/CSS/JavaScript."
           },
           {
-            "text": "NumPy, Pandas, Apache Spark & Hadoop, Flask, Asynchronous modules;"
+            "text": "<b>Backend & Databases:</b> Django REST, Flask, PostgreSQL, MongoDB, Seqwall, MinIO, Patroni."
           },
           {
-            "text": "Git, CI/CD; Unit testing, Relational databases, Linux administration; Nginx;"
+            "text": "<b>Infrastructure & SRE:</b> Linux, Docker, Docker Compose, nginx, systemd, cron, TLS, health checks, CI/CD with GitHub Actions and GitLab CI/CD, IaC, Ansible."
           },
           {
-            "text": "DRY, Agile Methodology; OOP, Functional programming; Data Structures, Algorithms, Complexity Analysis"
-          }
-        ]
-      }
-    },
-    {
-      "title": "Soft Skills",
-      "textblock": {
-        "type": "ul",
-        "items": [
+            "text": "<b>Monitoring:</b> Prometheus, Grafana, dashboards, alerting, uptime monitoring, incident response and debugging."
+          },
           {
-            "text": "Reliability, Rationality, Creativeness, Team work, Communication."
+            "text": "<b>Data & Machine Learning:</b> NumPy, Pandas, YOLO, Apache Spark, Hadoop."
+          },
+          {
+            "text": "<b>Computer Science:</b> algorithms, data structures, complexity analysis, operating systems and computer networks."
           }
         ]
       }
@@ -300,120 +201,71 @@
   ],
   "ru": [
     {
-      "title": "Education",
+      "title": "Образование",
       "timeline": [
         {
-          "company": "ITMO University",
-          "title": "Bachelor of Science in Software Engineering, 1st year",
-          "years": "2024 – Present",
-          "location": "Saint-Petersburg, Russia",
-          "content": [
-            {
-              "type": "ul",
-              "items": [
-                {
-                  "text": "Launched a website for university group resources, achieving <b>1.2k</b> monthly visits, and <b>100+</b> active users; managed the GitHub repository with 4 contributors and 300+ commits.",
-                  "links": [
-                    {
-                      "title": "m3104.nawinds.dev",
-                      "url": "https://m3104.nawinds.dev"
-                    },
-                    {
-                      "title": "Code",
-                      "url": "https://github.com/nawinds/m3104-links"
-                    }
-                  ]
-                },
-                {
-                  "text": "Built and deployed 3 Telegram bots addressing real student needs.",
-                  "links": [
-                    {
-                      "title": "Deadline bot",
-                      "url": "https://github.com/nawinds/deadline_bot"
-                    },
-                    {
-                      "title": "Queue bot",
-                      "url": "https://github.com/nawinds/queue_bot"
-                    },
-                    {
-                      "title": "Attendance bot",
-                      "url": "https://github.com/nawinds/attendance_bot"
-                    }
-                  ]
-                },
-                {
-                  "text": "Implemented more than 4 C++ projects, such as a custom uint239_t type with byte-level operations, an argument parser, a CLI log analyser, and a sandpile model with BMP visualisation."
-                }
-              ]
-            }
-          ]
+          "company": "Университет ИТМО",
+          "title": "Разработка программного обеспечения / Software Engineering",
+          "years": "2024 – настоящее время",
+          "location": "Санкт-Петербург, Россия",
+          "content": []
         },
         {
-          "company": "Technological University Dublin",
-          "title": "Bachelor of Science (Honours) in Computer Science (International), 1st year.",
+          "company": "Пекинский технологический институт",
+          "title": "Hands-on Learning for Emerging Technologies in Electronics Engineering",
+          "years": "2024",
+          "location": "Пекин, Китай",
+          "content": []
+        },
+        {
+          "company": "Технологический университет Дублина",
+          "title": "Bachelor of Science (Honours) in Computer Science (International)",
           "years": "2023 – 2024",
-          "location": "Dublin, Ireland",
-          "content": [
-            {
-              "type": "ul",
-              "items": [
-                {
-                  "text": "<b>Module final grades</b>: Mathematics: <b>97</b><sub>/100</sub> | Program Design: <b>96</b><sub>/100</sub> | Web Development: <b>94</b><sub>/100</sub>"
-                },
-                {
-                  "text": "<b>Achievements</b>: 2nd place in Zero Days CTF, “Best User Experience” award at Workday Hackathon with a posture monitoring app for developers."
-                },
-                {
-                  "text": "Public Relations Officer, Computer Science society (Summer 2024)."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "company": "“Kurchatovskaya School”",
-          "title": "",
-          "years": "2019 – 2023",
-          "location": "Moscow, Russia",
-          "content": [
-            {
-              "type": "ul",
-              "items": [
-                {
-                  "text": "Graduated with <b>honours (5 / 5 for all subjects)</b>."
-                },
-                {
-                  "text": "2021 – 2023: Physics and Technology class. Higher mathematics solving in C, C++; Algorithms in Python."
-                },
-                {
-                  "text": "Produced real-time widgets for the school social media as an admin."
-                },
-                {
-                  "text": "Winner of numerous city and national Olympiads in programming, mathematics, physics."
-                }
-              ]
-            }
-          ]
+          "location": "Дублин, Ирландия",
+          "content": []
         }
       ]
     },
     {
-      "title": "Work Experience",
+      "title": "Опыт работы",
       "timeline": [
         {
-          "company": "Mohu",
-          "title": "Backend Developer",
-          "years": "2024",
-          "location": "Remote",
+          "company": "ParkTrack — карта свободных городских парковок",
+          "title": "Тимлид",
+          "years": "2026",
+          "location": "",
           "content": [
             {
               "type": "ul",
               "items": [
                 {
-                  "text": "Rewrote key website modules using the Django REST framework, enhancing scalability and code readability."
-                },
+                  "text": "Руководил командой из восьми человек от идеи продукта до питча; лично обучил модель компьютерного зрения на изображениях городских камер для определения занятых парковочных мест, настроил CI/CD, внедрил мониторинг с Prometheus и Grafana, отвечал за поиск партнёров и защиту проекта.",
+                  "links": [
+                    {
+                      "title": "parktrack.live",
+                      "url": "https://parktrack.live"
+                    },
+                    {
+                      "title": "docs.parktrack.live",
+                      "url": "https://docs.parktrack.live"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": "Mohu",
+          "title": "Backend-разработчик",
+          "years": "2024",
+          "location": "Удалённо",
+          "content": [
+            {
+              "type": "ul",
+              "items": [
                 {
-                  "text": "Reduced page load time by 40% by optimising the website for use in distributed high-load systems."
+                  "text": "Переписал ключевые части сайта с использованием Django REST, улучшив структуру API, читаемость и сопровождаемость кода; сократил время загрузки страниц на 40%."
                 }
               ]
             }
@@ -421,40 +273,15 @@
         },
         {
           "company": "DataAnnotation",
-          "title": "Data Annotator (Freelance)",
+          "title": "Фриланс",
           "years": "2024",
-          "location": "Remote",
+          "location": "Удалённо",
           "content": [
             {
               "type": "ul",
               "items": [
                 {
-                  "text": "Conducted in-depth analysis of over 80 code-related LLMs responses (e.g. GPTs), generating actionable feedback that directly influenced the enhancement of programming topic accuracy and relevance within a 2-week period."
-                },
-                {
-                  "text": "Performed similar analyses continuously for 10 months, contributing to sustained improvements in programming accuracy."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "company": "Legal Solutions, LLC",
-          "title": "Web developer",
-          "years": "2022",
-          "location": "Moscow, Russia",
-          "content": [
-            {
-              "type": "ul",
-              "items": [
-                {
-                  "text": "Designed, coded, and deployed the whole mediation centre’s website within 3 days.",
-                  "links": [
-                    {
-                      "title": "погашениедолга.рф",
-                      "url": "https://xn--80aahbefax3aqhhe3k.xn--p1ai"
-                    }
-                  ]
+                  "text": "Проанализировал более 80 связанных с кодом ответов LLM и подготовил практическую обратную связь, которая напрямую повлияла на повышение точности и актуальности ответов в течение двух недель."
                 }
               ]
             }
@@ -463,56 +290,42 @@
       ]
     },
     {
-      "title": "Personal Projects",
+      "title": "Проекты",
       "projects-timeline": [
         {
-          "title": "<b>Personal Website (2022–2023)</b>",
-          "content": "Landing page in pure HTML, CSS, and JS, without any external libraries, supporting 2 languages.",
+          "title": "<b>Платформа учебных материалов и дедлайнов ИТМО (2024–2025)</b>",
+          "content": "Запустил четыре сайта для своей учебной группы и других групп потока, достигнув 1,2 тыс. ежемесячных посещений и более 100 активных пользователей.",
           "links": [
             {
-              "title": "nawinds.dev",
-              "url": "https://nawinds.dev/"
+              "title": "m3204.nawinds.dev",
+              "url": "https://m3204.nawinds.dev"
             },
             {
-              "title": "Code",
-              "url": "https://github.com/nawinds/nawinds-site"
+              "title": "Код",
+              "url": "https://github.com/nawinds/m3204-links"
             }
           ]
         },
         {
-          "title": "Inline stickers search bot (2023)",
-          "content": "Multilingual Telegram bot for any chat inline sticker search with 4.3k stickers added. Optimal personalised search, typos and keyboard layout fixes.",
-          "links": [
-            {
-              "title": "@SSrchBot",
-              "url": "https://t.me/SSrchBot"
-            },
-            {
-              "title": "Code",
-              "url": "https://github.com/nawinds/inline-stickers-search-bot"
-            }
-          ]
-        },
-        {
-          "title": "Private-Net.work Notes (2021–2022)",
-          "content": "Website for sharing private data by making one-time client-side encrypted notes with 8k notes created.",
+          "title": "<b>Private-Net.work Notes (2021–2022)</b>",
+          "content": "Создал на Flask сервис для передачи конфиденциальных данных через одноразовые зашифрованные на стороне клиента записки; пользователями создано более 8 000 записок.",
           "links": [
             {
               "title": "private-net.work",
               "url": "https://private-net.work"
             },
             {
-              "title": "Code",
+              "title": "Код",
               "url": "https://github.com/Private-Net-work/Private-Net.work-site"
             }
           ]
         },
         {
-          "title": "Systemd services monitoring bot (2022)",
-          "content": "Bot for monitoring and management of systemd services on the Linux server via Telegram.",
+          "title": "<b>Бот мониторинга сервисов systemd (2022)</b>",
+          "content": "Разработал Telegram-бота для мониторинга и управления сервисами systemd на Linux-сервере.",
           "links": [
             {
-              "title": "Code",
+              "title": "Код",
               "url": "https://github.com/nawinds/systemd_services_monitoring"
             }
           ]
@@ -520,50 +333,44 @@
       ]
     },
     {
-      "title": "Courses & Camps",
+      "title": "Достижения",
       "textblock": {
         "type": "ul",
         "items": [
           {
-            "text": "<b>Go course, Yandex Lyceum (2024)</b>: Built a distributed calculator in Go by implementing parallel computations.",
-            "links": [
-              {
-                "title": "Code",
-                "url": "https://github.com/nawinds/distributed_calculator_golang"
-              }
-            ]
+            "text": "2-е место на Zero Days CTF; награда «Best User Experience» на Workday Hackathon за приложение мониторинга осанки для разработчиков."
           },
           {
-            "text": "<b>Big Data Intensive, Yandex Lyceum (2022)</b>. Completed a group team project in detection of anomalies in data."
-          },
-          {
-            "text": "“Programming in C++”, “Linux Administration”, “Machine Learning”, “Discrete mathematics”, “Blockchain”, “Computer hardware” courses, School of Programmers (2021 – 2022)."
-          },
-          {
-            "text": "<b>Summer IT School, industrial programming team (2021)</b>: Collaborated on a team project to develop a bot for SIS teachers, reducing solution-checking time by 60%."
-          },
-          {
-            "text": "<b>“Industrial Python programming”, Yandex Lyceum (2020 – 2021)</b>.  Led 4 team projects, automated birthday emails at school."
+            "text": "Public Relations Officer в Computer Science Society Технологического университета Дублина (лето 2024)."
           }
         ]
       }
     },
     {
-      "title": "Volunteering",
-      "timeline": [
-        {
-          "company": "UCI Cyclo-cross World Cup",
-          "title": "",
-          "years": "2023",
-          "location": "Dublin, Ireland",
-          "content": [
-            {
-              "type": "text",
-              "text": "Ensured coordination at a crossing point during a high-profile event, showcasing teamwork and reliability."
-            }
-          ]
-        }
-      ]
+      "title": "Курсы и лагеря",
+      "textblock": {
+        "type": "ul",
+        "items": [
+          {
+            "text": "<b>Курс по разработке на Go, Яндекс Лицей (2024)</b>: написал распределённый калькулятор на Go с параллельными вычислениями.",
+            "links": [
+              {
+                "title": "Код",
+                "url": "https://github.com/nawinds/distributed_calculator_golang"
+              }
+            ]
+          },
+          {
+            "text": "<b>Интенсив по большим данным, Яндекс Лицей (2022)</b>."
+          },
+          {
+            "text": "<b>Летняя компьютерная школа (2021)</b>: организовал работу подкоманды и участвовал в разработке Telegram-бота для преподавателей, сократившего время проверки задач на 60%."
+          },
+          {
+            "text": "Курсы «Программирование на C++», «Администрирование Linux», «Машинное обучение», «Дискретная математика», «Блокчейн» и «Компьютерное железо», Школа программистов (2021–2022)."
+          }
+        ]
+      }
     },
     {
       "title": "Hard Skills",
@@ -571,27 +378,22 @@
         "type": "ul",
         "items": [
           {
-            "text": "Python, C++, C, Go, SQL; HTML/CSS, JavaScript;"
+            "text": "<b>Языки:</b> Python, Go, C++, C, Java, C#, SQL, Bash, HTML/CSS/JavaScript."
           },
           {
-            "text": "NumPy, Pandas, Apache Spark & Hadoop, Flask, Asynchronous modules;"
+            "text": "<b>Бэкенд и базы данных:</b> Django REST, Flask, PostgreSQL, MongoDB, Seqwall, MinIO, Patroni."
           },
           {
-            "text": "Git, CI/CD; Unit testing, Relational databases, Linux administration; Nginx;"
+            "text": "<b>Инфраструктура и SRE:</b> Linux, Docker, Docker Compose, nginx, systemd, cron, TLS, health checks, CI/CD с GitHub Actions и GitLab CI/CD, IaC, Ansible."
           },
           {
-            "text": "DRY, Agile Methodology; OOP, Functional programming; Data Structures, Algorithms, Complexity Analysis"
-          }
-        ]
-      }
-    },
-    {
-      "title": "Soft Skills",
-      "textblock": {
-        "type": "ul",
-        "items": [
+            "text": "<b>Мониторинг:</b> Prometheus, Grafana, дашборды, алертинг, мониторинг доступности, разбор инцидентов и отладка."
+          },
           {
-            "text": "Reliability, Rationality, Creativeness, Team work, Communication."
+            "text": "<b>Данные и машинное обучение:</b> NumPy, Pandas, YOLO, Apache Spark, Hadoop."
+          },
+          {
+            "text": "<b>Основы Computer Science:</b> алгоритмы, структуры данных, анализ сложности, операционные системы и компьютерные сети."
           }
         ]
       }
